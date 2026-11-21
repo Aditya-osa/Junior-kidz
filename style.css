@@ -1,0 +1,339 @@
+/*
+Theme Name: Eduspace
+Author: ModinaTheme
+Author URI: https://themeforest.net/user/modinatheme/
+Description: Eduspace - Online Course, Education & University Html Template
+Version: 1.2.0
+*/
+
+/*
+=================================
+|***    Table of contents:   ***|
+=================================
+
+1. General styles
+2. Typography
+3. Helpers
+4. Preloader
+5. Go up button
+6. Header and navigation
+7. Hero Section
+8. About us
+9. Services
+10. Fun facts
+11. Projects
+12. Pricing
+13. Testimonial
+14. CTA
+15. Team
+16. Video Banner
+17. Shop
+18. Marquee
+19. Blog
+20. Footer
+
+Main Style file-> assets/css/main.css 
+*/
+
+.header-logo img,
+.header-logo-2 img,
+.offcanvas__logo img,
+.single-footer-widget .widget-head img {
+    height: 104px;
+    width: 233px;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+/* Header Navigation & Alignment */
+.header-3.style-2 .header-main .main-menu ul li {
+    margin-inline-end: 18px;
+}
+.header-3.style-2 .header-main .main-menu ul li a {
+    font-size: 17px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.header-3.style-2 .header-main .header-button .theme-btn {
+    padding: 16px 28px;
+    background-color: var(--theme-orange);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+@media (max-width: 1399px) {
+    .header-3.style-2 .header-main .main-menu ul li {
+        margin-inline-end: 12px;
+    }
+    .header-3.style-2 .header-main .main-menu ul li a {
+        font-size: 16px;
+    }
+    .header-3.style-2 .header-logo img,
+    .header-3.style-2 .header-logo-2 img {
+        width: 190px;
+        height: 85px;
+    }
+}
+
+@media (max-width: 575px) {
+    .header-3.style-2 .header-logo img,
+    .header-3.style-2 .header-logo-2 img {
+        width: 160px;
+        height: 72px;
+    }
+}
+
+.hero-section.hero-4 {
+    height: auto;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 0 280px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("assets/img/image.png");
+}
+
+.hero-4 .hero-content {
+    max-width: 860px;
+    margin: 0 auto;
+    margin-top: 112px !important;
+}
+
+.hero-4 .hero-content h1 {
+    text-transform: none;
+}
+
+.hero-4 .hero-content .hero-button {
+    margin-top: 32px;
+}
+
+@media (max-width: 767px) {
+    .hero-section.hero-4 {
+        min-height: 740px;
+        padding: 100px 0 250px;
+        background-position: 58% center;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700;800&family=Sora:wght@700;800&display=swap");
+
+/* =========================================================
+   Playful Splash Eyebrow (.kidz-eyebrow / .eyebrow-splash)
+   Clean, balanced eyebrow size (22px) with colorful accents
+   ========================================================= */
+.kidz-eyebrow,
+.eyebrow-splash,
+.section-title h6.kidz-eyebrow,
+.section-title h6.eyebrow-splash {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Fredoka', 'Sora', sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.3px !important;
+    color: #0D1B3E;
+    position: relative;
+    padding-bottom: 0 !important;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .kidz-eyebrow,
+    .eyebrow-splash,
+    .section-title h6.kidz-eyebrow,
+    .section-title h6.eyebrow-splash {
+        font-size: 17px !important;
+        gap: 7px;
+    }
+}
+
+
+
+/* Two-tone color accents inside eyebrow */
+.kidz-eyebrow .title-navy,
+.eyebrow-splash .title-navy {
+    color: #0D1B3E;
+}
+.kidz-eyebrow .title-coral,
+.eyebrow-splash .title-coral {
+    color: #F27D52;
+}
+
+/* Left Splash Accent (Purple, Coral, Mint) */
+.section-title h6.kidz-eyebrow::before,
+.section-title h6.eyebrow-splash::before,
+.kidz-eyebrow::before,
+.eyebrow-splash::before {
+    content: "" !important;
+    position: static !important;
+    width: 26px !important;
+    height: 20px !important;
+    display: inline-block !important;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='32' viewBox='0 0 40 32' fill='none'%3E%3Cpath d='M34 24 C26 18 18 12 12 4' stroke='%237B61FF' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M36 26 C26 22 14 20 2 20' stroke='%23F27D52' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M34 28 C24 28 16 30 6 30' stroke='%2320C997' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / contain !important;
+    flex-shrink: 0;
+    animation: none !important;
+}
+
+/* Right Splash Accent (Teal, Coral, Royal Blue) */
+.section-title h6.kidz-eyebrow::after,
+.section-title h6.eyebrow-splash::after,
+.kidz-eyebrow::after,
+.eyebrow-splash::after {
+    content: "" !important;
+    position: static !important;
+    width: 26px !important;
+    height: 20px !important;
+    display: inline-block !important;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='32' viewBox='0 0 40 32' fill='none'%3E%3Cpath d='M6 24 C14 18 22 12 28 4' stroke='%2320C997' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M4 26 C14 22 26 20 38 20' stroke='%23F27D52' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M6 28 C16 28 24 30 34 30' stroke='%234D96FF' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / contain !important;
+    flex-shrink: 0;
+    animation: none !important;
+}
+
+@media (max-width: 767px) {
+    .kidz-eyebrow::before,
+    .eyebrow-splash::before,
+    .kidz-eyebrow::after,
+    .eyebrow-splash::after {
+        width: 20px !important;
+        height: 16px !important;
+    }
+}
+
+
+
+/* Dark background / text-white support */
+.kidz-eyebrow.text-white,
+.eyebrow-splash.text-white {
+    color: #FFFFFF !important;
+}
+.kidz-eyebrow.text-white .title-navy,
+.kidz-eyebrow.text-white .title-coral {
+    color: #FFFFFF !important;
+}
+.kidz-eyebrow.text-white::before,
+.kidz-eyebrow.text-white::after,
+.eyebrow-splash.text-white::before,
+.eyebrow-splash.text-white::after,
+.section-title.color-yellow .kidz-eyebrow::before,
+.section-title.color-yellow .kidz-eyebrow::after {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.35));
+}
+
+/* Optional smaller eyebrow variant */
+.kidz-eyebrow-sm,
+.section-title h6.kidz-eyebrow-sm {
+    font-size: 20px !important;
+    gap: 10px;
+}
+.kidz-eyebrow-sm::before,
+.kidz-eyebrow-sm::after,
+.section-title h6.kidz-eyebrow-sm::before,
+.section-title h6.kidz-eyebrow-sm::after {
+    width: 26px !important;
+    height: 20px !important;
+}
+
+/* Direct span accents support */
+.splash-accents {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.splash-accents svg {
+    display: block;
+}
+
+/* Franchise CTA Background */
+.cta-newsletter-section.style-2 {
+    background-color: #009FE3 !important;
+}
+
+/* All Buttons in Brand Red (#E52421) */
+.theme-btn,
+.theme-btn.yellow-btn,
+.theme-btn.red-btn,
+.theme-btn.pink-btn,
+.theme-btn.theme-blue-2,
+.welcome-pill-btn,
+.back-to-top {
+    background-color: #E52421 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #E52421 !important;
+}
+
+.theme-btn::before,
+.theme-btn::after,
+.theme-btn.yellow-btn::before,
+.theme-btn.yellow-btn::after,
+.theme-btn.red-btn::before,
+.theme-btn.red-btn::after,
+.theme-btn.pink-btn::before,
+.theme-btn.pink-btn::after,
+.theme-btn.theme-blue-2::before,
+.theme-btn.theme-blue-2::after {
+    background-color: #C01B18 !important;
+}
+
+.theme-btn:hover,
+.theme-btn.yellow-btn:hover,
+.theme-btn.red-btn:hover,
+.theme-btn.pink-btn:hover,
+.theme-btn.theme-blue-2:hover,
+.welcome-pill-btn:hover,
+.back-to-top:hover {
+    background-color: #C01B18 !important;
+    color: #FFFFFF !important;
+    border-color: #C01B18 !important;
+}
+
+/* Secondary / Outline Button */
+.theme-btn.style-2 {
+    background-color: transparent !important;
+    color: #E52421 !important;
+    border: 1px solid #E52421 !important;
+}
+.theme-btn.style-2:hover {
+    background-color: #E52421 !important;
+    color: #FFFFFF !important;
+}
+.theme-btn.style-2::before,
+.theme-btn.style-2::after {
+    background-color: #E52421 !important;
+}
+
+/* Our Events Background */
+.event-wrapper-2 .event-right-items,
+.event-secton-2 .event-right-items {
+    background-color: #009FE3 !important;
+}
+
+/* Welcome Junior Kidz - Know More Button */
+.welcome-pill-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #E52421 !important;
+    color: #FFFFFF !important;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 11px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(229, 36, 33, 0.35);
+    transition: all 0.3s ease;
+}
+.welcome-pill-btn:hover {
+    background-color: #C01B18 !important;
+    color: #FFFFFF !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(229, 36, 33, 0.45);
+}
+
