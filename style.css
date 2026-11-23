@@ -88,10 +88,10 @@ Main Style file-> assets/css/main.css
 
 .hero-section.hero-4 {
     height: auto;
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
-    padding: 120px 0 280px;
+    padding: 37px 0 280px;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url("assets/img/image.png");
