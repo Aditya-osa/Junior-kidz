@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--<< Header Area >>-->
+    <head>
+        <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="modinatheme">
+        <meta name="description" content="Junior Kidz - Play School Franchise in India">
+        <!-- ======== Page title ============ -->
+        <title>Franchise Opportunities - Junior Kidz</title>
+        <!--<< Favicon >>-->
+        <link rel="shortcut icon" href="assets/img/favicon.svg">
+        <!--<< Bootstrap min.css >>-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--<< Font Awesome.css >>-->
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <!--<< Animate.css >>-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!--<< Magnific Popup.css >>-->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!--<< MeanMenu.css >>-->
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <!--<< Odometer.css >>-->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!--<< Swiper Bundle.css >>-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--<< Nice Select.css >>-->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!--<< Main.css >>-->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!--<< Style.css >>-->
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /* Franchise Program Horizontal Card Layout */
+            .franchise-cards-container {
+                display: flex;
+                flex-direction: column;
+                gap: 28px;
+                margin-top: 32px;
+                margin-bottom: 32px;
+            }
+
+            .franchise-section-card {
+                display: flex;
+                flex-direction: row;
+                height: 310px;
+                background: #ffffff;
+                border: 1px solid #edf2f7;
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: 0 4px 18px rgba(13, 27, 62, 0.05);
+                transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+                scroll-margin-top: 110px;
+            }
+
+            .franchise-section-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 12px 28px rgba(13, 27, 62, 0.09);
+                border-color: #cbd5e1;
+            }
+
+            .franchise-card-image {
+                width: 38%;
+                height: 100%;
+                flex-shrink: 0;
+                position: relative;
+                overflow: hidden;
+                background: #f1f5f9;
+            }
+
+            .franchise-card-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+                transition: transform 0.35s ease;
+            }
+
+            .franchise-section-card:hover .franchise-card-image img {
+                transform: scale(1.03);
+            }
+
+            .franchise-card-content {
+                width: 62%;
+                height: 100%;
+                padding: 24px 28px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .franchise-card-title {
+                font-size: 22px;
+                font-weight: 700;
+                color: #0c1e33;
+                margin-bottom: 4px;
+                line-height: 1.3;
+            }
+
+            .franchise-card-subtitle {
+                font-size: 13px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.6px;
+                color: #e52421;
+                margin-bottom: 12px;
+                display: inline-block;
+            }
+
+            .franchise-card-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .franchise-card-list li {
+                font-size: 14px;
+                line-height: 1.45;
+                color: #4b5563;
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .franchise-card-list li i {
+                color: #10b981;
+                font-size: 15px;
+                margin-top: 3px;
+                flex-shrink: 0;
+            }
+
+            /* Contact Details inside Contact Us Card */
+            .franchise-contact-details {
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+                margin-bottom: 12px;
+            }
+
+            .franchise-contact-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+                font-size: 13.5px;
+                color: #4b5563;
+                line-height: 1.4;
+            }
+
+            .franchise-contact-item i {
+                color: #e52421;
+                font-size: 14px;
+                margin-top: 3px;
+                flex-shrink: 0;
+            }
+
+            .franchise-contact-item a {
+                color: #0c1e33;
+                font-weight: 600;
+                transition: color 0.2s ease;
+            }
+
+            .franchise-contact-item a:hover {
+                color: #e52421;
+            }
+
+            .franchise-contact-btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                align-self: flex-start;
+                padding: 7px 18px;
+                background: #e52421;
+                color: #ffffff;
+                font-size: 13px;
+                font-weight: 600;
+                border-radius: 8px;
+                text-decoration: none;
+                transition: background 0.2s ease, transform 0.2s ease;
+                box-shadow: 0 4px 12px rgba(229, 36, 33, 0.22);
+            }
+
+            .franchise-contact-btn:hover {
+                background: #c81e1b;
+                color: #ffffff;
+                transform: translateY(-2px);
+            }
+
+            /* Intro & Banner cards */
+            .franchise-intro-card {
+                background: #ffffff;
+                border: 1px solid #edf2f7;
+                border-radius: 16px;
+                box-shadow: 0 4px 18px rgba(13, 27, 62, 0.05);
+                padding: 26px 30px;
+                margin-bottom: 28px;
+                scroll-margin-top: 110px;
+            }
+
+            .franchise-intro-card h3 {
+                font-size: 22px;
+                font-weight: 700;
+                color: #0c1e33;
+                margin-bottom: 4px;
+            }
+
+            .franchise-why-enroll-banner {
+                background: linear-gradient(135deg, #0c1e33 0%, #1e3a8a 100%);
+                border-radius: 16px;
+                padding: 28px 30px;
+                color: #ffffff;
+                margin-top: 28px;
+            }
+
+            .franchise-why-enroll-banner h3 {
+                color: #ffffff;
+                font-size: 22px;
+                margin-bottom: 8px;
+            }
+
+            .franchise-why-enroll-banner p {
+                color: #e2e8f0;
+                margin: 0;
+                font-size: 15px;
+                line-height: 1.6;
+            }
+
+            .franchise-why-enroll-banner a {
+                color: #38bdf8;
+                font-weight: 600;
+                text-decoration: underline;
+            }
+
+            .franchise-map-card {
+                border-radius: 16px;
+                overflow: hidden;
+                border: 1px solid #edf2f7;
+                box-shadow: 0 4px 18px rgba(13, 27, 62, 0.05);
+                margin-top: 28px;
+                height: 320px;
+            }
+
+            .franchise-map-card iframe {
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+
+            @media (max-width: 991px) {
+                .franchise-section-card {
+                    flex-direction: column;
+                    height: auto;
+                }
+                .franchise-card-image {
+                    width: 100%;
+                    height: 220px;
+                }
+                .franchise-card-content {
+                    width: 100%;
+                    height: auto;
+                    padding: 22px 20px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+         <!-- Preloader Start -->
+         <div id="preloader" class="preloader">
+            <div class="animation-preloader">
+                <div class="edu-preloader-icon"> 
+                    <img src="assets/img/preloader.gif" alt="">               
+                </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+                    <span data-text-preloader="D" class="letters-loading">
+                        D
+                    </span>
+                    <span data-text-preloader="U" class="letters-loading">
+                        U
+                    </span>
+                    <span data-text-preloader="S" class="letters-loading">
+                        S
+                    </span>
+                    <span data-text-preloader="P" class="letters-loading">
+                        P
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="C" class="letters-loading">
+                        C
+                    </span>
+                    <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+                </div>
+                <p class="text-center">Loading</p>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back To Top start -->
+        <button id="back-top" class="back-to-top">
+            <i class="fas fa-long-arrow-up"></i>
+        </button>
+        
+        <!-- Marquee Section Start -->
+        <div class="marquee-section style-header">
+            <div class="mycustom-marque header-marque theme-blue-bg">
+                <div class="scrolling-wrap">
+                    <div class="comm">
+                        <div></div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Education & University</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Online Education</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> 230+ Quality Courses</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Experience Instructors</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Kindergarten Study</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> 25% Coupon Bonus</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> 25% Extra Coupon Bonus</div>
+                    </div>
+                    <div class="comm">
+                        <div></div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Education & University</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Online Education</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> 230+ Quality Courses</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Experience Instructors</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Kindergarten Study</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> 25% Coupon Bonus</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> 25% Extra Coupon Bonus</div>
+                    </div>
+                    <div class="comm">
+                        <div></div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Education & University</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Online Education</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> 230+ Quality Courses</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Experience Instructors</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> Kindergarten Study</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> 25% Coupon Bonus</div>
+                        <div class="cmn-textslide"><i class="flaticon-mortarboard"></i> 25% Extra Coupon Bonus</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offcanvas Area Start -->
+        <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="home.html">
+                                    <img src="assets/img/logo/black-logo.jpg" alt="logo-img">
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="offcanvas-title">Hello There!</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, </p>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="mobile-menu fix mb-3"></div>
+                        <div class="offcanvas__contact">
+                            <h3>Information</h3>
+                            <ul class="contact-list">
+                                <li>
+                                    <span>
+                                        Address:
+                                    </span>
+                                    7300-7398 Colonial Rd,
+                                    Brooklyn, NY 11209
+                                </li>
+                                <li>
+                                    <span>
+                                        Call Us:
+                                    </span>
+                                    <a href="tel:+00012345688">+000 123 456 88</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        Email:
+                                    </span>
+                                    <a href="mailto:supportedus@gmail.com">supportedus@gmail.com</a>
+                                </li>
+                            </ul>
+                            <div class="offcanvas-button">
+                                <a href="sign-in.html" class="theme-btn style-2"><i class="far fa-user"></i> Admin</a>
+                                <a href="register.html" class="theme-btn yellow-btn">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__overlay"></div>
+
+        <!-- Header Section Start -->
+<header class="header-section-3">
+    <div id="header-sticky" class="header-3 style-2">
+        <div class="container">
+            <div class="mega-menu-wrapper">
+                <div class="header-main">
+
+                    <!-- Logo -->
+                    <a href="home.html" class="header-logo">
+                        <img src="assets/img/logo/black-logo.jpg" alt="Junior Kidz Logo">
+                    </a>
+
+                    <a href="home.html" class="header-logo-2">
+                        <img src="assets/img/logo/black-logo.jpg" alt="Junior Kidz Logo">
+                    </a>
+
+                    <!-- Navigation -->
+                    <div class="header-left">
+                        <div class="mean__menu-wrapper">
+                            <div class="main-menu">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                      
+
+                                        <li>
+                                            <a href="about.html">
+                                                Who We Are
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="franchise.html">
+                                                Franchise Program
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="news-details.html">
+                                                Nursery Teacher Training
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="gallery.html">
+                                                <span class="head-icon"><i class="fas fa-layer-group"></i></span>
+                                                Gallery
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="event.html">
+                                                Events
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="contact.html">
+                                                Reach Us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Header Actions -->
+                    <div class="header-right d-flex justify-content-end align-items-center">
+
+                        <div class="header-button">
+                            <a href="contact.html" class="theme-btn">
+                                Enquiry
+                            </a>
+                        </div>
+
+                        <!-- Mobile Menu Toggle -->
+                        <div class="header__hamburger d-xl-none my-auto">
+                            <div class="sidebar__toggle">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <!-- Search Section Start -->
+        <div class="header-search-bar d-flex align-items-center">
+            <button class="search-close">Ã—</button>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="search-bar">
+                            <div class="contact-form-box contact-search-form-box">
+                                <form action="#">
+                                    <input type="email" placeholder="Search here...">
+                                    <button type="submit"><i class="far fa-search"></i></button>
+                                </form>
+                                <p>Type above and press Enter to search. Press Close to cancel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Breadcrumb-wrapper Start -->
+        <section class="breadcrumb-wrapper">
+       
+        <div class="container">
+            <div class="row">
+                <div class="page-heading">
+                    <h1>Franchise Opportunities</h1>
+                    
+                 
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Event Details Section Start -->
+        <section class="event-details-section section-padding">
+            <div class="container">
+                <div class="event-details-wrapper">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="event-details-items">
+                                <div class="details-image">
+                                    <img src="assets/img/gallery/3.png" alt="Junior Kidz Classroom">
+                                </div>
+                                <div class="event-details-content">
+                                    <h3>Franchise Opportunities</h3>
+                                    <p class="mb-4">
+                                        We have every reason for you to enroll in our franchise model. An amazing opportunity for you to start you own Play School Franchise in India
+                                    </p>
+                                    <p class="mb-5">
+                                        OPEN YOUR OWN PRESCHOOL — Franchise with Junior Kidz International. Become a Esteemed Junior Kidz Franchisee & Start a preschool!
+                                    </p>
+                                    <div class="franchise-intro-card" id="franchise-international">
+                                        <h3>
+                                            Franchise with Junior Kidz International
+                                        </h3>
+                                        <p class="franchise-card-subtitle">
+                                            OPEN YOUR OWN PRESCHOOL
+                                        </p>
+                                        <ul class="franchise-card-list">
+                                            <li><i class="fas fa-check-circle"></i>5 yrs agreement period</li>
+                                            <li><i class="fas fa-check-circle"></i>No royalty</li>
+                                            <li><i class="fas fa-check-circle"></i>Complete online offline Support</li>
+                                            <li><i class="fas fa-check-circle"></i>Marketing Support</li>
+                                            <li><i class="fas fa-check-circle"></i>New technology Touch Screen learning</li>
+                                            <li><i class="fas fa-check-circle"></i>Teachers training Program for additional revenue</li>
+                                            <li><i class="fas fa-check-circle"></i>Guidance on After school Activities</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="franchise-cards-container">
+                                        <!-- 1. Our Academics -->
+                                        <div class="franchise-section-card" id="academics">
+                                            <div class="franchise-card-image">
+                                                <img src="assets/img/gallery/3.png" alt="Our Academics">
+                                            </div>
+                                            <div class="franchise-card-content">
+                                                <h3 class="franchise-card-title">Our Academics</h3>
+                                                <p class="franchise-card-subtitle">Simple and best</p>
+                                                <ul class="franchise-card-list">
+                                                    <li><i class="fas fa-check-circle"></i>Robust pedagogy with continous updation</li>
+                                                    <li><i class="fas fa-check-circle"></i>Dynamic curriculum to foster multiple intelligences</li>
+                                                    <li><i class="fas fa-check-circle"></i>Interactive education tools and inviting learning infrastructure</li>
+                                                    <li><i class="fas fa-check-circle"></i>Curriculum in sync with all major education boards</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- 2. Our Support -->
+                                        <div class="franchise-section-card" id="support">
+                                            <div class="franchise-card-image">
+                                                <img src="assets/img/gallery/1.png" alt="Our Support">
+                                            </div>
+                                            <div class="franchise-card-content">
+                                                <h3 class="franchise-card-title">Our Support</h3>
+                                                <p class="franchise-card-subtitle">Here to help</p>
+                                                <ul class="franchise-card-list">
+                                                    <li><i class="fas fa-check-circle"></i>Ongoing updations, interactions, trainings and quality assistance</li>
+                                                    <li><i class="fas fa-check-circle"></i>Operational, academic & planning support, including various manuals</li>
+                                                    <li><i class="fas fa-check-circle"></i>Local marketing and brand support</li>
+                                                    <li><i class="fas fa-check-circle"></i>Efforts toward relationship building including affiliation with schools, parents and society at large</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- 3. Our Propositions -->
+                                        <div class="franchise-section-card" id="propositions">
+                                            <div class="franchise-card-image">
+                                                <img src="assets/img/gallery/7.png" alt="Our Propositions">
+                                            </div>
+                                            <div class="franchise-card-content">
+                                                <h3 class="franchise-card-title">Our Propositions</h3>
+                                                <p class="franchise-card-subtitle">One window solution</p>
+                                                <ul class="franchise-card-list">
+                                                    <li><i class="fas fa-check-circle"></i>Flexible business model</li>
+                                                    <li><i class="fas fa-check-circle"></i>Investor friendly location specific formats</li>
+                                                    <li><i class="fas fa-check-circle"></i>Associated programs to strengthen revenue</li>
+                                                    <li><i class="fas fa-check-circle"></i>Royalty holiday</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- 4. Franchise Requirements -->
+                                        <div class="franchise-section-card" id="requirements">
+                                            <div class="franchise-card-image">
+                                                <img src="assets/img/gallery/6.png" alt="Franchise Requirements">
+                                            </div>
+                                            <div class="franchise-card-content">
+                                                <h3 class="franchise-card-title">Franchise Requirements</h3>
+                                                <p class="franchise-card-subtitle">Joining the movement</p>
+                                                <ul class="franchise-card-list">
+                                                    <li><i class="fas fa-check-circle"></i>Passionate and on way to be an entrepreneur</li>
+                                                    <li><i class="fas fa-check-circle"></i>Premises approximately 800-2000 Sq Ft</li>
+                                                    <li><i class="fas fa-check-circle"></i>Investment capacity of 7-10 lacs</li>
+                                                    <li><i class="fas fa-check-circle"></i>Exisiting education business owners and enthusiasts including preschools</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- 5. Student Kit -->
+                                        <div class="franchise-section-card" id="student-kit">
+                                            <div class="franchise-card-image">
+                                                <img src="assets/img/program/student-kit-books.jpg" alt="Student Kit">
+                                            </div>
+                                            <div class="franchise-card-content">
+                                                <h3 class="franchise-card-title">Student Kit</h3>
+                                                <p class="franchise-card-subtitle">Learning in a bag</p>
+                                                <ul class="franchise-card-list">
+                                                    <li><i class="fas fa-check-circle"></i>Curriculum based FUN worksheets</li>
+                                                    <li><i class="fas fa-check-circle"></i>Language and activity books</li>
+                                                    <li><i class="fas fa-check-circle"></i>Smart uniforms, bag and accessories</li>
+                                                    <li><i class="fas fa-check-circle"></i>Talking books for enhanced learning stimulus</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <!-- 6. Contact Us -->
+                                        <div class="franchise-section-card" id="contact-us">
+                                            <div class="franchise-card-image">
+                                                <img src="assets/img/gallery/4.png" alt="Contact Us">
+                                            </div>
+                                            <div class="franchise-card-content">
+                                                <h3 class="franchise-card-title">Contact Us</h3>
+                                                <p class="franchise-card-subtitle">Inquire Now</p>
+                                                <div class="franchise-contact-details">
+                                                    <div class="franchise-contact-item">
+                                                        <i class="fas fa-map-marker-alt"></i>
+                                                        <span><strong>Location:</strong> At Marwari Vidyalaya High School, SVP Road, Prarthana Samaj, Charni Road, Opera House, Mumbai 400004</span>
+                                                    </div>
+                                                    <div class="franchise-contact-item">
+                                                        <i class="fas fa-phone-alt"></i>
+                                                        <span><strong>Phone:</strong> <a href="tel:+917030755159">+91 7030755159</a> / <a href="tel:+917030753153">+91 7030753153</a></span>
+                                                    </div>
+                                                    <div class="franchise-contact-item">
+                                                        <i class="fas fa-envelope"></i>
+                                                        <span><strong>Email:</strong> <a href="mailto:inquiry@juniorkidz.com">inquiry@juniorkidz.com</a></span>
+                                                    </div>
+                                                    <div class="franchise-contact-item">
+                                                        <i class="fas fa-clock"></i>
+                                                        <span><strong>Hours:</strong> Monday – Saturday: 10:00 AM – 8:00 PM</span>
+                                                    </div>
+                                                </div>
+                                                <a href="contact.html" class="franchise-contact-btn">
+                                                    Send Enquiry <i class="fas fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="franchise-map-card">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.7423985167667!2d72.8173456!3d18.9568434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce0e2b34208f%3A0xc3cf338cf13d0a64!2sMarwari%20Vidyalaya%20High%20School!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                                    </div>
+
+                                    <div class="franchise-why-enroll-banner">
+                                        <h3>Why Enroll?</h3>
+                                        <p>
+                                            Become an Esteemed Junior Kidz Franchisee & Start a preschool! Have queries? feel free to connect. CALL US: <a href="tel:+917030755159">+91 7030755159</a> / <a href="tel:+919821348391">+91 9821348391</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="event-details-information sticky-style">
+                                <div class="franchise-enroll-box">
+                                    <h4>Why Enroll?</h4>
+                                    <ul class="information-list">
+                                        <li>
+                                            <a href="#franchise-international">
+                                                <i class="fas fa-handshake"></i>
+                                                Franchise with Junior Kidz International
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#academics">
+                                                <i class="fas fa-graduation-cap"></i>
+                                                Our Academics
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#support">
+                                                <i class="fas fa-headset"></i>
+                                                Our Support
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#propositions">
+                                                <i class="fas fa-lightbulb"></i>
+                                                Our Propositions
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#requirements">
+                                                <i class="fas fa-list-check"></i>
+                                                Franchise Requirements
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#student-kit">
+                                                <i class="fas fa-school"></i>
+                                                Student Kit
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-us">
+                                                <i class="fas fa-phone-alt"></i>
+                                                Contact Us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#contact-us" class="theme-btn">Send Enquiry</a>
+                             
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Footer Section Start -->
+<footer class="junior-kidz-footer">
+            <div class="container">
+                <div class="junior-kidz-footer-main">
+                    <a href="home.html" class="junior-kidz-footer-logo" aria-label="Junior Kidz home">
+                        <img src="assets/img/logo/black-logo.jpg" alt="Junior Kidz">
+                    </a>
+                    <nav class="junior-kidz-footer-nav" aria-label="Footer navigation">
+                        <a href="home.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="program.html">Programs</a>
+                        <a href="franchise.html">Franchise</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                <div class="junior-kidz-footer-divider" aria-hidden="true"></div>
+                <div class="junior-kidz-footer-bottom">
+                    <p>&copy; 2026 Junior Kidz. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+  <!--<< All JS Plugins >>-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <!--<< Bootstrap Js >>-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--<< Nice Select Js >>-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!--<< Odometer Js >>-->
+        <script src="assets/js/odometer.min.js"></script>
+        <!--<< Appear Js >>-->
+        <script src="assets/js/jquery.appear.min.js"></script>
+        <!--<< Swiper Slider Js >>-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--<< MeanMenu Js >>-->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!--<< Magnific Popup Js >>-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--<< Circle Progress Js >>-->
+        <script src="assets/js/circle-progress.js"></script>
+        <!--<< Wow Animation Js >>-->
+        <script src="assets/js/wow.min.js"></script>
+        <!--<< Main.js >>-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

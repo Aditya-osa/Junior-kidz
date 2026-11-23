@@ -370,32 +370,31 @@
             }
             .welcome-info-block {
                 flex: 1;
+                width: 100%;
             }
             .welcome-desc {
                 color: #4A5568;
-                font-size: 14.5px;
+                font-size: 15px;
                 line-height: 1.68;
-                margin-bottom: 20px;
+                margin-bottom: 16px;
+                width: 100%;
+                max-width: 100%;
             }
             .welcome-features {
                 list-style: none;
                 padding: 0;
-                margin: 0 0 24px 0;
+                margin: 24px 0 30px 0;
                 display: flex;
-                flex-direction: column;
-                gap: 12px;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 16px;
             }
             .welcome-features li {
+                flex: 1 1 0;
+                min-width: 0;
                 display: flex;
-                align-items: center;
-                gap: 12px;
-                white-space: nowrap;
-            }
-            @media (max-width: 991px) {
-                .welcome-features li {
-                    justify-content: center;
-                    white-space: normal;
-                }
+                align-items: flex-start;
+                gap: 8px;
             }
             .welcome-features .feat-icon {
                 width: 24px;
@@ -404,12 +403,20 @@
                 align-items: center;
                 justify-content: center;
                 flex-shrink: 0;
+                margin-top: 1px;
             }
             .welcome-features .feat-label {
-                font-size: 15px;
+                font-size: 13.5px;
                 font-weight: 700;
                 color: #0D1B3E;
+                line-height: 1.35;
                 letter-spacing: -0.2px;
+            }
+            @media (max-width: 767px) {
+                .welcome-features {
+                    flex-direction: column;
+                    gap: 14px;
+                }
             }
             .welcome-pill-btn {
                 display: inline-flex;
@@ -434,16 +441,16 @@
             .welcome-collage-wrap {
                 position: relative;
                 width: 100%;
-                max-width: 490px;
-                height: 360px;
+                max-width: 580px;
+                height: 460px;
                 margin: 0 auto;
             }
             .collage-blob-wrapper {
                 position: absolute;
-                top: 25px;
+                top: 15px;
                 right: 0;
-                width: 420px;
-                height: 300px;
+                width: 520px;
+                height: 375px;
                 z-index: 2;
             }
             .collage-blob-svg {
@@ -455,15 +462,15 @@
             }
             .collage-secondary-frame {
                 position: absolute;
-                bottom: 22px;
-                left: 5px;
-                width: 148px;
-                height: 168px;
-                border-radius: 20px;
-                border: 6px solid #FFFFFF;
+                bottom: 15px;
+                left: 10px;
+                width: 190px;
+                height: 215px;
+                border-radius: 22px;
+                border: 7px solid #FFFFFF;
                 transform: rotate(-8deg);
                 overflow: hidden;
-                box-shadow: 0 16px 36px rgba(13, 27, 62, 0.22);
+                box-shadow: 0 18px 40px rgba(13, 27, 62, 0.24);
                 z-index: 5;
                 background-color: #FFFFFF;
             }
@@ -479,30 +486,64 @@
                 pointer-events: none;
             }
             .doodle-airplane {
-                top: 5px;
-                left: 20px;
+                top: -5px;
+                left: 10px;
                 z-index: 6;
             }
             .doodle-cloud {
-                top: 15px;
-                right: -2px;
+                top: 5px;
+                right: -10px;
                 z-index: 6;
             }
             .doodle-motion {
-                bottom: 8px;
-                left: 0;
+                bottom: 5px;
+                left: -5px;
                 z-index: 4;
             }
             .doodle-star {
-                bottom: 8px;
-                left: 175px;
+                bottom: 5px;
+                left: 225px;
                 z-index: 6;
             }
             .doodle-leaf {
-                bottom: -5px;
-                right: -15px;
+                bottom: -8px;
+                right: -20px;
                 z-index: 6;
                 transform: rotate(18deg);
+            }
+            @media (max-width: 991px) {
+                .welcome-collage-wrap {
+                    max-width: 500px;
+                    height: 410px;
+                    margin-top: 30px;
+                }
+                .collage-blob-wrapper {
+                    width: 450px;
+                    height: 325px;
+                }
+                .collage-secondary-frame {
+                    width: 165px;
+                    height: 185px;
+                }
+            }
+            @media (max-width: 575px) {
+                .welcome-collage-wrap {
+                    max-width: 100%;
+                    height: 340px;
+                }
+                .collage-blob-wrapper {
+                    width: 100%;
+                    height: 260px;
+                }
+                .collage-secondary-frame {
+                    width: 130px;
+                    height: 150px;
+                    left: 5px;
+                    bottom: 5px;
+                }
+                .doodle-star {
+                    left: 150px;
+                }
             }
             .welcome-waves-wrap {
                 width: 100%;
@@ -1109,7 +1150,7 @@
                     <div class="offcanvas__content">
                         <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
                             <div class="offcanvas__logo">
-                                <a href="index.html">
+                                <a href="home.html">
                                     <img src="assets/img/logo/black-logo.jpg" alt="logo-img">
                                 </a>
                             </div>
@@ -1171,11 +1212,11 @@
                 <div class="header-main">
 
                     <!-- Logo -->
-                    <a href="index.html" class="header-logo">
+                    <a href="home.html" class="header-logo">
                         <img src="assets/img/logo/black-logo.jpg" alt="Junior Kidz Logo">
                     </a>
 
-                    <a href="index.html" class="header-logo-2">
+                    <a href="home.html" class="header-logo-2">
                         <img src="assets/img/logo/black-logo.jpg" alt="Junior Kidz Logo">
                     </a>
 
@@ -1185,14 +1226,16 @@
                             <div class="main-menu">
                                 <nav id="mobile-menu">
                                     <ul>
+                                       
+
                                         <li>
-                                            <a href="courses-details.html">
+                                            <a href="about.html">
                                                 Who We Are
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="event-details.html">
+                                            <a href="franchise.html">
                                                 Franchise Program
                                             </a>
                                         </li>
@@ -1211,6 +1254,12 @@
                                         </li>
 
                                         <li>
+                                            <a href="event.html">
+                                                Events
+                                            </a>
+                                        </li>
+
+                                        <li>
                                             <a href="contact.html">
                                                 Reach Us
                                             </a>
@@ -1225,7 +1274,7 @@
                     <div class="header-right d-flex justify-content-end align-items-center">
 
                         <div class="header-button">
-                            <a href="program-details.html" class="theme-btn">
+                            <a href="contact.html" class="theme-btn">
                                 Enquiry
                             </a>
                         </div>
@@ -1524,7 +1573,7 @@
 
                             <!-- Secondary Overlapping Photo Frame (Bottom-Left, Tilted -8deg with White Border) -->
                             <div class="collage-secondary-frame">
-                                <img src="assets/img/gallery/junior-kidz-06.png" alt="Child Playing Outdoors">
+                                <img src="assets/img/gallery/6.png" alt="Child Playing Outdoors">
                             </div>
 
                             <!-- Motion Accent Lines (Under bottom-left of tilted photo) -->
@@ -1986,7 +2035,7 @@
                                                 <span>Sep 2024</span>
                                             </div>
                                             <div class="title-text">
-                                                <h4><a href="event-details.html">Outdoor Games and Nature Exploration</a></h4>
+                                                <h4><a href="event.html">Outdoor Games and Nature Exploration</a></h4>
                                                 <ul class="post-time">
                                           
                                                     <li><i class="far fa-clock"></i> 09:30am</li>
@@ -2006,7 +2055,7 @@
                                                 <span>Sep 2024</span>
                                             </div>
                                             <div class="title-text">
-                                                <h4><a href="event-details.html">A Fun Gathering for Kids and Parents</a></h4>
+                                                <h4><a href="event.html">A Fun Gathering for Kids and Parents</a></h4>
                                                 <ul class="post-time">
                                              
                                                     <li><i class="far fa-clock"></i> 09:30am</li>
@@ -2026,7 +2075,7 @@
                                                 <span>Sep 2024</span>
                                             </div>
                                             <div class="title-text">
-                                                <h4><a href="event-details.html">Dress-Up as Your Favorite Characters</a></h4>
+                                                <h4><a href="event.html">Dress-Up as Your Favorite Characters</a></h4>
                                                 <ul class="post-time">
                                                     <li><i class="far fa-clock"></i> 09:30am</li>
                                                 </ul>
@@ -2045,7 +2094,7 @@
                                                 <span>Sep 2024</span>
                                             </div>
                                             <div class="title-text">
-                                                <h4><a href="event-details.html">Outdoor Games and Nature Exploration</a></h4>
+                                                <h4><a href="event.html">Outdoor Games and Nature Exploration</a></h4>
                                                 <ul class="post-time">
                                                     <li><i class="far fa-clock"></i> 09:30am</li>
                                                 </ul>
@@ -2064,7 +2113,7 @@
                                                 <span>Sep 2024</span>
                                             </div>
                                             <div class="title-text">
-                                                <h4><a href="event-details.html">A Fun Gathering for Kids and Parents</a></h4>
+                                                <h4><a href="event.html">A Fun Gathering for Kids and Parents</a></h4>
                                                 <ul class="post-time">
                                                     <li><i class="far fa-clock"></i> 09:30am</li>
                                                 </ul>
@@ -2083,7 +2132,7 @@
                                                 <span>Sep 2024</span>
                                             </div>
                                             <div class="title-text">
-                                                <h4><a href="event-details.html">Dress-Up as Your Favorite Characters</a></h4>
+                                                <h4><a href="event.html">Dress-Up as Your Favorite Characters</a></h4>
                                                 <ul class="post-time">
                                                     <li><i class="far fa-clock"></i> 09:30am</li>
                                                 </ul>
@@ -2102,7 +2151,7 @@
                                                 <span>Sep 2024</span>
                                             </div>
                                             <div class="title-text">
-                                                <h4><a href="event-details.html">Outdoor Games and Nature Exploration</a></h4>
+                                                <h4><a href="event.html">Outdoor Games and Nature Exploration</a></h4>
                                                 <ul class="post-time">
                                                     <li><i class="far fa-clock"></i> 09:30am</li>
                                                 </ul>
@@ -2121,7 +2170,7 @@
                                                 <span>Sep 2024</span>
                                             </div>
                                             <div class="title-text">
-                                                <h4><a href="event-details.html">A Fun Gathering for Kids and Parents</a></h4>
+                                                <h4><a href="event.html">A Fun Gathering for Kids and Parents</a></h4>
                                                 <ul class="post-time">
                                                     <li><i class="far fa-clock"></i> 09:30am</li>                                                </ul>
                                             </div>
@@ -2139,7 +2188,7 @@
                                                 <span>Sep 2024</span>
                                             </div>
                                             <div class="title-text">
-                                                <h4><a href="event-details.html">Dress-Up as Your Favorite Characters</a></h4>
+                                                <h4><a href="event.html">Dress-Up as Your Favorite Characters</a></h4>
                                                 <ul class="post-time">
                                                     <li><i class="far fa-clock"></i> 09:30am</li>
                                                 </ul>
@@ -2281,7 +2330,7 @@
                         <a href="home.html">Home</a>
                         <a href="about.html">About</a>
                         <a href="program.html">Programs</a>
-                        <a href="contact.html#franchise-enquiry">Franchise</a>
+                        <a href="franchise.html">Franchise</a>
                         <a href="contact.html">Contact</a>
                     </nav>
                 </div>
