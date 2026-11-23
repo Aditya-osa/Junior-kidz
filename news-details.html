@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="modinatheme">
+        <meta name="description" content="Eduspace - Online Course, Education & University Html Template">
+        <!-- ======== Page title ============ -->
+        <title>Nursery Teacher Training (N.T.T.) | Junior Kidz Teachers Training Institute</title>
+        <!--<< Favicon >>-->
+        <link rel="shortcut icon" href="assets/img/favicon.svg">
+        <link rel="icon" type="image/png" href="assets/img/favicon.png">
+        <!--<< Bootstrap min.css >>-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--<< Font Awesome.css >>-->
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <!--<< Font Awesome 6 >>-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!--<< Animate.css >>-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!--<< Magnific Popup.css >>-->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!--<< MeanMenu.css >>-->
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <!--<< Odometer.css >>-->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!--<< Swiper Bundle.css >>-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--<< Nice Select.css >>-->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!--<< Main.css >>-->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!--<< Style.css >>-->
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700;800&family=Quicksand:wght@500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --primary: #0f172a;
+    --accent-orange: #f97316;
+    --accent-blue: #1e40af;
+    --bg-light: #f8fafc;
+    --text-dark: #1e293b;
+    --text-muted: #475569;
+    --border-color: #e2e8f0;
+  }
+
+  
+  /* Home Page Typography: Fredoka for Headings/Badges/Buttons, Quicksand for Body */
+  .ntt-content-area {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: 'Quicksand', 'Sora', sans-serif;
+  }
+
+  .ntt-content-area h1,
+  .ntt-content-area h2,
+  .ntt-content-area h3,
+  .ntt-content-area h4,
+  .ntt-content-area h5,
+  .ntt-content-area h6,
+  .ntt-title,
+  .section-title-ntt,
+  .fee-card-top-ntt h3,
+  .highlight-box-ntt h4,
+  .info-card-ntt h3,
+  .admission-card-ntt h3,
+  .doc-card-ntt h4,
+  .step-num-ntt,
+  .ntt-pill,
+  .section-tag-ntt,
+  .ntt-btn,
+  .btn-primary-ntt,
+  .btn-outline-ntt,
+  .ntt-join-text,
+  .ntt-iso-badge,
+  .fee-amount-ntt {
+    font-family: 'Fredoka', 'Sora', sans-serif !important;
+  }
+
+  .ntt-content-area p,
+  .ntt-subtitle,
+  .ntt-reg-box p,
+  .info-card-ntt p,
+  .info-card-ntt li,
+  .styled-list-ntt li,
+  .ntt-table th,
+  .ntt-table td,
+  .fee-features-ntt li,
+  .highlight-box-ntt p,
+  .admission-card-ntt p,
+  .doc-card-ntt p,
+  .ntt-cert-caption,
+  .form-group-ntt label,
+  .form-group-ntt input,
+  .form-group-ntt select {
+    font-family: 'Quicksand', 'Sora', sans-serif !important;
+  }
+
+  .ntt-content-area section {
+    padding: 60px 0;
+  }
+
+  /* Intro Card */
+  .ntt-intro-box {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    border-radius: 20px;
+    padding: 44px 40px;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 0.7fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: rgba(249, 115, 22, 0.2);
+    border: 1px solid #f97316;
+    color: #fdba74;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    
+    margin-bottom: 16px;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    
+    line-height: 1.25;
+    margin-bottom: 16px;
+    color: #ffffff;
+  }
+
+  .hero-subtitle {
+    font-size: 1.15rem;
+    color: #e2e8f0;
+    margin-bottom: 12px;
+    
+  }
+
+  .hero-reg {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    margin-bottom: 24px;
+  }
+
+  .btn-primary-ntt {
+    display: inline-block;
+    background-color: #E52421;
+    color: #ffffff;
+    padding: 13px 32px;
+    border-radius: 10px;
+    
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 4px 14px rgba(229, 36, 33, 0.3);
+  }
+
+  .btn-primary-ntt:hover {
+    background-color: #C01B18;
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+
+  .hero-logo-card {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  }
+
+  .hero-logo-card img {
+    max-width: 190px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  
+  /* Hero Section Wrapper from faq.html */
+  .ntt-hero {
+    position: relative;
+    background: white;
+    padding: 72px 24px;
+    overflow: hidden;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  /* Subtle Decorative Background Blobs */
+  .ntt-hero::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 380px;
+    height: 380px;
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.12) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .ntt-hero::after {
+    content: "";
+    position: absolute;
+    bottom: -120px;
+    left: -80px;
+    width: 340px;
+    height: 340px;
+    background: radial-gradient(circle, rgba(30, 64, 175, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .ntt-container {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.45fr 0.85fr;
+    gap: 48px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Top Pill Badge */
+  .ntt-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ffffff;
+    border: 1px solid #fed7aa;
+    color: #c2410c;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    
+    letter-spacing: 0.2px;
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.08);
+    margin-bottom: 20px;
+  }
+
+  .ntt-pill .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #f97316;
+    border-radius: 50%;
+  }
+
+  /* Main Heading */
+  .ntt-title {
+    font-size: 2.75rem;
+    
+    color: #0f172a;
+    line-height: 1.18;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+
+  .ntt-title span {
+    color: #1e40af;
+  }
+
+  /* Subheading */
+  .ntt-subtitle {
+    font-size: 1.2rem;
+    
+    color: #334155;
+    margin-bottom: 20px;
+  }
+
+  /* Affiliation & Registration Strip */
+  .ntt-reg-box {
+    background: rgba(255, 255, 255, 0.85);
+    border-left: 4px solid #1e40af;
+    padding: 14px 18px;
+    border-radius: 0 12px 12px 0;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  }
+
+  .ntt-reg-box p {
+    font-size: 0.95rem;
+    
+    color: #1e293b;
+    margin-bottom: 0;
+  }
+
+  /* Call to Action Row */
+  .ntt-cta-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .ntt-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    color: #ffffff;
+    font-size: 1.05rem;
+    
+    padding: 16px 34px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -5px rgba(234, 88, 12, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .ntt-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 24px -5px rgba(234, 88, 12, 0.5);
+    color: #ffffff;
+  }
+
+  .ntt-join-text {
+    font-size: 1.05rem;
+    
+    color: #0f172a;
+  }
+
+  /* Right Side Certification Seal Card */
+  .ntt-cert-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 32px 24px;
+    text-align: center; 
+    position: relative;
+  }
+
+  .ntt-cert-card img {
+    max-width: 210px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 16px;
+  }
+
+  .ntt-cert-caption {
+    font-size: 0.9rem;
+    
+    color: #1e293b;
+    padding-top: 14px;
+    border-top: 1px dashed #cbd5e1;
+  }
+
+  .ntt-iso-badge {
+    display: inline-block;
+    margin-top: 8px;
+    background: #eff6ff;
+    color: #1e40af;
+    font-size: 0.8rem;
+    
+    padding: 5px 14px;
+    border-radius: 50px;
+  }
+
+  @media (max-width: 920px) {
+    .ntt-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 36px;
+    }
+
+    .ntt-title {
+      font-size: 2.1rem;
+    }
+
+    .ntt-reg-box {
+      border-left: none;
+      border-top: 4px solid #1e40af;
+      border-radius: 12px;
+    }
+
+    .ntt-cta-row {
+      justify-content: center;
+    }
+
+    .ntt-cert-card {
+      max-width: 340px;
+      margin: 0 auto;
+    }
+  }
+
+  
+  /* Home Page Eyebrow & Heading Styles */
+  .kidz-eyebrow,
+  .eyebrow-splash,
+  .section-tag-ntt {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Fredoka', 'Sora', sans-serif !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.3px !important;
+    color: #0D1B3E !important;
+    position: relative;
+    padding-bottom: 0 !important;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .kidz-eyebrow::before,
+  .eyebrow-splash::before,
+  .section-tag-ntt::before {
+    content: "" !important;
+    position: static !important;
+    width: 26px !important;
+    height: 20px !important;
+    display: inline-block !important;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='32' viewBox='0 0 40 32' fill='none'%3E%3Cpath d='M34 24 C26 18 18 12 12 4' stroke='%237B61FF' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M36 26 C26 22 14 20 2 20' stroke='%23F27D52' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M34 28 C24 28 16 30 6 30' stroke='%2320C997' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / contain !important;
+    flex-shrink: 0;
+  }
+
+  .kidz-eyebrow::after,
+  .eyebrow-splash::after,
+  .section-tag-ntt::after {
+    content: "" !important;
+    position: static !important;
+    width: 26px !important;
+    height: 20px !important;
+    display: inline-block !important;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='32' viewBox='0 0 40 32' fill='none'%3E%3Cpath d='M6 24 C14 18 22 12 28 4' stroke='%2320C997' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M4 26 C14 22 26 20 38 20' stroke='%23F27D52' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M6 28 C16 28 24 30 34 30' stroke='%234D96FF' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / contain !important;
+    flex-shrink: 0;
+  }
+
+  .kidz-eyebrow .title-navy,
+  .section-tag-ntt .title-navy {
+    color: #0D1B3E !important;
+  }
+  .kidz-eyebrow .title-coral,
+  .section-tag-ntt .title-coral {
+    color: #F27D52 !important;
+  }
+
+  @media (max-width: 767px) {
+    .kidz-eyebrow,
+    .eyebrow-splash,
+    .section-tag-ntt {
+      font-size: 17px !important;
+      gap: 7px;
+    }
+    .kidz-eyebrow::before,
+    .eyebrow-splash::before,
+    .section-tag-ntt::before,
+    .kidz-eyebrow::after,
+    .eyebrow-splash::after,
+    .section-tag-ntt::after {
+      width: 20px !important;
+      height: 16px !important;
+    }
+  }
+
+  
+  /* Section Title & Heading styling matching Home Page */
+  .section-title {
+    position: relative;
+    z-index: 5;
+    margin-bottom: 48px;
+  }
+
+  .section-title h2,
+  .section-title-ntt,
+  .ntt-title {
+    font-family: "Sora", system-ui, sans-serif !important;
+    font-size: 55px !important;
+    font-weight: 700 !important;
+    
+    line-height: 1.2 !important;
+    text-transform: capitalize !important;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .ntt-title {
+    font-size: clamp(26px, 3.4vw, 44px) !important;
+    margin-bottom: 16px;
+  }
+
+  .ntt-title-subline {
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  @media (max-width: 575px) {
+    .ntt-title {
+      font-size: 20px !important;
+    }
+  }
+
+  .section-title h2 span.title-coral,
+  .section-title-ntt span.title-coral,
+  .ntt-title span.title-coral,
+  .ntt-title span {
+    color: #F27D52 !important;
+  }
+
+  @media (max-width: 1199px) {
+    .section-title h2,
+    .section-title-ntt {
+      font-size: 42px !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .section-title {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .section-title h2,
+    .section-title-ntt {
+      font-size: 36px !important;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .section-title h2,
+    .section-title-ntt {
+      font-size: 30px !important;
+    }
+  }
+
+  /* Why NTT Grid */
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .info-card-ntt {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+  }
+
+  .info-card-ntt h3 {
+    font-size: 1.3rem;
+    
+    color: var(--primary);
+    margin-bottom: 12px;
+  }
+
+  .info-card-ntt p, .info-card-ntt li {
+    color: var(--text-muted);
+    font-size: 0.96rem;
+  }
+
+  .styled-list-ntt {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .styled-list-ntt li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 10px;
+  }
+
+  .styled-list-ntt li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #E52421;
+    
+  }
+
+  /* Education Structure Tables */
+  .tables-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .table-card-ntt {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  }
+
+  .table-header-ntt {
+    background: #031F42;
+    color: #ffffff !important;
+    padding: 18px 24px;
+    font-size: 1.25rem;
+    font-weight: 600 !important;
+  }
+
+  .table-header-ntt.practical {
+    background: #009FE3;
+    color: #ffffff !important;
+  }
+
+  .ntt-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0;
+  }
+
+  .ntt-table th, .ntt-table td {
+    padding: 14px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.95rem;
+  }
+
+  .ntt-table th {
+    background-color: #f1f5f9;
+    
+    color: var(--primary);
+  }
+
+  .ntt-table tr.total-row {
+    background-color: #fff7ed;
+    
+    color: var(--primary);
+  }
+
+  .ntt-table tr.total-row td {
+    border-bottom: none;
+    color: #E52421;
+    font-size: 1.05rem;
+  }
+
+  /* Course Fees */
+  .fees-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .fee-card-ntt {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 2px solid var(--border-color);
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+  }
+
+  .fee-card-ntt:hover {
+    border-color: #E52421;
+  }
+
+  .fee-card-top-ntt {
+    background: #f1f5f9;
+    padding: 24px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .fee-card-top-ntt h3 {
+    font-size: 1.4rem;
+    
+    color: var(--primary);
+    margin-bottom: 4px;
+  }
+
+  .fee-card-top-ntt span {
+    font-size: 0.85rem;
+    color: #dc2626;
+    
+  }
+
+  /* Course Details & Short Program */
+  .details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 30px;
+  }
+
+  .highlight-box-ntt {
+    background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+    border: 1px solid #fed7aa;
+    border-radius: 16px;
+    padding: 28px;
+    margin-top: 24px;
+  }
+
+  .highlight-box-ntt h4 {
+    color: #9a3412;
+    font-size: 1.25rem;
+    
+    margin-bottom: 8px;
+  }
+
+  .highlight-box-ntt p {
+    color: #7c2d12;
+    
+    font-size: 1.05rem;
+  }
+
+  /* Institute Footer CTA */
+  .cta-banner-ntt {
+    background: var(--primary);
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 48px 40px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .cta-banner-ntt h2 {
+    font-size: 2rem;
+    
+    margin-bottom: 12px;
+    color: #ffffff;
+  }
+
+  .contact-numbers-ntt {
+    font-size: 1.25rem;
+    
+    color: #fdba74;
+    margin-bottom: 24px;
+  }
+
+  .contact-numbers-ntt a {
+    color: #fdba74;
+    text-decoration: none;
+  }
+
+  /* Inquiry Modal */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.7);
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .modal-box {
+    background: #ffffff;
+    border-radius: 16px;
+    max-width: 480px;
+    width: 100%;
+    padding: 32px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .close-modal {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-muted);
+    background: none;
+    border: none;
+  }
+
+  .form-group-ntt {
+    margin-bottom: 16px;
+  }
+
+  .form-group-ntt label {
+    display: block;
+    
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: var(--primary);
+  }
+
+  .form-group-ntt input, .form-group-ntt select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 900px) {
+    .hero-grid,
+    .why-grid,
+    .tables-grid,
+    .fees-grid,
+    .details-grid {
+      grid-template-columns: 1fr;
+    }
+    .hero-title {
+      font-size: 1.8rem;
+    }
+    .hero-logo-card {
+      max-width: 240px;
+      margin: 0 auto;
+    }
+  }
+
+  /* Enhanced Homepage Card Hover & Animation Styles */
+  .info-card-ntt,
+  .table-card-ntt,
+  .fee-card-ntt,
+  .highlight-box-ntt,
+  .admission-card-ntt,
+  .ntt-cert-card {
+    background: #ffffff;
+  
+  
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease !important;
+    overflow: hidden;
+  }
+
+ 
+
+
+
+
+  /* Consistent Homepage Heading Colors */
+  .info-card-ntt h3,
+  .admission-card-ntt h3,
+  .fee-card-top-ntt h3 {
+    color: #031F42 !important;
+  }
+
+
+  /* Strictly Calibrated Home Page Weights: 600 for Headings, 400-500 for Body */
+  .ntt-content-area p,
+  .info-card-ntt p,
+  .info-card-ntt li,
+  .styled-list-ntt li,
+  .ntt-table td,
+  .fee-card-top-ntt span,
+  .highlight-box-ntt p,
+  .ntt-subtitle,
+  .ntt-reg-box p {
+    font-weight: 500 !important;
+    color: #556987 !important;
+    line-height: 1.7 !important;
+  }
+
+  .ntt-content-area strong,
+  .info-card-ntt strong,
+  .ntt-table th,
+  .fee-card-top-ntt h3,
+  .highlight-box-ntt h4,
+  .info-card-ntt h3 {
+    font-weight: 600 !important;
+    color: #031F42 !important;
+  }
+
+  .section-title h2,
+  .ntt-title {
+    font-family: "Sora", system-ui, sans-serif !important;
+    font-weight: 600 !important;
+    color: #031F42 !important;
+  }
+
+  .kidz-eyebrow,
+  .eyebrow-splash {
+    font-family: 'Fredoka', 'Sora', sans-serif !important;
+    font-weight: 700 !important;
+  }
+
+  .btn-primary-ntt,
+  .ntt-btn {
+    font-family: 'Fredoka', 'Sora', sans-serif !important;
+    font-weight: 600 !important;
+  }
+
+
+  /* Explicit White Text Overrides */
+  .table-header-ntt,
+  .table-header-ntt.practical,
+  .cta-newsletter-section h2,
+  .cta-newsletter-section p,
+  .franchise-cta-content h2,
+  .franchise-cta-content p,
+  .franchise-cta-content .text-white {
+    color: #ffffff !important;
+  }
+
+</style>
+    </head>
+    <body>
+        <!-- Back To Top start -->
+        <button id="back-top" class="back-to-top">
+            <i class="fas fa-long-arrow-up"></i>
+        </button>
+
+<div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="index.html">
+                                    <img src="assets/img/logo/black-logo.svg" alt="logo-img">
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="offcanvas-title">Hello There!</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, </p>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="mobile-menu fix mb-3"></div>
+                        <div class="offcanvas__contact">
+                            <h3>Information</h3>
+                            <ul class="contact-list">
+                                <li>
+                                    <span>
+                                        Address:
+                                    </span>
+                                    7300-7398 Colonial Rd,
+                                    Brooklyn, NY 11209
+                                </li>
+                                <li>
+                                    <span>
+                                        Call Us:
+                                    </span>
+                                    <a href="tel:+00012345688">+000 123 456 88</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        Email:
+                                    </span>
+                                    <a href="mailto:supportedus@gmail.com">supportedus@gmail.com</a>
+                                </li>
+                            </ul>
+                            <div class="offcanvas-button">
+                                <a href="sign-in.html" class="theme-btn style-2"><i class="far fa-user"></i> Admin</a>
+                                <a href="register.html" class="theme-btn yellow-btn">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+<header class="header-section-3">
+    <div id="header-sticky" class="header-3 style-2">
+        <div class="container">
+            <div class="mega-menu-wrapper">
+                <div class="header-main">
+
+                    <!-- Logo -->
+                    <a href="home.html" class="header-logo">
+                        <img src="assets/img/logo/black-logo.jpg" alt="Junior Kidz Logo">
+                    </a>
+
+                    <a href="home.html" class="header-logo-2">
+                        <img src="assets/img/logo/black-logo.jpg" alt="Junior Kidz Logo">
+                    </a>
+
+                    <!-- Navigation -->
+                    <div class="header-left">
+                        <div class="mean__menu-wrapper">
+                            <div class="main-menu">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                     
+
+                                        <li>
+                                            <a href="about.html">
+                                                Who We Are
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="franchise.html">
+                                                Franchise Program
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="nursery-teacher-training.html">
+                                                Nursery Teacher Training
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="gallery.html">
+                                              
+                                                Gallery
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="event.html">
+                                                Events
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="contact.html">
+                                                Reach Us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Header Actions -->
+                    <div class="header-right d-flex justify-content-end align-items-center">
+
+                        <div class="header-button">
+                            <a href="contact.html" class="theme-btn">
+                                Enquiry
+                            </a>
+                        </div>
+
+                        <!-- Mobile Menu Toggle -->
+                        <div class="header__hamburger d-xl-none my-auto">
+                            <div class="sidebar__toggle">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+        <!-- Breadcrumb-wrapper Start -->
+        <section class="breadcrumb-wrapper">
+        <img src="assets/img/bar/banner-inner.png" alt="" class="banner-bg-img" aria-hidden="true">
+        <!-- Decorative Floating Elements -->
+        <div class="banner-floating-shape shape-flower">
+            <img src="assets/img/shape/banner-flower.png" alt="" aria-hidden="true">
+        </div>
+        <div class="banner-floating-shape shape-umbrella">
+            <img src="assets/img/shape/banner-umbrella.png" alt="" aria-hidden="true">
+        </div>
+        <div class="banner-floating-shape shape-balloon">
+            <img src="assets/img/shape/banner-balloon.png" alt="" aria-hidden="true">
+        </div>
+        <div class="banner-floating-shape shape-tree">
+            <img src="assets/img/shape/banner-tree.png" alt="" aria-hidden="true">
+        </div>
+        <div class="banner-content">
+            <div class="container">
+            <div class="row">
+                <div class="page-heading">
+                    <h1>Nursery Teacher Training</h1>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+
+
+    <div class="ntt-content-area">
+            <!-- Hero / Overview Section -->
+      <section class="ntt-hero">
+        <div class="ntt-container">
+          
+          <!-- Left Content Column -->
+          <div>
+            <div class="ntt-pill kidz-eyebrow">
+              <span class="dot"></span>
+              <span class="title-navy">Valid All Throughout India</span> &bull; <span class="title-coral">Regular &amp; Correspondence</span>
+            </div>
+
+            <h2 class="ntt-title wow fadeInUp" data-wow-delay=".3s">
+              Diploma Course in Child Education<br>
+              <span class="ntt-title-subline">– <span class="title-coral">N.T.T.</span> (Nursery Teacher’s Training)</span>
+            </h2>
+
+            <p class="ntt-subtitle">
+              One Year Job Oriented Diploma Course in Child Education
+            </p>
+
+            <div class="ntt-reg-box">
+              <p>All India Early Childhood Care &amp; Education – New Delhi (Regd. NCT Govt. of India NC S-43128)</p>
+            </div>
+
+            <div class="ntt-cta-row">
+              <a href="#inquire" class="theme-btn" onclick="openModal(); return false;">Inquire Now! <i class="fas fa-arrow-right ms-1"></i></a>
+              <span class="ntt-join-text">Join Nursery Teacher's Training Today!</span>
+            </div>
+          </div>
+
+          <!-- Right Certification Seal Column -->
+          <div class="ntt-cert-card">
+            <img src="assets/img/aiecce-logo.png" alt="All India Early Childhood Care & Education New Delhi - ISO 9001:2008 Certified">
+            <div class="ntt-cert-caption">
+              All India Early Childhood Care &amp; Education New Delhi
+              <div>
+                <span class="ntt-iso-badge">ISO 9001:2008 Certified</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Why NTT Section -->
+      <section>
+        <div class="container">
+          <div class="section-title text-center">
+            <h6 class="wow fadeInUp kidz-eyebrow"><span class="title-navy">Program </span><span class="title-coral">Overview</span></h6>
+            <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                Why N.T.T?
+            </h2>
+          </div>
+
+          <div class="why-grid">
+            <div class="info-card-ntt wow fadeInUp" data-wow-delay=".2s">
+              <h3>The Mark of Excellence</h3>
+              <p>The Quality Management System is in Compliance with <strong>ISO 9001:2008</strong>. Scope Of Certification includes Design, Development, and Conduct of Job Oriented and self employment Nursery Teacher Training Course.</p>
+            </div>
+
+            <div class="info-card-ntt wow fadeInUp" data-wow-delay=".3s">
+              <h3>Quality Policy</h3>
+              <p>All India Early Childhood Care &amp; Education is committed to impart Job Oriented &amp; Self employment Nursery Teacher Training in Conformity to the requirement vis-à-vis sanctity and dignity of education to ensure maintenance of desired standards.</p>
+            </div>
+
+            <div class="info-card-ntt wow fadeInUp" data-wow-delay=".4s">
+              <h3>Objective</h3>
+              <ul class="styled-list-ntt">
+                <li>To provide women (graduates and under graduates) with the knowledge and skill which will enable them to run their home and guide their children more efficiently.</li>
+                <li>To provide vocational training which will help them get jobs in the middle level management.</li>
+                <li>To educate them about social needs of the society/country and to awaken in them a desire to serve.</li>
+              </ul>
+            </div>
+
+            <div class="info-card-ntt wow fadeInUp" data-wow-delay=".5s">
+              <h3>Need of Training</h3>
+              <p>The preschool age (2–5) is the most impressionable age in one’s life. The effective teacher therefore should be aware of the principle of child development and need of the children, which are different from the primary and post primary children. This is the reason we conduct training courses with utmost care giving the emphasis on child psychology of this age group. The demand for nursery school and early childhood care is increasing day by day; teachers who possess requisite qualification and training are in great demand.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Structure -->
+      <section style="background-color: #ffffff;">
+        <div class="container">
+          <div class="section-title text-center">
+            <h6 class="wow fadeInUp kidz-eyebrow"><span class="title-navy">Curriculum &amp; </span><span class="title-coral">Assessment</span></h6>
+            <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                Education Structure
+            </h2>
+          </div>
+
+          <div class="tables-grid">
+            <!-- Theory Table -->
+            <div class="table-card-ntt wow fadeInLeft" data-wow-delay=".3s">
+              <div class="table-header-ntt" style="color: #ffffff !important;">Theory Subjects</div>
+              <table class="ntt-table">
+                <thead>
+                  <tr>
+                    <th style="width: 70px;">No.</th>
+                    <th>Subject</th>
+                    <th style="width: 90px;">Marks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>1.a</td><td>Child Psychology</td><td>100</td></tr>
+                  <tr><td>1.b</td><td>Child Care &amp; Health</td><td>100</td></tr>
+                  <tr><td>2</td><td>Sociology &amp; Guidance</td><td>100</td></tr>
+                  <tr><td>3</td><td>School Organization</td><td>100</td></tr>
+                  <tr><td>4</td><td>Principles of Education</td><td>100</td></tr>
+                  <tr><td>5</td><td>Education Psychology</td><td>100</td></tr>
+                  <tr><td>6</td><td>Modern Methods of Teaching</td><td>100</td></tr>
+                  <tr><td>7</td><td>Method of Teaching Topics</td><td>100</td></tr>
+                  <tr class="total-row">
+                    <td colspan="2">Total</td>
+                    <td>700</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Practical Table -->
+            <div class="table-card-ntt wow fadeInRight" data-wow-delay=".3s">
+              <div class="table-header-ntt practical" style="color: #ffffff !important;">Practical Subjects</div>
+              <table class="ntt-table">
+                <thead>
+                  <tr>
+                    <th style="width: 70px;">No.</th>
+                    <th>Subject</th>
+                    <th style="width: 90px;">Marks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>1</td><td>Lesson Plan &amp; Teaching</td><td>100</td></tr>
+                  <tr><td>2</td><td>Art &amp; Craft</td><td>100</td></tr>
+                  <tr><td>3</td><td>Art File &amp; Other File</td><td>100</td></tr>
+                  <tr><td>4</td><td>Preparation Of Teaching Aids, e.g Rhymes, Action Song, Speech, Story</td><td>100</td></tr>
+                  <tr><td>5</td><td>VIVA</td><td>50</td></tr>
+                  <tr><td>6</td><td>Internal Assessment</td><td>50</td></tr>
+                  <tr class="total-row">
+                    <td colspan="2">Total</td>
+                    <td>500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Course Fees -->
+      <section>
+        <div class="container">
+          <div class="section-title text-center">
+            <h6 class="wow fadeInUp kidz-eyebrow"><span class="title-navy">Affordable </span><span class="title-coral">Fee Structure</span></h6>
+            <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                Course Fees (Non Refundable)
+            </h2>
+          </div>
+
+          <div class="fees-grid">
+            <!-- Regular Course -->
+            <div class="fee-card-ntt wow fadeInLeft" data-wow-delay=".2s">
+              <div class="fee-card-top-ntt">
+                <h3>Regular Course</h3>
+                <span>* All fees are non-refundable</span>
+              </div>
+              <table class="ntt-table">
+                <thead>
+                  <tr>
+                    <th>Particulars</th>
+                    <th style="text-align: right;">Fees</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Prospectus</td><td style="text-align: right;">Rs. 200</td></tr>
+                  <tr><td>Registration Fees</td><td style="text-align: right;">Rs. 1,000</td></tr>
+                  <tr><td><strong>Tuition Fees</strong></td><td style="text-align: right;">Rs. 23,000</td></tr>
+                  <tr><td style="padding-left: 34px; color: #475569;">• 1st Installment On Enrolment</td><td style="text-align: right;">Rs. 11,000</td></tr>
+                  <tr><td style="padding-left: 34px; color: #475569;">• 2nd Installment On 31st October</td><td style="text-align: right;">Rs. 12,000</td></tr>
+                  <tr><td>Examination Fees</td><td style="text-align: right;">Rs. 1,000</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Correspondence Course -->
+            <div class="fee-card-ntt wow fadeInRight" data-wow-delay=".4s">
+              <div class="fee-card-top-ntt">
+                <h3>Correspondence Course</h3>
+                <span>* All fees are non-refundable</span>
+              </div>
+              <table class="ntt-table">
+                <thead>
+                  <tr>
+                    <th>Particulars</th>
+                    <th style="text-align: right;">Fees</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Prospectus</td><td style="text-align: right;">Rs. 200</td></tr>
+                  <tr><td>Registration Fees</td><td style="text-align: right;">Rs. 1,000</td></tr>
+                  <tr><td><strong>Tuition Fees</strong></td><td style="text-align: right;">Rs. 18,000</td></tr>
+                  <tr><td style="padding-left: 34px; color: #475569;">• 1st Installment On Enrolment</td><td style="text-align: right;">Rs. 10,000</td></tr>
+                  <tr><td style="padding-left: 34px; color: #475569;">• 2nd Installment On 31st October</td><td style="text-align: right;">Rs. 8,000</td></tr>
+                  <tr><td>Examination Fees</td><td style="text-align: right;">Rs. 1,000</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Course Details & Centre Features -->
+      <section style="background-color: #ffffff;">
+        <div class="container">
+          <div class="section-title text-center">
+            <h6 class="wow fadeInUp kidz-eyebrow"><span class="title-navy">Schedule &amp; </span><span class="title-coral">Facilities</span></h6>
+            <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                Course Details
+            </h2>
+          </div>
+
+          <div class="details-grid">
+            <div>
+              <div class="info-card-ntt wow fadeInUp" data-wow-delay=".2s">
+                <h3>Course Duration</h3>
+                <ul class="styled-list-ntt">
+                  <li>One year course commencing from June</li>
+                  <li>Final examination in May every year</li>
+                  <li>A minimum attendance of 75% of the total study days is necessary</li>
+                </ul>
+              </div>
+
+              <div class="highlight-box-ntt">
+                <h4>Teachers Training Program</h4>
+                <p>12 Sessions &bull; Fees: Rs. 8,000/-</p>
+                <button type="button" class="theme-btn" style="margin-top: 16px; padding: 12px 26px; font-size: 0.95rem; border: none; cursor: pointer;" onclick="openModal()">Enquire Now</button>
+              </div>
+            </div>
+
+            <div class="info-card-ntt wow fadeInUp" data-wow-delay=".3s">
+              <h3>Centre Features</h3>
+              <ul class="styled-list-ntt">
+                <li>The only centre in Mumbai Affiliated to AIECCE</li>
+                <li>Provide Intense Practical &amp; Theory training</li>
+                <li>One month Internship</li>
+                <li>Workshops on various topics by experts</li>
+                <li>Qualified &amp; Professional faculty</li>
+                <li>Placement Cell</li>
+                <li>Library Facility</li>
+                <li>Computer Lab for project preparation</li>
+                <li>All India transfer facilities available without any extra charge.</li>
+                <li>Regular monitoring of the program by AIECCE</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact & Location CTA -->
+       
+        </div>
+      </section>
+       <section class="cta-newsletter-section style-2 fix" style="background-color: #009FE3;">
+           
+            <div class="shape-1">
+                <img src="assets/img/cta/shape-1.png" alt="img">
+            </div>
+            <div class="shape-2">
+                <img src="assets/img/cta/shape-2.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="cta-newsletter-wrapper style-2">
+                    <div class="section-title text-center franchise-cta-content">
+                        <h2 class="text-white wow fadeInUp" style="color: #ffffff !important;">
+                          Junior Kidz Teachers Training Institute
+                        </h2>
+                        <p class="text-white wow fadeInUp" data-wow-delay=".3s" style="color: #ffffff !important;">
+                            Mumbai Centre Affiliated to All India Early Childhood Care & Education (AIECCE)
+                        </p>
+                        <a href="contact.html#franchise-enquiry" class="theme-btn wow fadeInUp" data-wow-delay=".5s" style="background-color: #E52421; color: #FFFFFF; border: 1px solid #E52421;">
+                           Enquiry Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Inquiry Popup Modal -->
+    <div class="modal-overlay" id="inquiryModal">
+      <div class="modal-box">
+        <button class="close-modal" onclick="closeModal()">&times;</button>
+        <h3 style="margin-bottom: 8px; color: var(--primary);">Course Enquiry</h3>
+        <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px;">Junior Kidz Teachers Training Institute</p>
+        <form onsubmit="event.preventDefault(); alert('Thank you for your inquiry! Our team will contact you shortly.'); closeModal();">
+          <div class="form-group-ntt">
+            <label>Full Name</label>
+            <input type="text" required placeholder="Enter your full name">
+          </div>
+          <div class="form-group-ntt">
+            <label>Phone Number</label>
+            <input type="tel" required placeholder="Enter your mobile number">
+          </div>
+          <div class="form-group-ntt">
+            <label>Select Course</label>
+            <select>
+              <option>N.T.T. Diploma (Regular Course)</option>
+              <option>N.T.T. Diploma (Correspondence Course)</option>
+              <option>Teachers Training Program (12 Sessions - Rs. 8000/-)</option>
+            </select>
+          </div>
+          <button type="submit" class="theme-btn" style="width: 100%; border: none; cursor: pointer;">Submit Enquiry</button>
+        </form>
+      </div>
+    </div>
+
+<footer class="junior-kidz-footer">
+            <div class="container">
+                <div class="junior-kidz-footer-main">
+                    <a href="home.html" class="junior-kidz-footer-logo" aria-label="Junior Kidz home">
+                        <img src="assets/img/logo/black-logo.jpg" alt="Junior Kidz">
+                    </a>
+                    <nav class="junior-kidz-footer-nav" aria-label="Footer navigation">
+                        <a href="home.html">Home</a>
+                        <a href="about.html">Who We Are</a>
+                        <a href="franchise.html">Franchise Program</a>
+                        <a href="nursery-teacher-training.html">Nursery Teacher Training</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="event.html">Events</a>
+                        <a href="contact.html">Reach Us</a>
+                    </nav>
+                </div>
+                <div class="junior-kidz-footer-divider" aria-hidden="true"></div>
+                <div class="junior-kidz-footer-bottom">
+                    <p>© 2026 Junior Kidz. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+         <!--<< All JS Plugins >>-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <!--<< Bootstrap Js >>-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--<< Nice Select Js >>-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!--<< Odometer Js >>-->
+        <script src="assets/js/odometer.min.js"></script>
+        <!--<< Appear Js >>-->
+        <script src="assets/js/jquery.appear.min.js"></script>
+        <!--<< Swiper Slider Js >>-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--<< MeanMenu Js >>-->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!--<< Magnific Popup Js >>-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--<< Circle Progress Js >>-->
+        <script src="assets/js/circle-progress.js"></script>
+        <!--<< Wow Animation Js >>-->
+        <script src="assets/js/wow.min.js"></script>
+        <!--<< Main.js >>-->
+        <script src="assets/js/main.js"></script>
+    
+  <script>
+    function openModal() {
+      document.getElementById('inquiryModal').style.display = 'flex';
+    }
+    function closeModal() {
+      document.getElementById('inquiryModal').style.display = 'none';
+    }
+    window.onclick = function(event) {
+      const modal = document.getElementById('inquiryModal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
+</body>
+</html>
