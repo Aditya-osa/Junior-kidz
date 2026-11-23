@@ -568,3 +568,23 @@ Main Style file-> assets/css/main.css
     }
 }
 
+/* Spacing between Welcome eyebrow and paragraph */
+.welcome-header,
+.welcome-junior-section .welcome-header {
+    margin-bottom: 55px !important;
+}
+
+@media (max-width: 991px) {
+    .welcome-header,
+    .welcome-junior-section .welcome-header {
+        margin-bottom: 40px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .welcome-header,
+    .welcome-junior-section .welcome-header {
+        margin-bottom: 32px !important;
+    }
+}
+
