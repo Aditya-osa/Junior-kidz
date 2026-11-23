@@ -1,0 +1,2910 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--<< Header Area >>-->
+    <head>
+        <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="modinatheme">
+        <meta name="description" content="Eduspace - Online Course, Education & University Html Template">
+        <!-- ======== Page title ============ -->
+        <title>Eduspace - Online Course, Education & University Html Template</title>
+        <!--<< Favicon >>-->
+        <link rel="shortcut icon" href="assets/img/favicon.svg">
+        <!--<< Bootstrap min.css >>-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--<< Font Awesome.css >>-->
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <!--<< Animate.css >>-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!--<< Magnific Popup.css >>-->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!--<< MeanMenu.css >>-->
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <!--<< Odometer.css >>-->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!--<< Swiper Bundle.css >>-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--<< Nice Select.css >>-->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!--<< Main.css >>-->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!--<< Style.css >>-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+            .testimonial-slider-4 .swiper-wrapper {
+                display: flex;
+                align-items: stretch;
+            }
+            .testimonial-slider-4 .swiper-slide {
+                height: auto;
+                display: flex;
+                justify-content: center;
+            }
+            .testimonial-slider-4 .testimonial-wrapper-2 {
+                width: 100%;
+                max-width: 900px;
+                min-height: 380px;
+                margin: 50px auto 0;
+                padding: 50px 60px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                box-sizing: border-box;
+            }
+            .testimonial-slider-4 .testimonial-wrapper-2 .content {
+                max-width: 760px;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .testimonial-slider-4 .testimonial-wrapper-2 .content .icon {
+                margin: 0 auto 20px;
+                text-align: center;
+                display: inline-block;
+            }
+            .testimonial-slider-4 .testimonial-wrapper-2 .content h3 {
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 1.5;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .testimonial-slider-4 .testimonial-wrapper-2 .content .client-content {
+                margin-top: 25px;
+                text-align: center;
+            }
+            .testimonial-slider-4 .testimonial-wrapper-2 .content .client-content h4 {
+                text-align: center;
+                margin: 0;
+            }
+            @media (max-width: 767px) {
+                .testimonial-slider-4 .testimonial-wrapper-2 {
+                    padding: 35px 25px;
+                    min-height: auto;
+                    margin-top: 30px;
+                }
+                .testimonial-slider-4 .testimonial-wrapper-2 .content h3 {
+                    font-size: 18px;
+                }
+            }
+
+            @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700;800&family=Quicksand:wght@600;700&family=Sora:wght@700;800&display=swap");
+
+            /* =========================================================
+               Playful Splash Eyebrow (.kidz-eyebrow / .eyebrow-splash)
+               Clean, balanced eyebrow size (22px) with colorful accents
+               ========================================================= */
+            .kidz-eyebrow,
+            .eyebrow-splash,
+            .section-title h6.kidz-eyebrow,
+            .section-title h6.eyebrow-splash {
+                display: inline-flex !important;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                font-family: 'Fredoka', 'Sora', sans-serif !important;
+                font-size: 22px !important;
+                font-weight: 700 !important;
+                line-height: 1.2 !important;
+                letter-spacing: -0.3px !important;
+                color: #0D1B3E;
+                position: relative;
+                padding-bottom: 0 !important;
+                margin-bottom: 12px;
+                text-align: center;
+            }
+
+            @media (max-width: 767px) {
+                .kidz-eyebrow,
+                .eyebrow-splash,
+                .section-title h6.kidz-eyebrow,
+                .section-title h6.eyebrow-splash {
+                    font-size: 17px !important;
+                    gap: 7px;
+                }
+            }
+
+
+
+            /* Two-tone color accents inside eyebrow */
+            .kidz-eyebrow .title-navy,
+            .eyebrow-splash .title-navy {
+                color: #0D1B3E;
+            }
+            .kidz-eyebrow .title-coral,
+            .eyebrow-splash .title-coral {
+                color: #F27D52;
+            }
+
+            /* Left Splash Accent (Purple, Coral, Mint) */
+            .section-title h6.kidz-eyebrow::before,
+            .section-title h6.eyebrow-splash::before,
+            .kidz-eyebrow::before,
+            .eyebrow-splash::before {
+                content: "" !important;
+                position: static !important;
+                width: 26px !important;
+                height: 20px !important;
+                display: inline-block !important;
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='32' viewBox='0 0 40 32' fill='none'%3E%3Cpath d='M34 24 C26 18 18 12 12 4' stroke='%237B61FF' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M36 26 C26 22 14 20 2 20' stroke='%23F27D52' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M34 28 C24 28 16 30 6 30' stroke='%2320C997' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / contain !important;
+                flex-shrink: 0;
+                animation: none !important;
+            }
+
+            /* Right Splash Accent (Teal, Coral, Royal Blue) */
+            .section-title h6.kidz-eyebrow::after,
+            .section-title h6.eyebrow-splash::after,
+            .kidz-eyebrow::after,
+            .eyebrow-splash::after {
+                content: "" !important;
+                position: static !important;
+                width: 26px !important;
+                height: 20px !important;
+                display: inline-block !important;
+                background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='32' viewBox='0 0 40 32' fill='none'%3E%3Cpath d='M6 24 C14 18 22 12 28 4' stroke='%2320C997' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M4 26 C14 22 26 20 38 20' stroke='%23F27D52' stroke-width='3.5' stroke-linecap='round'/%3E%3Cpath d='M6 28 C16 28 24 30 34 30' stroke='%234D96FF' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / contain !important;
+                flex-shrink: 0;
+                animation: none !important;
+            }
+
+            @media (max-width: 767px) {
+                .kidz-eyebrow::before,
+                .eyebrow-splash::before,
+                .kidz-eyebrow::after,
+                .eyebrow-splash::after {
+                    width: 20px !important;
+                    height: 16px !important;
+                }
+            }
+
+
+
+            /* Dark background / text-white support */
+            .kidz-eyebrow.text-white,
+            .eyebrow-splash.text-white {
+                color: #FFFFFF !important;
+            }
+            .kidz-eyebrow.text-white .title-navy,
+            .kidz-eyebrow.text-white .title-coral {
+                color: #FFFFFF !important;
+            }
+            .kidz-eyebrow.text-white::before,
+            .kidz-eyebrow.text-white::after,
+            .eyebrow-splash.text-white::before,
+            .eyebrow-splash.text-white::after,
+            .section-title.color-yellow .kidz-eyebrow::before,
+            .section-title.color-yellow .kidz-eyebrow::after {
+                filter: drop-shadow(0 2px 4px rgba(0,0,0,0.35));
+            }
+
+            /* Optional smaller eyebrow variant */
+            .kidz-eyebrow-sm,
+            .section-title h6.kidz-eyebrow-sm {
+                font-size: 20px !important;
+                gap: 10px;
+            }
+            .kidz-eyebrow-sm::before,
+            .kidz-eyebrow-sm::after,
+            .section-title h6.kidz-eyebrow-sm::before,
+            .section-title h6.kidz-eyebrow-sm::after {
+                width: 26px !important;
+                height: 20px !important;
+            }
+
+            /* Direct span accents support */
+            .splash-accents {
+                display: inline-flex;
+                align-items: center;
+                flex-shrink: 0;
+            }
+            .splash-accents svg {
+                display: block;
+            }
+
+            /* Franchise CTA Background */
+            .cta-newsletter-section.style-2 {
+                background-color: #009FE3 !important;
+            }
+
+            /* All Buttons in Brand Red (#E52421) */
+            .theme-btn,
+            .theme-btn.yellow-btn,
+            .theme-btn.red-btn,
+            .theme-btn.pink-btn,
+            .theme-btn.theme-blue-2,
+            .welcome-pill-btn,
+            .back-to-top {
+                background-color: #E52421 !important;
+                color: #FFFFFF !important;
+                border: 1px solid #E52421 !important;
+            }
+
+            .theme-btn::before,
+            .theme-btn::after,
+            .theme-btn.yellow-btn::before,
+            .theme-btn.yellow-btn::after,
+            .theme-btn.red-btn::before,
+            .theme-btn.red-btn::after,
+            .theme-btn.pink-btn::before,
+            .theme-btn.pink-btn::after,
+            .theme-btn.theme-blue-2::before,
+            .theme-btn.theme-blue-2::after {
+                background-color: #C01B18 !important;
+            }
+
+            .theme-btn:hover,
+            .theme-btn.yellow-btn:hover,
+            .theme-btn.red-btn:hover,
+            .theme-btn.pink-btn:hover,
+            .theme-btn.theme-blue-2:hover,
+            .welcome-pill-btn:hover,
+            .back-to-top:hover {
+                background-color: #C01B18 !important;
+                color: #FFFFFF !important;
+                border-color: #C01B18 !important;
+            }
+
+            /* Secondary / Outline Button */
+            .theme-btn.style-2 {
+                background-color: transparent !important;
+                color: #E52421 !important;
+                border: 1px solid #E52421 !important;
+            }
+            .theme-btn.style-2:hover {
+                background-color: #E52421 !important;
+                color: #FFFFFF !important;
+            }
+            .theme-btn.style-2::before,
+            .theme-btn.style-2::after {
+                background-color: #E52421 !important;
+            }
+
+            /* Our Events Background */
+            .event-wrapper-2 .event-right-items,
+            .event-secton-2 .event-right-items {
+                background-color: #009FE3 !important;
+            }
+
+            /* ==========================================
+               Welcome to Junior Kidz Section (Playful)
+               ========================================== */
+            .welcome-junior-section {
+                background-color: #Ffffff;
+                position: relative;
+                overflow: hidden;
+                padding-top: 55px;
+                padding-bottom: 0;
+            }
+            .welcome-bg-doodle {
+                position: absolute;
+                pointer-events: none;
+                z-index: 1;
+            }
+            .bg-doodle-star-tl {
+                top: 35px;
+                left: 45px;
+            }
+            .bg-doodle-star-bl {
+                bottom: 80px;
+                left: 40px;
+            }
+            .bg-doodle-dots-tr {
+                top: 30px;
+                right: 45px;
+            }
+            .bg-doodle-dots-br {
+                bottom: 70px;
+                right: 35px;
+            }
+            .welcome-header {
+                margin-bottom: 30px;
+                position: relative;
+                z-index: 2;
+                text-align: center;
+            }
+            .welcome-left-wrap {
+                display: flex;
+                align-items: flex-start;
+                gap: 22px;
+            }
+            @media (max-width: 991px) {
+                .welcome-left-wrap {
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    gap: 22px;
+                }
+            }
+            .welcome-badge {
+                flex-shrink: 0;
+                width: 115px;
+                height: 115px;
+                position: relative;
+                margin-top: 4px;
+            }
+            .welcome-badge .badge-text-spin {
+                width: 100%;
+                height: 100%;
+                animation: cir36 12s linear infinite;
+                display: block;
+            }
+            .welcome-badge .badge-center-flower {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 52px;
+                height: 52px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .welcome-badge .badge-center-flower img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            .welcome-info-block {
+                flex: 1;
+                width: 100%;
+            }
+            .welcome-desc {
+                color: #4A5568;
+                font-size: 15px;
+                line-height: 1.68;
+                margin-bottom: 16px;
+                width: 100%;
+                max-width: 100%;
+            }
+            .welcome-features {
+                list-style: none;
+                padding: 0;
+                margin: 24px 0 30px 0;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 16px;
+            }
+            .welcome-features li {
+                flex: 1 1 0;
+                min-width: 0;
+                display: flex;
+                align-items: flex-start;
+                gap: 8px;
+            }
+            .welcome-features .feat-icon {
+                width: 24px;
+                height: 24px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-top: 1px;
+            }
+            .welcome-features .feat-label {
+                font-size: 13.5px;
+                font-weight: 700;
+                color: #0D1B3E;
+                line-height: 1.35;
+                letter-spacing: -0.2px;
+            }
+            @media (max-width: 767px) {
+                .welcome-features {
+                    flex-direction: column;
+                    gap: 14px;
+                }
+            }
+            .welcome-pill-btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                background-color: #E52421;
+                color: #FFFFFF !important;
+                font-size: 15px;
+                font-weight: 600;
+                padding: 11px 32px;
+                border-radius: 50px;
+                text-decoration: none;
+                box-shadow: 0 4px 15px rgba(229, 36, 33, 0.35);
+                transition: all 0.3s ease;
+            }
+            .welcome-pill-btn:hover {
+                background-color: #C01B18;
+                color: #FFFFFF !important;
+                transform: translateY(-2px);
+                box-shadow: 0 8px 22px rgba(229, 36, 33, 0.45);
+            }
+            .welcome-collage-wrap {
+                position: relative;
+                width: 100%;
+                max-width: 580px;
+                height: 460px;
+                margin: 0 auto;
+            }
+            .collage-blob-wrapper {
+                position: absolute;
+                top: 15px;
+                right: 0;
+                width: 520px;
+                height: 375px;
+                z-index: 2;
+            }
+            .collage-blob-svg {
+                width: 100%;
+                height: 100%;
+                display: block;
+                overflow: visible;
+                filter: drop-shadow(0 14px 32px rgba(242, 125, 82, 0.14));
+            }
+            .collage-secondary-frame {
+                position: absolute;
+                bottom: 15px;
+                left: 10px;
+                width: 190px;
+                height: 215px;
+                border-radius: 22px;
+                border: 7px solid #FFFFFF;
+                transform: rotate(-8deg);
+                overflow: hidden;
+                box-shadow: 0 18px 40px rgba(13, 27, 62, 0.24);
+                z-index: 5;
+                background-color: #FFFFFF;
+            }
+            .collage-secondary-frame img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center 30%;
+                display: block;
+            }
+            .collage-doodle {
+                position: absolute;
+                pointer-events: none;
+            }
+            .doodle-airplane {
+                top: -5px;
+                left: 10px;
+                z-index: 6;
+            }
+            .doodle-cloud {
+                top: 5px;
+                right: -10px;
+                z-index: 6;
+            }
+            .doodle-motion {
+                bottom: 5px;
+                left: -5px;
+                z-index: 4;
+            }
+            .doodle-star {
+                bottom: 5px;
+                left: 225px;
+                z-index: 6;
+            }
+            .doodle-leaf {
+                bottom: -8px;
+                right: -20px;
+                z-index: 6;
+                transform: rotate(18deg);
+            }
+            @media (max-width: 991px) {
+                .welcome-collage-wrap {
+                    max-width: 500px;
+                    height: 410px;
+                    margin-top: 30px;
+                }
+                .collage-blob-wrapper {
+                    width: 450px;
+                    height: 325px;
+                }
+                .collage-secondary-frame {
+                    width: 165px;
+                    height: 185px;
+                }
+            }
+            @media (max-width: 575px) {
+                .welcome-collage-wrap {
+                    max-width: 100%;
+                    height: 340px;
+                }
+                .collage-blob-wrapper {
+                    width: 100%;
+                    height: 260px;
+                }
+                .collage-secondary-frame {
+                    width: 130px;
+                    height: 150px;
+                    left: 5px;
+                    bottom: 5px;
+                }
+                .doodle-star {
+                    left: 150px;
+                }
+            }
+            .welcome-waves-wrap {
+                width: 100%;
+                margin-top: 35px;
+                line-height: 0;
+                overflow: hidden;
+                position: relative;
+                z-index: 3;
+            }
+            .welcome-waves-svg {
+                width: 100%;
+                height: 54px;
+                display: block;
+            }
+
+            /* =========================================================
+               8 Multiple Intelligences Radial Section (2-Column Layout)
+               ========================================================= */
+            .intelligences-section {
+                background-color: #FFFDF5;
+                position: relative;
+                padding: 60px 0 70px 0;
+                overflow: visible;
+            }
+
+            /* Left Column Content */
+            .intelligences-left-content {
+                position: relative;
+                z-index: 5;
+                visibility: visible !important;
+            }
+            .intelligences-left-content * {
+                visibility: visible !important;
+            }
+            .intelligences-heading {
+                font-family: 'Fredoka', 'Sora', sans-serif;
+                font-size: clamp(32px, 3.8vw, 44px);
+                font-weight: 800;
+                color: #0D1B3E;
+                line-height: 1.2;
+                margin-top: 10px;
+                margin-bottom: 18px;
+                letter-spacing: -0.5px;
+            }
+            .intelligences-desc {
+                font-family: 'Quicksand', 'Sora', sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                color: #556987;
+                line-height: 1.7;
+                margin-bottom: 0;
+                max-width: 480px;
+            }
+
+            /* Radial Diagram Container (Right Column) */
+            .intelligences-diagram-wrap {
+                position: relative;
+                width: 100%;
+                max-width: 720px;
+                height: 684px;
+                margin: 0 auto;
+                overflow: visible;
+                --circle-radius: 226px;
+                --label-radius: 312px;
+            }
+
+            /* SVG Connectors & Sparkles overlay */
+            .intelligences-svg-bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+               
+            }
+
+            /* Center Hub Badge (Stationary Center Axle) */
+            .hub-center-badge {
+                position: absolute;
+                top: 48.95%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 156px;
+                height: 156px;
+                border-radius: 50%;
+                background-color: #E52421;
+                border: 7px solid #009FE3;
+                box-shadow: 0 10px 30px rgba(0, 159, 227, 0.28), 0 6px 16px rgba(229, 36, 33, 0.25);
+                z-index: 10;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: visible;
+                transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            }
+            .hub-center-badge:hover {
+                transform: translate(-50%, -50%) scale(1.05);
+            }
+
+            .hub-inner-svg {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+
+            /* Rotating Wheel Track (SVG Spokes + Orbiting Nodes) */
+            @media (min-width: 769px) {
+                .intelligences-wheel-track {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    transform-origin: 50% 48.95%;
+                    animation: rotateIntelligencesWheel 36s linear infinite;
+                    z-index: 2;
+                }
+
+                .intelligences-nodes-grid {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                }
+
+                /* Spoke item: anchored at exact geometric center */
+                .spoke-item {
+                    position: absolute;
+                    top: 48.95%;
+                    left: 50%;
+                    width: 0;
+                    height: 0;
+                    transform: rotate(var(--angle));
+                    pointer-events: none;
+                }
+
+                /* 1. Icon Circle along the spoke */
+                .node-circle {
+                    position: absolute;
+                    width: 82px;
+                    height: 82px;
+                    margin-left: -41px;
+                    margin-top: -41px;
+                    border-radius: 50%;
+                    background-color: #FFFFFF !important;
+                    border: 2px solid #009FE3;
+                    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+                    transform: translateY(calc(-1 * var(--circle-radius, 226px)));
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    pointer-events: auto;
+                    cursor: pointer;
+                    z-index: 5;
+                    transition: box-shadow 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+                }
+
+                .spoke-item:hover .node-circle {
+                    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+                    border-color: #F27D52;
+                    transform: translateY(calc(-1 * var(--circle-radius, 226px))) scale(1.1);
+                }
+
+                /* 2. Label positioned further outward along the exact same spoke */
+                .node-label {
+                    position: absolute;
+                    width: 160px;
+                    margin-left: -80px;
+                    margin-top: -20px;
+                    transform: translateY(calc(-1 * var(--label-radius, 312px)));
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    pointer-events: none;
+                    z-index: 6;
+                }
+
+                /* 3. Upright Content: cancels spoke angle and counter-rotates continuously */
+                .upright-content {
+                    transform: rotate(calc(-1 * var(--angle)));
+                    animation: counterSpin 36s linear infinite;
+                }
+
+                .node-label .upright-content {
+                    background-color: rgba(255, 253, 245, 0.96);
+                    padding: 6px 12px;
+                    border-radius: 8px;
+                    font-family: 'Fredoka', 'Sora', sans-serif;
+                    font-size: 13px;
+                    font-weight: 700;
+                    color: #1E293B;
+                    line-height: 1.2;
+                    text-align: center;
+                    white-space: normal;
+                    max-width: 135px;
+                    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+                    border: 1px solid rgba(226, 232, 240, 0.6);
+                }
+
+                .node-circle .upright-content {
+                    background: transparent;
+                    padding: 0;
+                    box-shadow: none;
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .node-circle .upright-content i {
+                    font-size: 30px;
+                    line-height: 1;
+                    display: block;
+                }
+
+                /* Pause on hover anywhere on wheel */
+                .intelligences-diagram-wrap:hover .intelligences-wheel-track,
+                .intelligences-diagram-wrap:hover .upright-content {
+                    animation-play-state: paused;
+                }
+            }
+
+            /* Node Border Colors */
+            .node-circle.border-blue { border-color: #009FE3; }
+            .node-circle.border-red  { border-color: #E52421; }
+            .node-circle.border-gold { border-color: #E89C1E; }
+
+            .node-icon-svg {
+                width: 44px;
+                height: 44px;
+                display: block;
+            }
+
+            /* Wheel Keyframe Animations */
+            @keyframes rotateIntelligencesWheel {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes counterSpin {
+                from {
+                    transform: rotate(calc(-1 * var(--angle)));
+                }
+                to {
+                    transform: rotate(calc(-1 * var(--angle) - 360deg));
+                }
+            }
+
+            /* Large desktop (>= 1400px) slight upscale */
+            @media (min-width: 1400px) {
+                .intelligences-diagram-wrap {
+                    max-width: 740px;
+                    height: 703px;
+                    --circle-radius: 233px;
+                    --label-radius: 322px;
+                }
+                .hub-center-badge {
+                    width: 170px;
+                    height: 170px;
+                }
+                .node-circle {
+                    width: 88px;
+                    height: 88px;
+                    margin-left: -44px;
+                    margin-top: -44px;
+                }
+                .node-icon-svg {
+                    width: 48px;
+                    height: 48px;
+                }
+                .node-label .upright-content {
+                    font-size: 13.5px;
+                    max-width: 140px;
+                }
+            }
+
+            /* Mobile Responsive (< 768px) */
+            @media (max-width: 768px) {
+                .intelligences-section {
+                    padding: 65px 16px 70px 16px;
+                }
+                .intelligences-heading {
+                    font-size: 28px;
+                    margin-bottom: 12px;
+                }
+                .intelligences-desc {
+                    font-size: 14.5px;
+                    margin-bottom: 30px;
+                }
+                .intelligences-diagram-wrap {
+                    height: auto;
+                    max-width: 520px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 25px;
+                }
+                .intelligences-svg-bg {
+                    display: none;
+                }
+                .intelligences-wheel-track {
+                    display: contents;
+                    animation: none !important;
+                }
+                .hub-center-badge {
+                    position: static;
+                    transform: none !important;
+                    margin: 0 auto 20px auto;
+                    width: 165px;
+                    height: 165px;
+                }
+                .intelligences-nodes-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    gap: 24px 16px;
+                    width: 100%;
+                    max-width: 360px;
+                    margin: 0 auto;
+                }
+                .spoke-item {
+                    position: static;
+                    transform: none !important;
+                    animation: none !important;
+                    width: 100%;
+                    height: auto;
+                    max-width: 160px;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 8px;
+                }
+                .spoke-item:hover {
+                    transform: translateY(-4px) !important;
+                }
+                .node-circle {
+                    position: static;
+                    transform: none !important;
+                    margin: 0 auto;
+                    width: 86px;
+                    height: 86px;
+                }
+                .node-icon-svg {
+                    width: 44px;
+                    height: 44px;
+                }
+                .node-label {
+                    position: static;
+                    transform: none !important;
+                    margin: 0 auto;
+                    width: auto;
+                    white-space: normal;
+                    text-align: center;
+                }
+                .upright-content {
+                    transform: none !important;
+                    animation: none !important;
+                }
+                .node-label .upright-content {
+                    font-size: 13.5px;
+                    max-width: 140px;
+                    padding: 3px 6px;
+                    white-space: normal;
+                }
+            }
+
+            /* Student Kit Cards - Best Fit & Seamless Alignment */
+            .popular-program-section .row.g-4 {
+                align-items: stretch;
+            }
+            .popular-program-box-items.student-kit-card {
+                height: 100%;
+                margin-top: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background: #ffffff;
+                border-radius: 20px;
+                border: 1.5px solid rgba(13, 27, 62, 0.08);
+                box-shadow: 0 10px 30px rgba(13, 27, 62, 0.05);
+                overflow: hidden;
+                transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+            }
+            .popular-program-box-items.student-kit-card:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 20px 45px rgba(13, 27, 62, 0.12);
+                border-color: #F27D52;
+            }
+            .student-kit-card .thumb {
+                height: 230px;
+                mask: none !important;
+                -webkit-mask: none !important;
+                background: #ffffff !important;
+                border-radius: 20px 20px 0 0;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 14px 18px 6px;
+            }
+            .student-kit-card .thumb img {
+                width: 100%;
+                height: 100%;
+                max-height: 205px;
+                object-fit: contain !important;
+                object-position: center bottom;
+                padding: 0 !important;
+                border-radius: 0;
+                display: block;
+                margin: 0 auto;
+                transition: transform 0.4s ease;
+            }
+            .popular-program-box-items.student-kit-card:hover .thumb img {
+                transform: scale(1.05);
+            }
+            .student-kit-card .content {
+                flex: 1 1 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 82px;
+                padding: 16px 20px 24px;
+                text-align: center;
+                background: #ffffff;
+            }
+            .student-kit-card .content h3 {
+                margin: 0;
+                font-size: 20px;
+                font-weight: 700;
+                color: #0D1B3E;
+                line-height: 1.35;
+            }
+/* MAIN SECTION */
+.khil-gallery-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CAROUSEL */
+.khil-gallery-section .carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: grab;
+    touch-action: pan-y;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.khil-gallery-section .carousel.dragging {
+    cursor: grabbing;
+}
+
+/* SLIDES */
+.khil-gallery-section .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e9ecef;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    will-change: transform, clip-path;
+    pointer-events: none;
+}
+
+/* NAVIGATION */
+.khil-gallery-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.khil-gallery-navigation button {
+    width: 46px;
+    height: 46px;
+    border: 1px solid #222;
+    border-radius: 50%;
+    background: transparent;
+    color: #222;
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.khil-gallery-navigation button:hover {
+    background: #222;
+    color: #fff;
+}
+
+/* RESPONSIVE */
+@media(max-width:1024px) {
+    .khil-gallery-navigation {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:767px) {
+    .khil-gallery-section .carousel {
+        min-height: 220px;
+    }
+
+    .khil-gallery-navigation {
+        margin-top: 15px;
+        gap: 12px;
+    }
+
+    .khil-gallery-navigation button {
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .khil-gallery-navigation button {
+        transition: none;
+    }
+}
+        </style>
+    </head>
+
+    <body>
+
+         <!-- Preloader Start -->
+         <div id="preloader" class="preloader">
+            <div class="animation-preloader">
+                <div class="edu-preloader-icon"> 
+                    <img src="assets/img/preloader.gif" alt="">               
+                </div>
+                <div class="txt-loading">
+                    <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+                    <span data-text-preloader="D" class="letters-loading">
+                        D
+                    </span>
+                    <span data-text-preloader="U" class="letters-loading">
+                        U
+                    </span>
+                    <span data-text-preloader="S" class="letters-loading">
+                        S
+                    </span>
+                    <span data-text-preloader="P" class="letters-loading">
+                        P
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="C" class="letters-loading">
+                        C
+                    </span>
+                    <span data-text-preloader="E" class="letters-loading">
+                        E
+                    </span>
+                </div>
+                <p class="text-center">Loading</p>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back To Top start -->
+        <button id="back-top" class="back-to-top">
+            <i class="fas fa-long-arrow-up"></i>
+        </button>
+
+        <!-- Offcanvas Area Start -->
+        <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="home.html">
+                                    <img src="assets/img/logo/black-logo.jpg" alt="logo-img">
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <h3 class="offcanvas-title">Hello There!</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, </p>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <div class="mobile-menu fix mb-3"></div>
+                        <div class="offcanvas__contact">
+                            <h3>Information</h3>
+                            <ul class="contact-list">
+                                <li>
+                                    <span>
+                                        Address:
+                                    </span>
+                                    7300-7398 Colonial Rd,
+                                    Brooklyn, NY 11209
+                                </li>
+                                <li>
+                                    <span>
+                                        Call Us:
+                                    </span>
+                                    <a href="tel:+00012345688">+000 123 456 88</a>
+                                </li>
+                                <li>
+                                    <span>
+                                        Email:
+                                    </span>
+                                    <a href="mailto:supportedus@gmail.com">supportedus@gmail.com</a>
+                                </li>
+                            </ul>
+                            <div class="offcanvas-button">
+                                <a href="sign-in.html" class="theme-btn style-2"><i class="far fa-user"></i> Admin</a>
+                                <a href="register.html" class="theme-btn yellow-btn">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__overlay"></div>
+
+        <!-- Header Section Start -->
+    
+<header class="header-section-3">
+    <div id="header-sticky" class="header-3 style-2">
+        <div class="container">
+            <div class="mega-menu-wrapper">
+                <div class="header-main">
+
+                    <!-- Logo -->
+                    <a href="home.html" class="header-logo">
+                        <img src="assets/img/logo/black-logo.jpg" alt="Junior Kidz Logo">
+                    </a>
+
+                    <a href="home.html" class="header-logo-2">
+                        <img src="assets/img/logo/black-logo.jpg" alt="Junior Kidz Logo">
+                    </a>
+
+                    <!-- Navigation -->
+                    <div class="header-left">
+                        <div class="mean__menu-wrapper">
+                            <div class="main-menu">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                       
+
+                                        <li>
+                                            <a href="about.html">
+                                                Who We Are
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="franchise.html">
+                                                Franchise Program
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="news-details.html">
+                                                Nursery Teacher Training
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="gallery.html">
+                                                <span class="head-icon"><i class="fas fa-layer-group"></i></span>
+                                                Gallery
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="event.html">
+                                                Events
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="contact.html">
+                                                Reach Us
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Header Actions -->
+                    <div class="header-right d-flex justify-content-end align-items-center">
+
+                        <div class="header-button">
+                            <a href="contact.html" class="theme-btn">
+                                Enquiry
+                            </a>
+                        </div>
+
+                        <!-- Mobile Menu Toggle -->
+                        <div class="header__hamburger d-xl-none my-auto">
+                            <div class="sidebar__toggle">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+        <!-- Hero Section Start -->
+        <section class="hero-section hero-4">
+            <div class="container-fluid">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-12">
+                        <div class="hero-content">
+                            <h6 class="wow fadeInUp kidz-eyebrow text-white">
+                                <span>Welcome to </span><span style="color: #FFD25D;">Junior Kidz</span>
+                            </h6>
+                            <h1 class="wow fadeInUp" data-wow-delay=".3s">A happy place to learn, play, and grow</h1>
+                            <p class="wow fadeInUp" data-wow-delay=".4s">
+                                Curious minds explore, make friends, and build confidence through play.
+                            </p>
+                            <!-- <div class="hero-button wow fadeInUp" data-wow-delay=".3s">
+                                <a href="program.html" class="theme-btn">Explore Our Programs</a>
+                            </div> -->
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </section>
+
+<!-- Why Choose Us Section Start -->
+<section class="choose-us-4 section-padding"
+    style="background-image: url('assets/img/feature/choose-bg-4.png');">
+
+    <div class="container">
+
+
+
+
+
+
+        
+
+        <div class="section-title color-black text-center color-pink">
+            <h6 class="wow fadeInUp kidz-eyebrow"><span class="title-navy">Why Parents Choose </span><span class="title-coral">Junior Kidz</span></h6>
+            <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                Building Strong Foundations<br> For a Brighter Future
+            </h2>
+            <p class="wow fadeInUp" data-wow-delay=".4s">
+                Your toddler is developing at a rapid pace, gaining new physical, cognitive, and emotional skills every day. In the next five years, you’ll watch your child grow from a tentative toddler who speaks only a few words into a confident preschooler with a growing awareness of the world around them.
+            </p>
+        </div>
+
+        <div class="row justify-content-center g-4">
+
+            <!-- Card 1 -->
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp"
+                data-wow-delay=".2s">
+                <div class="choose-us-box-4 h-100">
+                    <div class="icon">
+                       <i class="flaticon-board-meeting"></i>
+                    </div>
+                    <div class="content">
+                        <h4>Touch Screen Learning</h4>
+                        <p>
+                            Interactive smart displays and guided digital tools that make foundational learning engaging, fun, and intuitive.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp"
+                data-wow-delay=".4s">
+                <div class="choose-us-box-4 h-100">
+                    <div class="icon">
+                      <i class="flaticon-playground"></i>
+                    </div>
+                    <div class="content">
+                        <h4>Field Trips & Events</h4>
+                        <p>
+                            Curated outdoor excursions and festive community activities that spark curiosity, teamwork, and hands-on discovery.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp"
+                data-wow-delay=".6s">
+                <div class="choose-us-box-4 h-100">
+                    <div class="icon">
+                     <i class="flaticon-teachers-day"></i>
+                    </div>
+                    <div class="content">
+                        <h4>Certified Teachers</h4>
+                        <p>
+                            Passionate, highly qualified early educators committed to providing personalized care and nurturing every child's potential.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+       
+
+    </div>
+</section>
+<!-- Why Choose Us Section End -->
+
+        
+        <!-- Welcome to Junior Kidz Section Start -->
+        <section class="welcome-junior-section">
+            <!-- Subtle Background Doodles (Stars and Stipple Dots) -->
+            <div class="welcome-bg-doodle bg-doodle-star-tl" aria-hidden="true">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                    <path d="M17 2 C17 12 12 17 2 17 C12 17 17 22 17 32 C17 22 22 17 32 17 C22 17 17 12 17 2 Z" stroke="#DFC5B2" stroke-width="1.6"/>
+                </svg>
+            </div>
+            <div class="welcome-bg-doodle bg-doodle-star-bl" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 34 34" fill="none">
+                    <path d="M17 2 C17 12 12 17 2 17 C12 17 17 22 17 32 C17 22 22 17 32 17 C22 17 17 12 17 2 Z" stroke="#DFC5B2" stroke-width="1.6"/>
+                </svg>
+            </div>
+            <div class="welcome-bg-doodle bg-doodle-dots-tr" aria-hidden="true">
+                <svg width="46" height="46" viewBox="0 0 48 48" fill="none">
+                    <circle cx="8" cy="12" r="1.8" fill="#E5BFA8"/>
+                    <circle cx="18" cy="8" r="1.5" fill="#E5BFA8"/>
+                    <circle cx="28" cy="14" r="1.8" fill="#E5BFA8"/>
+                    <circle cx="14" cy="22" r="2" fill="#E5BFA8"/>
+                    <circle cx="24" cy="24" r="1.5" fill="#E5BFA8"/>
+                    <circle cx="34" cy="20" r="1.8" fill="#E5BFA8"/>
+                    <circle cx="10" cy="34" r="1.5" fill="#E5BFA8"/>
+                    <circle cx="20" cy="36" r="2" fill="#E5BFA8"/>
+                    <circle cx="30" cy="32" r="1.8" fill="#E5BFA8"/>
+                    <circle cx="40" cy="28" r="1.5" fill="#E5BFA8"/>
+                </svg>
+            </div>
+            <div class="welcome-bg-doodle bg-doodle-dots-br" aria-hidden="true">
+                <svg width="42" height="42" viewBox="0 0 48 48" fill="none">
+                    <circle cx="10" cy="14" r="1.8" fill="#E5BFA8"/>
+                    <circle cx="22" cy="10" r="1.5" fill="#E5BFA8"/>
+                    <circle cx="32" cy="16" r="1.8" fill="#E5BFA8"/>
+                    <circle cx="16" cy="26" r="2" fill="#E5BFA8"/>
+                    <circle cx="26" cy="28" r="1.5" fill="#E5BFA8"/>
+                    <circle cx="38" cy="24" r="1.8" fill="#E5BFA8"/>
+                    <circle cx="12" cy="38" r="1.5" fill="#E5BFA8"/>
+                    <circle cx="24" cy="40" r="2" fill="#E5BFA8"/>
+                </svg>
+            </div>
+
+            <div class="container position-relative" style="z-index: 2;">
+                <!-- Centered Header with Splash Accents -->
+                <div class="welcome-header text-center">
+                    <h2 class="wow fadeInUp kidz-eyebrow">
+                        <span class="title-navy">Welcome To </span>
+                        <span class="title-coral">Junior Kidz</span>
+                    </h2>
+                </div>
+
+                <!-- Main Content Row -->
+                <div class="row align-items-center g-4 g-lg-5 welcome-content-row">
+                    <!-- Left Column: Flower Badge + Description + 3 Bullets + Button -->
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".2s">
+                        <div class="welcome-left-wrap">
+                            <div class="welcome-badge">
+                                <img src="assets/img/circle-text.png" alt="Kindergarten Based USA Best" class="badge-text-spin">
+                                <div class="badge-center-flower">
+                                    <img src="assets/img/flower.png" alt="Happy Flower">
+                                </div>
+                            </div>
+
+                            <!-- Text & Features Block -->
+                            <div class="welcome-info-block">
+                                <p class="welcome-desc">
+                                    We are known to have a theme-based and child-centric curriculum that helps your child learn and acquire knowledge. Physical activities are also part of growth and development, and that's how the kids here are growing.
+                                </p>
+
+                                <ul class="welcome-features">
+                                    <li>
+                                        <span class="feat-icon">
+                                            <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+                                                <path d="M14 2C7.37 2 2 7.37 2 14c0 3.86 1.83 7.3 4.67 9.5.6.47 1.46.22 1.76-.48.37-.88 1.15-1.52 2.1-1.68.96-.16 1.93.18 2.53.91.43.52 1.07.82 1.74.82 3.97 0 7.2-3.23 7.2-7.2 0-7.66-6.34-13.87-8-13.87z" fill="#F49D78" stroke="#0D1B3E" stroke-width="1.8" stroke-linejoin="round"/>
+                                                <circle cx="16.5" cy="18" r="1.6" fill="#FDF4EC" stroke="#0D1B3E" stroke-width="1.4"/>
+                                                <circle cx="7" cy="11" r="1.8" fill="#4D96FF"/>
+                                                <circle cx="12" cy="7" r="1.8" fill="#FFD166"/>
+                                                <circle cx="18" cy="9" r="1.8" fill="#20C997"/>
+                                                <circle cx="19" cy="14" r="1.8" fill="#E63946"/>
+                                            </svg>
+                                        </span>
+                                        <span class="feat-label">Theme-Based & Child-Centric Curriculum</span>
+                                    </li>
+                                    <li>
+                                        <span class="feat-icon">
+                                            <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+                                                <path d="M14 3l2.8 6.8 7.2.6-5.4 4.8 1.6 7.1L14 18.6l-6.2 3.7 1.6-7.1L4 10.4l7.2-.6L14 3z" fill="#FFD166" stroke="#0D1B3E" stroke-width="1.8" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="feat-label">Physical Growth & Activities</span>
+                                    </li>
+                                    <li>
+                                        <span class="feat-icon">
+                                            <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
+                                                <path d="M3 6.5C3 5.1 4.1 4 5.5 4H12c1.1 0 2 .9 2 2v15.5c0-.8-.7-1.5-1.5-1.5H5.5C4.1 20 3 21.1 3 22.5V6.5z" fill="#FFFFFF" stroke="#0D1B3E" stroke-width="1.8" stroke-linejoin="round"/>
+                                                <path d="M25 6.5C25 5.1 23.9 4 22.5 4H16c-1.1 0-2 .9-2 2v15.5c0-.8.7-1.5 1.5-1.5h6.5c1.4 0 2.5 1.1 2.5 2.5V6.5z" fill="#FFFFFF" stroke="#0D1B3E" stroke-width="1.8" stroke-linejoin="round"/>
+                                                <path d="M14 4v9l2-1.5 2 1.5V4" fill="#F27D52"/>
+                                                <path d="M6 8h5M6 11h4M18 8h5M18 11h4" stroke="#A0AEC0" stroke-width="1.5" stroke-linecap="round"/>
+                                            </svg>
+                                        </span>
+                                        <span class="feat-label">Reading with Phonetics</span>
+                                    </li>
+                                </ul>
+
+                                <div class="welcome-btn-wrap">
+                                    <a href="about.html" class="theme-btn" style="background-color: #E52421;">
+                                        Know More <span class="btn-arrow">&rarr;</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Image Collage with Playful Doodles -->
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay=".3s">
+                        <div class="welcome-collage-wrap">
+                            <!-- Paper Airplane with Dashed Flight Loop Trail (Top-Left) -->
+                            <div class="collage-doodle doodle-airplane" aria-hidden="true">
+                                <svg width="125" height="110" viewBox="0 0 125 110" fill="none">
+                                    <path d="M10 102 C6 78 14 58 26 48 C38 38 46 44 42 56 C36 68 20 66 18 48 C16 32 30 20 54 18 C72 16 86 24 96 22" 
+                                          stroke="#111111" stroke-width="1.8" stroke-dasharray="4 4" stroke-linecap="round"/>
+                                    <g transform="translate(94, 6) rotate(32)">
+                                        <polygon points="0,22 36,0 16,36" fill="#FFF8DE" stroke="#111111" stroke-width="1.8" stroke-linejoin="round"/>
+                                        <polygon points="0,22 36,0 18,18" fill="#FCE38A" stroke="#111111" stroke-width="1.8" stroke-linejoin="round"/>
+                                        <line x1="0" y1="22" x2="36" y2="0" stroke="#111111" stroke-width="1.8"/>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <!-- Fluffy Blue Cloud (Top-Right) -->
+                            <div class="collage-doodle doodle-cloud" aria-hidden="true">
+                                <svg width="68" height="48" viewBox="0 0 68 48" fill="none">
+                                    <path d="M16 40 h36 a11 11 0 0 0 4-21.2 a14 14 0 0 0-26.5-5 A11 11 0 0 0 16 22 a9 9 0 0 0 0 18 z" 
+                                          fill="#BFE1F6" stroke="#111111" stroke-width="2" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+
+                            <!-- Main Primary Photo Frame (Organic Wavy Blob Shape with Peach Border) -->
+                            <div class="collage-blob-wrapper">
+                                <svg class="collage-blob-svg" viewBox="0 0 420 300">
+                                    <defs>
+                                        <clipPath id="organic-blob-clip">
+                                            <path d="M 85,58 
+                                                     C 140,32 190,56 250,42 
+                                                     C 310,28 365,24 392,68 
+                                                     C 418,110 416,170 398,220 
+                                                     C 378,268 345,288 290,278 
+                                                     C 240,268 195,296 140,282 
+                                                     C 80,268 46,218 52,156 
+                                                     C 58,96 62,74 85,58 Z" />
+                                        </clipPath>
+                                    </defs>
+
+                                    <!-- Primary Uploaded Photo inside Wavy Blob Frame -->
+                                    <g clip-path="url(#organic-blob-clip)">
+                                        <image href="assets/img/about/junior-kidz-reading.jpg" 
+                                               x="35" y="15" width="390" height="285" 
+                                               preserveAspectRatio="xMidYMid slice" />
+                                    </g>
+
+                                    <!-- Solid Soft Peach Stroke (#F6C29F, ~6px thick) -->
+                                    <path d="M 85,58 
+                                             C 140,32 190,56 250,42 
+                                             C 310,28 365,24 392,68 
+                                             C 418,110 416,170 398,220 
+                                             C 378,268 345,288 290,278 
+                                             C 240,268 195,296 140,282 
+                                             C 80,268 46,218 52,156 
+                                             C 58,96 62,74 85,58 Z" 
+                                          fill="none" stroke="#F6C29F" stroke-width="6.5" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <!-- Secondary Overlapping Photo Frame (Bottom-Left, Tilted -8deg with White Border) -->
+                            <div class="collage-secondary-frame">
+                                <img src="assets/img/gallery/6.png" alt="Child Playing Outdoors">
+                            </div>
+
+                            <!-- Motion Accent Lines (Under bottom-left of tilted photo) -->
+                            <div class="collage-doodle doodle-motion" aria-hidden="true">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <path d="M4 14 C0 21 3 28 10 32" stroke="#111111" stroke-width="2.2" stroke-linecap="round"/>
+                                    <path d="M10 8 C6 17 9 25 17 29" stroke="#111111" stroke-width="2.2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+
+                            <!-- Coral-Pink Star (Bottom-Center, below main blob) -->
+                            <div class="collage-doodle doodle-star" aria-hidden="true">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <g transform="rotate(-10 12 12)">
+                                        <path d="M12 2l2.6 6.5L21 9.3l-5 4.6 1.4 6.8L12 17.2l-5.4 3.5 1.4-6.8-5-4.6 6.4-.8L12 2z" 
+                                              fill="#F1786C" stroke="#111111" stroke-width="1.8" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <!-- Whimsical Botanical Leafy Stem/Branch (Bottom-Right, overlapping blob corner) -->
+                            <div class="collage-doodle doodle-leaf" aria-hidden="true">
+                                <svg width="68" height="96" viewBox="0 0 68 96" fill="none">
+                                    <path d="M12 92 C22 72 32 48 44 10" stroke="#0D1B3E" stroke-width="2.5" stroke-linecap="round"/>
+                                    <ellipse cx="20" cy="75" rx="9" ry="5.2" transform="rotate(-35 20 75)" 
+                                             fill="#FF8A80" stroke="#0D1B3E" stroke-width="1.8"/>
+                                    <ellipse cx="33" cy="68" rx="9" ry="5.2" transform="rotate(30 33 68)" 
+                                             fill="#FFE082" stroke="#0D1B3E" stroke-width="1.8"/>
+                                    <ellipse cx="24" cy="52" rx="9" ry="5.2" transform="rotate(-40 24 52)" 
+                                             fill="#80D8FF" stroke="#0D1B3E" stroke-width="1.8"/>
+                                    <ellipse cx="38" cy="46" rx="9" ry="5.2" transform="rotate(25 38 46)" 
+                                             fill="#80CBC4" stroke="#0D1B3E" stroke-width="1.8"/>
+                                    <ellipse cx="29" cy="32" rx="8" ry="4.8" transform="rotate(-45 29 32)" 
+                                             fill="#FF8A80" stroke="#0D1B3E" stroke-width="1.8"/>
+                                    <ellipse cx="40" cy="26" rx="8" ry="4.8" transform="rotate(20 40 26)" 
+                                             fill="#80D8FF" stroke="#0D1B3E" stroke-width="1.8"/>
+                                    <ellipse cx="45" cy="11" rx="7.5" ry="4.5" transform="rotate(-65 45 11)" 
+                                             fill="#F27D52" stroke="#0D1B3E" stroke-width="1.8"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Wave Border at the bottom (Peach #FBC69F over Light Blue #BFE1F6) -->
+            <div class="welcome-waves-wrap" aria-hidden="true">
+                <svg class="welcome-waves-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+                    <path d="M0,24 C320,52 640,12 960,34 C1200,50 1340,22 1440,28 L1440,60 L0,60 Z" fill="#BFE1F6"/>
+                    <path d="M0,12 C320,40 640,2 960,22 C1200,38 1340,10 1440,16 L1440,32 C1340,24 1200,46 960,32 C640,14 320,48 0,26 Z" fill="#FBC69F"/>
+                </svg>
+            </div>
+        </section>
+        <!-- Welcome to Junior Kidz Section End -->
+
+        <!-- Popular Program Section Start -->
+        <section class="popular-program-section fix section-padding">
+            <div class="frame-shape">
+                <img src="assets/img/program/frame-shape.png" alt="img">
+            </div>
+            <div class="star-shape">
+                <img src="assets/img/program/star.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="section-title text-center color-pink">
+
+                    <h6 class="wow fadeInUp kidz-eyebrow">
+                        <span class="title-navy">Student </span><span class="title-coral">Kit</span>
+                    </h6>
+                   
+
+
+
+
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                        Everything Your Child Needs to Learn
+                    </h2>
+                    <p class="wow fadeInUp" data-wow-delay=".4s">
+                        A thoughtfully prepared student kit to support everyday learning.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="popular-program-box-items student-kit-card">
+                            <div class="thumb">
+                                <img src="assets/img/uniform.jpeg" alt="Two pairs of school uniform">
+                            </div>
+                            <div class="content">
+                                <h3>Two Pairs of Uniform</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="popular-program-box-items student-kit-card">
+                            <div class="thumb">
+                                <img src="assets/img/program/student-kit-worksheets.jpg" alt="School worksheets">
+                            </div>
+                            <div class="content">
+                                <h3>Worksheets</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="popular-program-box-items student-kit-card">
+                            <div class="thumb">
+                                <img src="assets/img/program/student-kit-books.jpg" alt="Set of school books">
+                            </div>
+                            <div class="content">
+                                <h3>Set of Books</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".9s">
+                        <div class="popular-program-box-items student-kit-card">
+                            <div class="thumb">
+                                <img src="assets/img/program/student-kit-id-card.jpg" alt="School identity card">
+                            </div>
+                            <div class="content">
+                                <h3>Identity Card</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <!-- 8 Multiple Intelligences Radial Section Start -->
+        <section class="intelligences-section" id="intelligences-section">
+            <div class="container">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <!-- Left Column: Text Content -->
+                    <div class="col-lg-5 col-xl-5">
+                        <div class="section-title text-center text-lg-start intelligences-left-content mb-4 mb-lg-0">
+                            <h6 class="kidz-eyebrow">
+                                <span class="title-navy">Our Learning </span><span class="title-coral">Approach</span>
+                            </h6>
+                            <h2 class="intelligences-heading">
+                                Intelligences viz
+                            </h2>
+                            <p class="intelligences-desc">
+                                At Junior Kidz, the potential and uniqueness of your child are explored and nurtured through the eight intelligences.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Radial Hub & Spoke Diagram -->
+                    <div class="col-lg-7 col-xl-7">
+                        <div class="intelligences-diagram-wrap">
+                            <!-- Center Hub: THE UNIQUE CHILD (Fixed stationary center axle) -->
+                            <div class="hub-center-badge">
+                                <svg class="hub-inner-svg" viewBox="0 0 184 184" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <!-- Path for curved text along bottom arc -->
+                                        <!-- Radius 66, centered at (92, 92) -->
+                                        <path id="uniqueChildTextArc" d="M 28 116 A 66 66 0 0 0 156 116" fill="none"/>
+                                        <!-- Clip path for center mascot circle -->
+                                        <clipPath id="mascotClip">
+                                            <circle cx="92" cy="78" r="50"/>
+                                        </clipPath>
+                                    </defs>
+
+                                    <!-- White curved decorative arcs on left and right inside red ring -->
+                                    <path d="M 32 60 A 70 70 0 0 1 54 36" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.9"/>
+                                    <path d="M 152 60 A 70 70 0 0 0 130 36" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.9"/>
+
+                                    <!-- Center white circular ground for giraffe -->
+                                    <circle cx="92" cy="78" r="50" fill="#FFFFFF" stroke="#009FE3" stroke-width="3.5"/>
+
+                                    <!-- Giraffe Mascot Illustration -->
+                                    <g clip-path="url(#mascotClip)">
+                                        <!-- Neck -->
+                                        <path d="M 80 76 L 77 135 L 107 135 L 104 76 Z" fill="#FBBF24"/>
+                                        
+                                        <!-- Spots on Neck -->
+                                        <ellipse cx="91" cy="112" rx="7.5" ry="5.5" fill="#B45309"/>
+                                        <ellipse cx="98" cy="94" rx="5.5" ry="4.5" fill="#B45309"/>
+                                        <ellipse cx="83" cy="92" rx="4.5" ry="3.5" fill="#B45309"/>
+
+                                        <!-- Two Raised Friendly Arms / Hooves Resting on Edge -->
+                                        <path d="M 68 115 C 64 102 58 88 53 91 C 48 94 54 110 65 122 Z" fill="#FBBF24"/>
+                                        <path d="M 52 90 C 50 92 52 97 56 98 C 58 95 55 90 52 90 Z" fill="#92400E"/>
+                                        
+                                        <path d="M 116 115 C 120 102 126 88 131 91 C 136 94 130 110 119 122 Z" fill="#FBBF24"/>
+                                        <path d="M 132 90 C 134 92 132 97 128 98 C 126 95 129 90 132 90 Z" fill="#92400E"/>
+
+                                        <!-- Head Shape -->
+                                        <ellipse cx="92" cy="58" rx="23" ry="24" fill="#FBBF24"/>
+
+                                        <!-- Spots on Head -->
+                                        <circle cx="76" cy="49" r="3.8" fill="#B45309"/>
+                                        <circle cx="108" cy="49" r="3.8" fill="#B45309"/>
+                                        <circle cx="92" cy="38" r="3.2" fill="#B45309"/>
+
+                                        <!-- Snout / Muzzle Area -->
+                                        <ellipse cx="92" cy="69" rx="17" ry="12" fill="#FEF08A"/>
+                                        <!-- Nostrils -->
+                                        <circle cx="87.5" cy="66" r="1.8" fill="#92400E"/>
+                                        <circle cx="96.5" cy="66" r="1.8" fill="#92400E"/>
+                                        <!-- Happy Smile -->
+                                        <path d="M 85 71 Q 92 78 99 71" fill="none" stroke="#E52421" stroke-width="2.4" stroke-linecap="round"/>
+
+                                        <!-- Big Cheerful Cartoon Eyes -->
+                                        <circle cx="83.5" cy="53" r="4.5" fill="#1E293B"/>
+                                        <circle cx="82" cy="51.2" r="1.8" fill="#FFFFFF"/>
+                                        <circle cx="100.5" cy="53" r="4.5" fill="#1E293B"/>
+                                        <circle cx="99" cy="51.2" r="1.8" fill="#FFFFFF"/>
+
+                                        <!-- Rosy Cheeks -->
+                                        <circle cx="77" cy="62" r="4" fill="#F472B6" opacity="0.65"/>
+                                        <circle cx="107" cy="62" r="4" fill="#F472B6" opacity="0.65"/>
+
+                                        <!-- Ossicones (Horns with Knobs) -->
+                                        <path d="M 84.5 39 L 82.5 26" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round"/>
+                                        <circle cx="82" cy="25" r="4.2" fill="#92400E"/>
+                                        
+                                        <path d="M 99.5 39 L 101.5 26" stroke="#FBBF24" stroke-width="3.5" stroke-linecap="round"/>
+                                        <circle cx="102" cy="25" r="4.2" fill="#92400E"/>
+
+                                        <!-- Cute Rounded Ears -->
+                                        <ellipse cx="72" cy="41" rx="9" ry="5" transform="rotate(-30 72 41)" fill="#FBBF24"/>
+                                        <ellipse cx="73" cy="41" rx="6" ry="2.8" transform="rotate(-30 73 41)" fill="#F472B6" opacity="0.75"/>
+                                        
+                                        <ellipse cx="112" cy="41" rx="9" ry="5" transform="rotate(30 112 41)" fill="#FBBF24"/>
+                                        <ellipse cx="111" cy="41" rx="6" ry="2.8" transform="rotate(30 111 41)" fill="#F472B6" opacity="0.75"/>
+
+                                        <!-- Little Hair Tuft -->
+                                        <path d="M 89 35 Q 92 29 95 35" stroke="#92400E" stroke-width="2.5" stroke-linecap="round"/>
+                                    </g>
+
+                                    <!-- White Curved Text along Bottom Arc: THE UNIQUE CHILD -->
+                                    <text fill="#FFFFFF" font-family="'Fredoka', 'Sora', sans-serif" font-size="13" font-weight="800" letter-spacing="2.6">
+                                        <textPath href="#uniqueChildTextArc" startOffset="50%" text-anchor="middle">
+                                            THE UNIQUE CHILD
+                                        </textPath>
+                                    </text>
+                                </svg>
+                            </div>
+
+                            <!-- Rotating Wheel Track (SVG Spokes + Outer Rim + Orbiting Nodes) -->
+                            <div class="intelligences-wheel-track">
+                                <!-- SVG Connectors & Sparkle Stars (Desktop) -->
+                                <svg class="intelligences-svg-bg" viewBox="0 0 800 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <!-- Sparkle 4-point star definition (pinched curves) -->
+                                        <g id="sparkle-star">
+                                            <path d="M0 -9 Q0 0 9 0 Q0 0 0 9 Q0 0 -9 0 Q0 0 0 -9 Z" fill="currentColor"/>
+                                        </g>
+                                    </defs>
+
+                                    <!-- Circular Dotted Outer Ring (Connecting Nodes) in 8 alternating color arcs -->
+                                    <!-- Center (400, 372), R = 252 -->
+                                    <!-- Arc 1: Naturalist (225°) to Linguistic (270°) -> Blue -->
+                                    <path d="M 222 194 A 252 252 0 0 1 400 120" stroke="#009FE3" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+                                    
+                                    <!-- Arc 2: Linguistic (270°) to Logical-Mathematical (315°) -> Red -->
+                                    <path d="M 400 120 A 252 252 0 0 1 578 194" stroke="#E52421" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+                                    
+                                    <!-- Arc 3: Logical-Mathematical (315°) to Spatial (0°) -> Gold -->
+                                    <path d="M 578 194 A 252 252 0 0 1 652 372" stroke="#E89C1E" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+                                    
+                                    <!-- Arc 4: Spatial (0°) to Bodily-Kinesthetic (45°) -> Blue -->
+                                    <path d="M 652 372 A 252 252 0 0 1 578 550" stroke="#009FE3" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+                                    
+                                    <!-- Arc 5: Bodily-Kinesthetic (45°) to Musical (90°) -> Red -->
+                                    <path d="M 578 550 A 252 252 0 0 1 400 624" stroke="#E52421" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+                                    
+                                    <!-- Arc 6: Musical (90°) to Intrapersonal (135°) -> Gold -->
+                                    <path d="M 400 624 A 252 252 0 0 1 222 550" stroke="#E89C1E" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+                                    
+                                    <!-- Arc 7: Intrapersonal (135°) to Interpersonal (180°) -> Blue -->
+                                    <path d="M 222 550 A 252 252 0 0 1 148 372" stroke="#009FE3" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+                                    
+                                    <!-- Arc 8: Interpersonal (180°) to Naturalist (225°) -> Red -->
+                                    <path d="M 148 372 A 252 252 0 0 1 222 194" stroke="#E52421" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+
+                                    <!-- Curved Dotted Radial Spokes connecting Center Hub (R ~ 92) to Nodes (R ~ 252) -->
+                                    <!-- 1. Center to Linguistic (Top) -> Blue -->
+                                    <path d="M 400 280 Q 394 200, 400 168" stroke="#009FE3" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+
+                                    <!-- 2. Center to Logical-Mathematical (Top-Right) -> Red -->
+                                    <path d="M 465 307 Q 515 260, 545 227" stroke="#E52421" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+
+                                    <!-- 3. Center to Spatial (Right) -> Gold -->
+                                    <path d="M 492 372 Q 545 366, 604 372" stroke="#E89C1E" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+
+                                    <!-- 4. Center to Bodily-Kinesthetic (Bottom-Right) -> Blue -->
+                                    <path d="M 465 437 Q 515 484, 545 517" stroke="#009FE3" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+
+                                    <!-- 5. Center to Musical (Bottom) -> Red -->
+                                    <path d="M 400 464 Q 406 525, 400 576" stroke="#E52421" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+
+                                    <!-- 6. Center to Intrapersonal (Bottom-Left) -> Gold -->
+                                    <path d="M 335 437 Q 285 484, 255 517" stroke="#E89C1E" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+
+                                    <!-- 7. Center to Interpersonal (Left) -> Blue -->
+                                    <path d="M 308 372 Q 255 378, 196 372" stroke="#009FE3" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+
+                                    <!-- 8. Center to Naturalist (Top-Left) -> Red -->
+                                    <path d="M 335 307 Q 285 260, 255 227" stroke="#E52421" stroke-width="2.5" stroke-dasharray="3 7" stroke-linecap="round"/>
+
+                                    <!-- Playful Scattered Sparkles (✦) & Dots Matching Reference -->
+                                    <!-- Top-Left Area -->
+                                    <circle cx="212" cy="265" r="2.2" fill="#E89C1E"/>
+
+                                    <!-- Top-Right Area -->
+                                    <circle cx="462" cy="230" r="2.4" fill="#009FE3"/>
+                                    <circle cx="592" cy="270" r="2.2" fill="#E52421"/>
+
+                                    <!-- Bottom Area -->
+                                    <circle cx="430" cy="620" r="2.2" fill="#E89C1E"/>
+                                    <circle cx="295" cy="615" r="2.2" fill="#E89C1E"/>
+
+                                    <!-- Left Area -->
+                                    <circle cx="225" cy="610" r="2.2" fill="#009FE3"/>
+                                    <circle cx="168" cy="435" r="2.2" fill="#009FE3"/>
+                                </svg>
+
+                    <!-- 8 Orbiting Nodes (Clockwise starting from 12 o'clock) -->
+                    <div class="intelligences-nodes-grid">
+                        
+                        <!-- 1. Linguistic (Top, 12:00) -->
+                        <div class="spoke-item node-linguistic" style="--angle: 0deg;">
+                            <div class="node-circle border-blue">
+                                <div class="upright-content">
+                                    <i class="fa-solid fa-comments" style="color: #1E88E5;"></i>
+                                </div>
+                            </div>
+                            <div class="node-label">
+                                <div class="upright-content">Linguistic</div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Logical-Mathematical (Top-Right, 1:30) -->
+                        <div class="spoke-item node-logical" style="--angle: 45deg;">
+                            <div class="node-circle border-red">
+                                <div class="upright-content">
+                                    <i class="fa-solid fa-calculator" style="color: #E53935;"></i>
+                                </div>
+                            </div>
+                            <div class="node-label">
+                                <div class="upright-content">Logical-<br>Mathematical</div>
+                            </div>
+                        </div>
+
+                        <!-- 3. Spatial (Right, 3:00) -->
+                        <div class="spoke-item node-spatial" style="--angle: 90deg;">
+                            <div class="node-circle border-gold">
+                                <div class="upright-content">
+                                    <i class="fa-solid fa-puzzle-piece" style="color: #FFB300;"></i>
+                                </div>
+                            </div>
+                            <div class="node-label">
+                                <div class="upright-content">Spatial</div>
+                            </div>
+                        </div>
+
+                        <!-- 4. Bodily-Kinesthetic (Bottom-Right, 4:30) -->
+                        <div class="spoke-item node-bodily" style="--angle: 135deg;">
+                            <div class="node-circle border-blue">
+                                <div class="upright-content">
+                                    <i class="fa-solid fa-person-running" style="color: #1E88E5;"></i>
+                                </div>
+                            </div>
+                            <div class="node-label">
+                                <div class="upright-content">Bodily-<br>Kinesthetic</div>
+                            </div>
+                        </div>
+
+                        <!-- 5. Musical (Bottom, 6:00) -->
+                        <div class="spoke-item node-musical" style="--angle: 180deg;">
+                            <div class="node-circle border-red">
+                                <div class="upright-content">
+                                    <i class="fa-solid fa-music" style="color: #E53935;"></i>
+                                </div>
+                            </div>
+                            <div class="node-label">
+                                <div class="upright-content">Musical</div>
+                            </div>
+                        </div>
+
+                        <!-- 6. Intrapersonal (Bottom-Left, 7:30) -->
+                        <div class="spoke-item node-intrapersonal" style="--angle: 225deg;">
+                            <div class="node-circle border-gold">
+                                <div class="upright-content">
+                                    <i class="fa-solid fa-brain" style="color: #E91E63;"></i>
+                                </div>
+                            </div>
+                            <div class="node-label">
+                                <div class="upright-content">Intrapersonal</div>
+                            </div>
+                        </div>
+
+                        <!-- 7. Interpersonal (Left, 9:00) -->
+                        <div class="spoke-item node-interpersonal" style="--angle: 270deg;">
+                            <div class="node-circle border-blue">
+                                <div class="upright-content">
+                                    <i class="fa-solid fa-handshake" style="color: #FB8C00;"></i>
+                                </div>
+                            </div>
+                            <div class="node-label">
+                                <div class="upright-content">Interpersonal</div>
+                            </div>
+                        </div>
+
+                        <!-- 8. Naturalist (Top-Left, 10:30) -->
+                        <div class="spoke-item node-naturalist" style="--angle: 315deg;">
+                            <div class="node-circle border-red">
+                                <div class="upright-content">
+                                    <i class="fa-solid fa-seedling" style="color: #43A047;"></i>
+                                </div>
+                            </div>
+                            <div class="node-label">
+                                <div class="upright-content">Naturalist</div>
+                            </div>
+                        </div>
+
+                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 8 Multiple Intelligences Radial Section End -->
+
+
+
+
+        <!-- Event Section Start -->
+        <section class="event-secton-2 fix section-padding pt-0">
+           <div class="event-wrapper-2">
+                <div class="row g-0 align-items-center">
+                    <div class="col-xl-7">
+                        <div class="event-image">
+                            <img src="assets/img/event/event-bg.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-xl-5">
+                        <div class="event-right-items" style="background-color: #009FE3;">
+                            <div class="section-title color-yellow">
+                                <h6 class="wow fadeInUp kidz-eyebrow text-white">
+                                    Our Events
+                                </h6>
+                                <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">
+                                    Events & Programs
+                                </h2>
+                            </div>
+                            <div class="event-list-area mt-4 mt-md-0">
+                                <div class="event-list-items">
+                                    <div class="event-content">
+                                        <div class="content">
+                                            <div class="date">
+                                                <h2>18</h2>
+                                                <span>Sep 2024</span>
+                                            </div>
+                                            <div class="title-text">
+                                                <h4><a href="event.html">Outdoor Games and Nature Exploration</a></h4>
+                                                <ul class="post-time">
+                                          
+                                                    <li><i class="far fa-clock"></i> 09:30am</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event-thumb">
+                                        <img src="assets/img/event/1.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="event-list-items">
+                                    <div class="event-content">
+                                        <div class="content">
+                                            <div class="date">
+                                                <h2>20</h2>
+                                                <span>Sep 2024</span>
+                                            </div>
+                                            <div class="title-text">
+                                                <h4><a href="event.html">A Fun Gathering for Kids and Parents</a></h4>
+                                                <ul class="post-time">
+                                             
+                                                    <li><i class="far fa-clock"></i> 09:30am</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event-thumb">
+                                        <img src="assets/img/event/2.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="event-list-items">
+                                    <div class="event-content">
+                                        <div class="content">
+                                            <div class="date">
+                                                <h2>18</h2>
+                                                <span>Sep 2024</span>
+                                            </div>
+                                            <div class="title-text">
+                                                <h4><a href="event.html">Dress-Up as Your Favorite Characters</a></h4>
+                                                <ul class="post-time">
+                                                    <li><i class="far fa-clock"></i> 09:30am</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event-thumb">
+                                        <img src="assets/img/event/3.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="event-list-items">
+                                    <div class="event-content">
+                                        <div class="content">
+                                            <div class="date">
+                                                <h2>18</h2>
+                                                <span>Sep 2024</span>
+                                            </div>
+                                            <div class="title-text">
+                                                <h4><a href="event.html">Outdoor Games and Nature Exploration</a></h4>
+                                                <ul class="post-time">
+                                                    <li><i class="far fa-clock"></i> 09:30am</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event-thumb">
+                                        <img src="assets/img/event/1.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="event-list-items">
+                                    <div class="event-content">
+                                        <div class="content">
+                                            <div class="date">
+                                                <h2>20</h2>
+                                                <span>Sep 2024</span>
+                                            </div>
+                                            <div class="title-text">
+                                                <h4><a href="event.html">A Fun Gathering for Kids and Parents</a></h4>
+                                                <ul class="post-time">
+                                                    <li><i class="far fa-clock"></i> 09:30am</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event-thumb">
+                                        <img src="assets/img/event/2.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="event-list-items">
+                                    <div class="event-content">
+                                        <div class="content">
+                                            <div class="date">
+                                                <h2>18</h2>
+                                                <span>Sep 2024</span>
+                                            </div>
+                                            <div class="title-text">
+                                                <h4><a href="event.html">Dress-Up as Your Favorite Characters</a></h4>
+                                                <ul class="post-time">
+                                                    <li><i class="far fa-clock"></i> 09:30am</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event-thumb">
+                                        <img src="assets/img/event/3.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="event-list-items">
+                                    <div class="event-content">
+                                        <div class="content">
+                                            <div class="date">
+                                                <h2>18</h2>
+                                                <span>Sep 2024</span>
+                                            </div>
+                                            <div class="title-text">
+                                                <h4><a href="event.html">Outdoor Games and Nature Exploration</a></h4>
+                                                <ul class="post-time">
+                                                    <li><i class="far fa-clock"></i> 09:30am</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event-thumb">
+                                        <img src="assets/img/event/1.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="event-list-items">
+                                    <div class="event-content">
+                                        <div class="content">
+                                            <div class="date">
+                                                <h2>20</h2>
+                                                <span>Sep 2024</span>
+                                            </div>
+                                            <div class="title-text">
+                                                <h4><a href="event.html">A Fun Gathering for Kids and Parents</a></h4>
+                                                <ul class="post-time">
+                                                    <li><i class="far fa-clock"></i> 09:30am</li>                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event-thumb">
+                                        <img src="assets/img/event/2.png" alt="img">
+                                    </div>
+                                </div>
+                                <div class="event-list-items">
+                                    <div class="event-content">
+                                        <div class="content">
+                                            <div class="date">
+                                                <h2>18</h2>
+                                                <span>Sep 2024</span>
+                                            </div>
+                                            <div class="title-text">
+                                                <h4><a href="event.html">Dress-Up as Your Favorite Characters</a></h4>
+                                                <ul class="post-time">
+                                                    <li><i class="far fa-clock"></i> 09:30am</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="event-thumb">
+                                        <img src="assets/img/event/3.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </section>
+
+        <!-- Testimonial Section Start -->
+        <section class="testimonial-section-4 fix section-padding pt-0">
+            <div class="container">
+                <div class="section-title text-center color-pink">
+                    <h6 class="wow fadeInUp kidz-eyebrow">
+                        <span class="title-navy">What Parents Say About </span><span class="title-coral">Junior Kidz</span>
+                    </h6>
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                        What Students Say Eduspace
+                    </h2>
+                </div>
+                <div class="swiper testimonial-slider-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrapper-2">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class="flaticon-quote"></i>
+                                    </div>
+                                    <h3>
+                                        "I really Liked the progress of my child and also the activities conducted in the school from time to time. The teachers were also helping. The environment of school is excellent."
+                                    </h3>
+                                    <div class="client-content">
+                                        <h4>Vikram Bohra - Father of Maneet Bohra</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrapper-2">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class="flaticon-quote"></i>
+                                    </div>
+                                    <h3>
+                                        "Environment of the school is good and the teachers are the best. My child had progressed a lot and I suggest if more activities should be involved so that the child learn more."
+                                    </h3>
+                                    <div class="client-content">
+                                        <h4>Shilpa & Vikram Shahji - Parents of Sowmya</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrapper-2">
+                                <div class="content">
+                                    <div class="icon">
+                                        <i class="flaticon-quote"></i>
+                                    </div>
+                                    <h3>
+                                        "Environment of the school is very nice, specially the Principal & the coordinator are always cooperative to the parents."
+                                    </h3>
+                                    <div class="client-content">
+                                        <h4>Neepa Zaveri - Mother of Rishabh Zaveri</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-dot bg-color-3 text-center pt-5">
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<section class="khil-gallery-section">
+
+    <div class="carousel" id="carousel"></div>
+
+    <div class="khil-gallery-navigation">
+
+        <button type="button"
+                id="galleryPrevBtn"
+                aria-label="Previous image">
+            &#8592;
+        </button>
+
+        <button type="button"
+                id="galleryNextBtn"
+                aria-label="Next image">
+            &#8594;
+        </button>
+
+    </div>
+
+</section>
+<!-- Junior Kidz Gallery Section End -->
+        <!-- Franchise Cta Section Start -->
+        <section class="cta-newsletter-section style-2 fix" style="background-color: #009FE3;">
+           
+            <div class="shape-1">
+                <img src="assets/img/cta/shape-1.png" alt="img">
+            </div>
+            <div class="shape-2">
+                <img src="assets/img/cta/shape-2.png" alt="img">
+            </div>
+            <div class="container">
+                <div class="cta-newsletter-wrapper style-2">
+                    <div class="section-title text-center franchise-cta-content">
+                        <h2 class="text-white wow fadeInUp">
+                            Become a Junior Kidz Franchise Owner
+                        </h2>
+                        <p class="text-white wow fadeInUp" data-wow-delay=".3s">
+                            Start your own preschool and become part of Junior Kidz's mission to spread structured and quality early education.
+                        </p>
+                        <a href="contact.html#franchise-enquiry" class="theme-btn wow fadeInUp" data-wow-delay=".5s" style="background-color: #E52421; color: #FFFFFF; border: 1px solid #E52421;">
+                            Become a Franchise Partner
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section Start -->
+        <footer class="junior-kidz-footer">
+            <div class="container">
+                <div class="junior-kidz-footer-main">
+                    <a href="home.html" class="junior-kidz-footer-logo" aria-label="Junior Kidz home">
+                        <img src="assets/img/logo/black-logo.jpg" alt="Junior Kidz">
+                    </a>
+                    <nav class="junior-kidz-footer-nav" aria-label="Footer navigation">
+                        <a href="home.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="program.html">Programs</a>
+                        <a href="franchise.html">Franchise</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                <div class="junior-kidz-footer-divider" aria-hidden="true"></div>
+                <div class="junior-kidz-footer-bottom">
+                    <p>© 2026 Junior Kidz. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* ==========================================
+       1. GALLERY IMAGES
+    ========================================== */
+
+    // Replace these paths with your actual gallery images.
+
+    const IMAGES = [
+        "assets/img/gallery/1.png",
+        "assets/img/gallery/2.png",
+        "assets/img/gallery/3.png",
+        "assets/img/gallery/4.png",
+        "assets/img/gallery/5.png",
+        "assets/img/gallery/6.png",
+        "assets/img/gallery/7.png",
+        "assets/img/gallery/8.png"
+    ];
+
+    // For Laravel Blade, you can use:
+    // const IMAGES = @json($galleryImages);
+
+
+    /* ==========================================
+       2. SETTINGS
+    ========================================== */
+
+    const SLIDE_SPEED = 0.45;
+    const PAUSE_ON_HOVER = true;
+    const MAX_WIDTH = 0;
+
+    const CARD_WIDTHS = [81, 86, 130, 156];
+    const GAP = 4;
+    const DESIGN_EDGE = 411;
+    const MIN_HEIGHT = 58;
+    const CORNER = 8;
+    const DRAG_UNIT = 105;
+
+
+    /* ==========================================
+       3. INITIAL VARIABLES
+    ========================================== */
+
+    const carousel = document.getElementById("carousel");
+
+    if (!carousel || !IMAGES.length) return;
+
+    let slides = [];
+    let count = 0;
+    let scale = 1;
+    let shift = 0;
+
+    let dragging = false;
+    let lastX = 0;
+    let hovering = false;
+
+    const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+
+    /* ==========================================
+       4. HELPER FUNCTIONS
+    ========================================== */
+
+    function between(list, position) {
+
+        const last = list.length - 1;
+
+        if (position >= last) {
+            return list[last];
+        }
+
+        const i = Math.floor(position);
+
+        return list[i] +
+            (list[i + 1] - list[i]) *
+            (position - i);
+    }
+
+
+    function curveHeight(x) {
+
+        x = Math.abs(x);
+
+        if (x <= DESIGN_EDGE) {
+
+            return MIN_HEIGHT +
+                83 * Math.pow(x / DESIGN_EDGE, 2);
+        }
+
+        return MIN_HEIGHT + 83 +
+            (166 / DESIGN_EDGE) *
+            (x - DESIGN_EDGE);
+    }
+
+
+    /* ==========================================
+       5. CARD POSITIONS
+    ========================================== */
+
+    const centres = [0];
+    const steps = [];
+
+    for (let i = 0; i < 60; i++) {
+
+        steps[i] =
+            (between(CARD_WIDTHS, i) +
+            between(CARD_WIDTHS, i + 1)) / 2 + GAP;
+
+        centres[i + 1] =
+            centres[i] + steps[i];
+    }
+
+    const FIT = DESIGN_EDGE /
+        (
+            centres[3] +
+            0.5 * steps[3] +
+            between(CARD_WIDTHS, 3.5) / 2
+        );
+
+
+    function centreOf(position) {
+
+        const i = Math.floor(position);
+
+        return (
+            centres[i] +
+            (position - i) * steps[i]
+        ) * FIT;
+    }
+
+
+    /* ==========================================
+       6. ROUNDED SHAPE
+    ========================================== */
+
+    function roundedShape(points, radius) {
+
+        let path = "";
+        const n = points.length;
+
+        for (let i = 0; i < n; i++) {
+
+            const p = points[i];
+
+            const before =
+                points[(i + n - 1) % n];
+
+            const after =
+                points[(i + 1) % n];
+
+            const d1 = Math.hypot(
+                before[0] - p[0],
+                before[1] - p[1]
+            );
+
+            const d2 = Math.hypot(
+                after[0] - p[0],
+                after[1] - p[1]
+            );
+
+            const r = Math.min(
+                radius,
+                d1 / 2.2,
+                d2 / 2.2
+            );
+
+            const start = [
+                p[0] +
+                (before[0] - p[0]) / d1 * r,
+
+                p[1] +
+                (before[1] - p[1]) / d1 * r
+            ];
+
+            const end = [
+                p[0] +
+                (after[0] - p[0]) / d2 * r,
+
+                p[1] +
+                (after[1] - p[1]) / d2 * r
+            ];
+
+            path +=
+                (i ? "L" : "M") +
+                start[0].toFixed(1) + " " +
+                start[1].toFixed(1) +
+                "Q" +
+                p[0].toFixed(1) + " " +
+                p[1].toFixed(1) + " " +
+                end[0].toFixed(1) + " " +
+                end[1].toFixed(1);
+        }
+
+        return path + "Z";
+    }
+
+
+    /* ==========================================
+       7. CREATE SLIDES
+    ========================================== */
+
+    function buildSlides(total) {
+
+        carousel.innerHTML = "";
+
+        count = total;
+        slides = [];
+
+        for (let i = 0; i < total; i++) {
+
+            const el = document.createElement("div");
+
+            el.className = "slide";
+
+            el.style.backgroundImage =
+                'url("' +
+                IMAGES[i % IMAGES.length] +
+                '")';
+
+            carousel.appendChild(el);
+
+            slides.push(el);
+        }
+    }
+
+
+    /* ==========================================
+       8. RESPONSIVE RESIZE
+    ========================================== */
+
+    function resize() {
+
+        if (!carousel.clientWidth) return;
+
+        if (MAX_WIDTH > 0) {
+
+            carousel.style.maxWidth =
+                MAX_WIDTH + "px";
+        }
+
+        scale =
+            carousel.clientWidth /
+            (DESIGN_EDGE * 2);
+
+        const total =
+            Math.ceil(16 / IMAGES.length) *
+            IMAGES.length;
+
+        if (total !== count) {
+
+            buildSlides(total);
+        }
+
+        carousel.style.height =
+            Math.max(
+                220,
+                2 * curveHeight(DESIGN_EDGE) + 4
+            ) * scale + "px";
+
+        draw();
+
+        if (
+            window.AOS &&
+            typeof window.AOS.refresh === "function"
+        ) {
+            window.AOS.refresh();
+        }
+    }
+
+
+    /* ==========================================
+       9. DRAW CAROUSEL
+    ========================================== */
+
+    function draw() {
+
+        const middleX =
+            carousel.clientWidth / 2;
+
+        const middleY =
+            carousel.clientHeight / 2;
+
+        slides.forEach(function (el, i) {
+
+            const position =
+                (
+                    (
+                        i - 3.5 +
+                        shift +
+                        count / 2
+                    ) % count + count
+                ) % count - count / 2;
+
+            const distance =
+                Math.abs(position);
+
+            const centre =
+                (position < 0 ? -1 : 1) *
+                centreOf(distance);
+
+            const half =
+                between(CARD_WIDTHS, distance) *
+                FIT / 2;
+
+            const left = centre - half;
+            const right = centre + half;
+
+            const leftH = curveHeight(left);
+            const rightH = curveHeight(right);
+
+            const width = half * 2;
+
+            const height =
+                2 * Math.max(leftH, rightH);
+
+            el.style.width =
+                width * scale + "px";
+
+            el.style.height =
+                height * scale + "px";
+
+            el.style.transform =
+                "translate(" +
+                (middleX + left * scale) +
+                "px," +
+                (middleY - height * scale / 2) +
+                "px)";
+
+            const corners = [
+
+                [0, height / 2 - leftH],
+
+                [width, height / 2 - rightH],
+
+                [width, height / 2 + rightH],
+
+                [0, height / 2 + leftH]
+
+            ].map(function (p) {
+
+                return [
+                    p[0] * scale,
+                    p[1] * scale
+                ];
+            });
+
+            el.style.clipPath =
+                "path('" +
+                roundedShape(
+                    corners,
+                    CORNER * scale
+                ) +
+                "')";
+        });
+    }
+
+
+    /* ==========================================
+       10. AUTOMATIC SLIDING
+    ========================================== */
+
+    let lastTime = performance.now();
+
+    function animate(now) {
+
+        const seconds = Math.min(
+            0.05,
+            (now - lastTime) / 1000
+        );
+
+        lastTime = now;
+
+        if (
+            !dragging &&
+            !hovering &&
+            !reduceMotion
+        ) {
+            shift -= SLIDE_SPEED * seconds;
+        }
+
+        draw();
+
+        requestAnimationFrame(animate);
+    }
+
+
+    /* ==========================================
+       11. MOUSE AND TOUCH DRAG
+    ========================================== */
+
+    carousel.addEventListener(
+        "pointerdown",
+        function (e) {
+
+            if (e.pointerType === "mouse" &&
+                e.button !== 0) return;
+
+            dragging = true;
+            lastX = e.clientX;
+
+            carousel.classList.add("dragging");
+
+            carousel.setPointerCapture(e.pointerId);
+        }
+    );
+
+
+    carousel.addEventListener(
+        "pointermove",
+        function (e) {
+
+            if (!dragging) return;
+
+            shift +=
+                (e.clientX - lastX) /
+                (DRAG_UNIT * scale);
+
+            lastX = e.clientX;
+
+            draw();
+        }
+    );
+
+
+    function stopDragging() {
+
+        dragging = false;
+
+        carousel.classList.remove("dragging");
+    }
+
+
+    carousel.addEventListener(
+        "pointerup",
+        stopDragging
+    );
+
+    carousel.addEventListener(
+        "pointercancel",
+        stopDragging
+    );
+
+    carousel.addEventListener(
+        "lostpointercapture",
+        stopDragging
+    );
+
+
+    /* ==========================================
+       12. PAUSE ON HOVER
+    ========================================== */
+
+    if (PAUSE_ON_HOVER) {
+
+        carousel.addEventListener(
+            "mouseenter",
+            function () {
+                hovering = true;
+            }
+        );
+
+        carousel.addEventListener(
+            "mouseleave",
+            function () {
+                hovering = false;
+            }
+        );
+    }
+
+
+    /* ==========================================
+       13. PREVIOUS BUTTON
+    ========================================== */
+
+    const galleryPrev =
+        document.getElementById(
+            "galleryPrevBtn"
+        );
+
+    if (galleryPrev) {
+
+        galleryPrev.addEventListener(
+            "click",
+            function () {
+
+                shift += 1;
+
+                draw();
+            }
+        );
+    }
+
+
+    /* ==========================================
+       14. NEXT BUTTON
+    ========================================== */
+
+    const galleryNext =
+        document.getElementById(
+            "galleryNextBtn"
+        );
+
+    if (galleryNext) {
+
+        galleryNext.addEventListener(
+            "click",
+            function () {
+
+                shift -= 1;
+
+                draw();
+            }
+        );
+    }
+
+
+    /* ==========================================
+       15. INITIALIZE
+    ========================================== */
+
+    if ("ResizeObserver" in window) {
+
+        const observer =
+            new ResizeObserver(resize);
+
+        observer.observe(carousel);
+
+    } else {
+
+        window.addEventListener(
+            "resize",
+            resize
+        );
+    }
+
+    resize();
+
+    requestAnimationFrame(animate);
+
+});
+</script>
+         <!--<< All JS Plugins >>-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <!--<< Bootstrap Js >>-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--<< Nice Select Js >>-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!--<< Odometer Js >>-->
+        <script src="assets/js/odometer.min.js"></script>
+        <!--<< Appear Js >>-->
+        <script src="assets/js/jquery.appear.min.js"></script>
+        <!--<< Swiper Slider Js >>-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--<< MeanMenu Js >>-->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!--<< Magnific Popup Js >>-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--<< Circle Progress Js >>-->
+        <script src="assets/js/circle-progress.js"></script>
+        <!--<< Wow Animation Js >>-->
+        <script src="assets/js/wow.min.js"></script>
+        <!--<< Main.js >>-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
