@@ -396,7 +396,7 @@ Main Style file-> assets/css/main.css
 
 .breadcrumb-wrapper .page-heading h1 {
     font-family: 'Fredoka', 'Sora', sans-serif !important;
-    font-size: 48px !important;
+    font-size: 61px !important;
     font-weight: 700 !important;
     color: #FFFFFF !important;
     margin: 0 !important;
@@ -423,33 +423,33 @@ Main Style file-> assets/css/main.css
 
 /* Flower - Top Left */
 .banner-floating-shape.shape-flower {
-    top: 15% !important;
-    left: 8% !important;
-    width: 72px !important;
+    top: 18% !important;
+    left: 9% !important;
+    width: 105px !important;
     animation: bannerFloatFlower 4.2s ease-in-out infinite !important;
 }
 
 /* Umbrella - Bottom Left */
 .banner-floating-shape.shape-umbrella {
-    bottom: 24% !important;
-    left: 17% !important;
-    width: 82px !important;
+    bottom: 23% !important;
+    left: 24% !important;
+    width: 102px !important;
     animation: bannerFloatUmbrella 4.8s ease-in-out 0.8s infinite !important;
 }
 
 /* Balloon - Top Right */
 .banner-floating-shape.shape-balloon {
-    top: 14% !important;
-    right: 17% !important;
-    width: 80px !important;
+    top: 17% !important;
+    right: 13% !important;
+    width: 105px !important;
     animation: bannerFloatBalloon 3.9s ease-in-out 0.4s infinite !important;
 }
 
 /* Tree - Bottom Right */
 .banner-floating-shape.shape-tree {
-    bottom: 22% !important;
-    right: 8% !important;
-    width: 80px !important;
+    bottom: 25% !important;
+    right: 21% !important;
+    width: 114px !important;
     animation: bannerFloatTree 4.6s ease-in-out 1.2s infinite !important;
 }
 
