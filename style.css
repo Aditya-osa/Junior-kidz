@@ -597,32 +597,6 @@ Main Style file-> assets/css/main.css
     }
 }
 
-@media (max-width: 360px) {
-    .banner-floating-shape.shape-flower {
-        left: 2% !important;
-        top: 5% !important;
-        width: 28px !important;
-    }
-    .banner-floating-shape.shape-umbrella {
-        left: 2% !important;
-        bottom: 8% !important;
-        width: 28px !important;
-    }
-    .banner-floating-shape.shape-balloon {
-        right: 2% !important;
-        top: 5% !important;
-        width: 28px !important;
-    }
-    .banner-floating-shape.shape-tree {
-        right: 2% !important;
-        bottom: 8% !important;
-        width: 28px !important;
-    }
-    .breadcrumb-wrapper .page-heading h1 {
-        font-size: 24px !important;
-    }
-}
-
 /* Spacing between Welcome eyebrow and paragraph */
 .welcome-header,
 .welcome-junior-section .welcome-header {
