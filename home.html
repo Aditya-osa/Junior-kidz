@@ -34,6 +34,11 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <style>
+            .testimonial-slider-4 {
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+            }
             .testimonial-slider-4 .swiper-wrapper {
                 display: flex;
                 align-items: stretch;
@@ -42,6 +47,7 @@
                 height: auto;
                 display: flex;
                 justify-content: center;
+                width: 100%;
             }
             .testimonial-slider-4 .testimonial-wrapper-2 {
                 width: 100%;
@@ -82,14 +88,32 @@
                 text-align: center;
                 margin: 0;
             }
+            @media (max-width: 991px) {
+                .testimonial-slider-4 .testimonial-wrapper-2 {
+                    padding: 40px 30px;
+                    min-height: auto;
+                    margin-top: 35px;
+                }
+            }
             @media (max-width: 767px) {
                 .testimonial-slider-4 .testimonial-wrapper-2 {
-                    padding: 35px 25px;
+                    padding: 30px 20px;
                     min-height: auto;
-                    margin-top: 30px;
+                    margin-top: 25px;
                 }
                 .testimonial-slider-4 .testimonial-wrapper-2 .content h3 {
                     font-size: 18px;
+                }
+            }
+            @media (max-width: 480px) {
+                .testimonial-slider-4 .testimonial-wrapper-2 {
+                    padding: 22px 14px;
+                    margin-top: 20px;
+                    border-radius: 12px;
+                }
+                .testimonial-slider-4 .testimonial-wrapper-2 .content h3 {
+                    font-size: 15px;
+                    line-height: 1.5;
                 }
             }
 
@@ -415,7 +439,16 @@
             @media (max-width: 767px) {
                 .welcome-features {
                     flex-direction: column;
+                    align-items: stretch;
                     gap: 14px;
+                    margin: 20px 0 25px 0;
+                    text-align: left;
+                }
+                .welcome-features li {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
                 }
             }
             .welcome-pill-btn {
@@ -529,20 +562,48 @@
             @media (max-width: 575px) {
                 .welcome-collage-wrap {
                     max-width: 100%;
-                    height: 340px;
+                    height: 330px;
                 }
                 .collage-blob-wrapper {
                     width: 100%;
-                    height: 260px;
+                    height: 250px;
                 }
                 .collage-secondary-frame {
-                    width: 130px;
-                    height: 150px;
+                    width: 125px;
+                    height: 145px;
                     left: 5px;
                     bottom: 5px;
                 }
                 .doodle-star {
-                    left: 150px;
+                    left: 45%;
+                }
+                .doodle-leaf {
+                    right: 0 !important;
+                    transform: rotate(12deg) scale(0.85);
+                    transform-origin: bottom right;
+                }
+                .doodle-cloud {
+                    right: 0 !important;
+                }
+            }
+            @media (max-width: 380px) {
+                .welcome-badge {
+                    width: 95px;
+                    height: 95px;
+                }
+                .welcome-badge .badge-center-flower {
+                    width: 42px;
+                    height: 42px;
+                }
+                .welcome-collage-wrap {
+                    height: 280px;
+                }
+                .collage-blob-wrapper {
+                    height: 215px;
+                }
+                .collage-secondary-frame {
+                    width: 110px;
+                    height: 125px;
                 }
             }
             .welcome-waves-wrap {
@@ -566,7 +627,7 @@
                 background-color: #FFFDF5;
                 position: relative;
                 padding: 60px 0 70px 0;
-                overflow: visible;
+                overflow: hidden;
             }
 
             /* Left Column Content */
@@ -829,6 +890,23 @@
                 }
             }
 
+            /* Laptop Responsive (992px - 1199px) */
+            @media (min-width: 992px) and (max-width: 1199px) {
+                .intelligences-section {
+                    padding: 55px 0 65px 0;
+                }
+                .intelligences-desc {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .intelligences-diagram-wrap {
+                    max-width: 660px;
+                    height: 627px;
+                    --circle-radius: 205px;
+                    --label-radius: 285px;
+                }
+            }
+
             /* Mobile Responsive (< 768px) */
             @media (max-width: 768px) {
                 .intelligences-section {
@@ -916,6 +994,33 @@
                     max-width: 140px;
                     padding: 3px 6px;
                     white-space: normal;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .intelligences-section {
+                    padding: 45px 12px 50px 12px;
+                }
+                .hub-center-badge {
+                    width: 140px;
+                    height: 140px;
+                }
+                .intelligences-nodes-grid {
+                    gap: 18px 12px;
+                    max-width: 320px;
+                }
+                .node-circle {
+                    width: 76px;
+                    height: 76px;
+                }
+                .node-icon-svg {
+                    width: 38px;
+                    height: 38px;
+                }
+                .node-label .upright-content {
+                    font-size: 12px;
+                    max-width: 125px;
+                    padding: 2px 4px;
                 }
             }
 
@@ -1657,8 +1762,8 @@
             <div class="container">
                 <div class="row align-items-center g-4 g-lg-5">
                     <!-- Left Column: Text Content -->
-                    <div class="col-lg-5 col-xl-5">
-                        <div class="section-title text-center text-lg-start intelligences-left-content mb-4 mb-lg-0">
+                    <div class="col-12 col-xl-5">
+                        <div class="section-title text-center text-xl-start intelligences-left-content mb-4 mb-xl-0">
                             <h6 class="kidz-eyebrow">
                                 <span class="title-navy">Our Learning </span><span class="title-coral">Approach</span>
                             </h6>
@@ -1672,7 +1777,7 @@
                     </div>
 
                     <!-- Right Column: Radial Hub & Spoke Diagram -->
-                    <div class="col-lg-7 col-xl-7">
+                    <div class="col-12 col-xl-7 d-flex justify-content-center">
                         <div class="intelligences-diagram-wrap">
                             <!-- Center Hub: THE UNIQUE CHILD (Fixed stationary center axle) -->
                             <div class="hub-center-badge">
