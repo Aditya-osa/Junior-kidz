@@ -901,14 +901,21 @@ html, body {
     display: block !important;
     transition: none !important;
 }
-.event-list-wrapper .event-list-items:hover,
-.event-wrapper-2 .event-right-items .event-list-items:hover {
+.event-list-wrapper .event-list-items:hover {
     transform: none !important;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03) !important;
 }
-.event-list-wrapper .event-list-items:hover .event-image img,
-.event-wrapper-2 .event-right-items .event-list-items:hover .event-thumb img {
+.event-list-wrapper .event-list-items:hover .event-image img {
     transform: none !important;
+}
+
+/* Home page events ticker: hardware acceleration & smooth pause on hover (prevents animation-transform conflict & hover jitter) */
+.event-wrapper-2 .event-right-items .event-list-items {
+    will-change: transform;
+}
+.event-wrapper-2 .event-right-items .event-list-area:hover .event-list-items,
+.event-wrapper-2 .event-right-items .event-list-items:hover {
+    animation-play-state: paused !important;
 }
 
 /* Tablets (768px - 1024px): 1-row layout with compact sizing */
