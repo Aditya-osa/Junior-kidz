@@ -362,6 +362,9 @@
                     text-align: center;
                     gap: 22px;
                 }
+                .welcome-badge {
+                    display: none !important;
+                }
             }
             .welcome-badge {
                 flex-shrink: 0;
@@ -548,7 +551,8 @@
                 .welcome-collage-wrap {
                     max-width: 500px;
                     height: 410px;
-                    margin-top: 30px;
+                    margin-top: 0;
+                    margin-bottom: 28px;
                 }
                 .collage-blob-wrapper {
                     width: 450px;
@@ -910,23 +914,23 @@
             /* Mobile Responsive (< 768px) */
             @media (max-width: 768px) {
                 .intelligences-section {
-                    padding: 65px 16px 70px 16px;
+                    padding: 50px 16px 60px 16px;
                 }
                 .intelligences-heading {
                     font-size: 28px;
-                    margin-bottom: 12px;
+                    margin-bottom: 10px;
                 }
                 .intelligences-desc {
                     font-size: 14.5px;
-                    margin-bottom: 30px;
+                    margin-bottom: 25px;
                 }
                 .intelligences-diagram-wrap {
                     height: auto;
-                    max-width: 520px;
+                    max-width: 480px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    gap: 25px;
+                    gap: 20px;
                 }
                 .intelligences-svg-bg {
                     display: none;
@@ -938,14 +942,14 @@
                 .hub-center-badge {
                     position: static;
                     transform: none !important;
-                    margin: 0 auto 20px auto;
-                    width: 165px;
-                    height: 165px;
+                    margin: 0 auto 15px auto;
+                    width: 145px;
+                    height: 145px;
                 }
                 .intelligences-nodes-grid {
                     display: grid;
-                    grid-template-columns: repeat(2, minmax(0, 1fr));
-                    gap: 24px 16px;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 16px 12px;
                     width: 100%;
                     max-width: 360px;
                     margin: 0 auto;
@@ -955,72 +959,112 @@
                     transform: none !important;
                     animation: none !important;
                     width: 100%;
-                    height: auto;
-                    max-width: 160px;
+                    height: 100%;
+                    min-height: 130px;
                     margin: 0 auto;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    gap: 8px;
+                    justify-content: center;
+                    gap: 10px;
+                    background: #FFFFFF;
+                    border: 1.5px solid rgba(13, 27, 62, 0.07);
+                    border-radius: 18px;
+                    padding: 14px 8px;
+                    box-shadow: 0 4px 14px rgba(13, 27, 62, 0.04);
+                    transition: transform 0.25s ease, box-shadow 0.25s ease;
                 }
                 .spoke-item:hover {
-                    transform: translateY(-4px) !important;
+                    transform: translateY(-3px) !important;
+                    box-shadow: 0 8px 20px rgba(13, 27, 62, 0.08);
                 }
                 .node-circle {
                     position: static;
                     transform: none !important;
                     margin: 0 auto;
-                    width: 86px;
-                    height: 86px;
+                    width: 66px;
+                    height: 66px;
+                    border-radius: 50%;
+                    background-color: #FFFFFF !important;
+                    border: 2.5px solid #009FE3;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
-                .node-icon-svg {
-                    width: 44px;
-                    height: 44px;
+                .node-circle .upright-content {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: none !important;
+                    animation: none !important;
+                    background: transparent !important;
+                    border: none !important;
+                    box-shadow: none !important;
+                    padding: 0 !important;
+                }
+                .node-circle .upright-content i {
+                    font-size: 26px;
+                    line-height: 1;
+                    display: block;
                 }
                 .node-label {
                     position: static;
                     transform: none !important;
                     margin: 0 auto;
-                    width: auto;
+                    width: 100%;
                     white-space: normal;
                     text-align: center;
                 }
-                .upright-content {
+                .node-label .upright-content {
                     transform: none !important;
                     animation: none !important;
-                }
-                .node-label .upright-content {
+                    background: transparent !important;
+                    border: none !important;
+                    box-shadow: none !important;
+                    padding: 0;
+                    font-family: 'Fredoka', 'Sora', sans-serif;
                     font-size: 13.5px;
-                    max-width: 140px;
-                    padding: 3px 6px;
+                    font-weight: 700;
+                    color: #1E293B;
+                    line-height: 1.25;
+                    text-align: center;
                     white-space: normal;
+                    max-width: 100%;
                 }
             }
 
             @media (max-width: 480px) {
                 .intelligences-section {
-                    padding: 45px 12px 50px 12px;
+                    padding: 40px 12px 50px 12px;
                 }
                 .hub-center-badge {
-                    width: 140px;
-                    height: 140px;
+                    width: 130px;
+                    height: 130px;
+                    margin-bottom: 10px;
                 }
                 .intelligences-nodes-grid {
-                    gap: 18px 12px;
-                    max-width: 320px;
+                    gap: 12px 10px;
+                    max-width: 330px;
+                }
+                .spoke-item {
+                    padding: 12px 6px;
+                    min-height: 120px;
+                    border-radius: 16px;
+                    gap: 8px;
                 }
                 .node-circle {
-                    width: 76px;
-                    height: 76px;
+                    width: 60px;
+                    height: 60px;
+                    border-width: 2px;
                 }
-                .node-icon-svg {
-                    width: 38px;
-                    height: 38px;
+                .node-circle .upright-content i {
+                    font-size: 23px;
                 }
                 .node-label .upright-content {
-                    font-size: 12px;
-                    max-width: 125px;
-                    padding: 2px 4px;
+                    font-size: 12.5px;
                 }
             }
 
@@ -1501,8 +1545,8 @@
 
                 <!-- Main Content Row -->
                 <div class="row align-items-center g-4 g-lg-5 welcome-content-row">
-                    <!-- Left Column: Flower Badge + Description + 3 Bullets + Button -->
-                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay=".2s">
+                    <!-- Left Column: Description + 3 Bullets + Button -->
+                    <div class="col-lg-6 order-2 order-lg-1 wow fadeInLeft" data-wow-delay=".2s">
                         <div class="welcome-left-wrap">
                             <div class="welcome-badge">
                                 <img src="assets/img/circle-text.png" alt="Kindergarten Based USA Best" class="badge-text-spin">
@@ -1562,7 +1606,7 @@
                     </div>
 
                     <!-- Right Column: Image Collage with Playful Doodles -->
-                    <div class="col-lg-6 wow fadeInRight" data-wow-delay=".3s">
+                    <div class="col-lg-6 order-1 order-lg-2 wow fadeInRight" data-wow-delay=".3s">
                         <div class="welcome-collage-wrap">
                             <!-- Paper Airplane with Dashed Flight Loop Trail (Top-Left) -->
                             <div class="collage-doodle doodle-airplane" aria-hidden="true">
@@ -2061,12 +2105,12 @@
         <section class="event-secton-2 fix section-padding pt-0">
            <div class="event-wrapper-2">
                 <div class="row g-0 align-items-center">
-                    <div class="col-xl-7">
+                    <div class="col-xl-7 d-none d-xl-block">
                         <div class="event-image">
                             <img src="assets/img/event/event-bg.png" alt="img">
                         </div>
                     </div>
-                    <div class="col-xl-5">
+                    <div class="col-xl-5 col-12">
                         <div class="event-right-items" style="background-color: #009FE3;">
                             <div class="section-title color-yellow">
                                 <h6 class="wow fadeInUp kidz-eyebrow text-white">

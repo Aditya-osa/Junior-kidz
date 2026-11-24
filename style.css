@@ -626,4 +626,64 @@ html, body {
     color: var(--theme-blue);
 }
 
+/* Skip event background image on mobile and tablet */
+@media (max-width: 1199px) {
+    .event-wrapper-2 .event-image {
+        display: none !important;
+    }
+}
+
+/* Event List Item: Date box and title in 1 row on mobile/tablet (keep date size intact) */
+@media (max-width: 1399px) {
+    .event-wrapper-2 .event-right-items .event-list-items .event-content .content,
+    .event-list-wrapper .event-list-items .event-content .content {
+        flex-wrap: nowrap !important;
+        align-items: center !important;
+        gap: 16px !important;
+    }
+    .event-wrapper-2 .event-right-items .event-list-items .event-content .content .date,
+    .event-list-wrapper .event-list-items .event-content .content .date {
+        flex-shrink: 0 !important;
+        padding: 12px 20px 12px !important;
+    }
+    .event-wrapper-2 .event-right-items .event-list-items .event-content .content .date h2,
+    .event-list-wrapper .event-list-items .event-content .content .date h2 {
+        font-size: 40px !important;
+    }
+    .event-wrapper-2 .event-right-items .event-list-items .event-content .content .title-text,
+    .event-list-wrapper .event-list-items .event-content .content .title-text {
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+    .event-wrapper-2 .event-right-items .event-list-items .event-content .content .title-text .post-time,
+    .event-list-wrapper .event-list-items .event-content .content .title-text .post-time {
+        margin-top: 10px !important;
+        padding-top: 10px !important;
+        flex-wrap: nowrap !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .event-wrapper-2 .event-right-items .event-list-items {
+        padding: 20px 15px !important;
+    }
+    .event-wrapper-2 .event-right-items .event-list-items .event-content .content,
+    .event-list-wrapper .event-list-items .event-content .content {
+        gap: 12px !important;
+    }
+    .event-wrapper-2 .event-right-items .event-list-items .event-content .content .title-text h4,
+    .event-list-wrapper .event-list-items .event-content .content .title-text h4 {
+        font-size: 16px !important;
+        line-height: 1.35 !important;
+    }
+    .event-wrapper-2 .event-right-items .event-list-items .event-content .content .title-text .post-time,
+    .event-list-wrapper .event-list-items .event-content .content .title-text .post-time {
+        margin-top: 8px !important;
+        padding-top: 8px !important;
+        font-size: 13px !important;
+    }
+}
+
+
 
