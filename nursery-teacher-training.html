@@ -34,7 +34,6 @@
         <link rel="stylesheet" href="assets/css/main.css">
         <!--<< Style.css >>-->
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700;800&family=Quicksand:wght@500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
   :root {
@@ -48,11 +47,12 @@
   }
 
   
-  /* Home Page Typography: Fredoka for Headings/Badges/Buttons, Quicksand for Body */
-  .ntt-content-area {
+  /* Typography: Sora throughout matching About Us page */
+  .ntt-content-area,
+  .modal-box {
     background-color: var(--bg-light);
     color: var(--text-dark);
-    font-family: 'Quicksand', 'Sora', sans-serif;
+    font-family: "Sora", sans-serif;
   }
 
   .ntt-content-area h1,
@@ -62,22 +62,16 @@
   .ntt-content-area h5,
   .ntt-content-area h6,
   .ntt-title,
+  .section-title h2,
   .section-title-ntt,
   .fee-card-top-ntt h3,
   .highlight-box-ntt h4,
   .info-card-ntt h3,
   .admission-card-ntt h3,
   .doc-card-ntt h4,
-  .step-num-ntt,
-  .ntt-pill,
-  .section-tag-ntt,
-  .ntt-btn,
-  .btn-primary-ntt,
-  .btn-outline-ntt,
-  .ntt-join-text,
-  .ntt-iso-badge,
+  .modal-box h3,
   .fee-amount-ntt {
-    font-family: 'Fredoka', 'Sora', sans-serif !important;
+    font-family: "Sora", sans-serif !important;
   }
 
   .ntt-content-area p,
@@ -95,8 +89,55 @@
   .ntt-cert-caption,
   .form-group-ntt label,
   .form-group-ntt input,
-  .form-group-ntt select {
-    font-family: 'Quicksand', 'Sora', sans-serif !important;
+  .form-group-ntt select,
+  .modal-box p {
+    font-family: "Sora", sans-serif !important;
+  }
+
+  .kidz-eyebrow,
+  .eyebrow-splash,
+  .section-tag-ntt,
+  .ntt-pill,
+  .step-num-ntt,
+  .ntt-btn,
+  .btn-primary-ntt,
+  .btn-outline-ntt,
+  .theme-btn,
+  .ntt-join-text,
+  .ntt-iso-badge {
+    font-family: "Sora", sans-serif !important;
+  }
+
+  /* Breadcrumb Banner Heading matching About Us page */
+  .breadcrumb-wrapper .page-heading h1 {
+    font-family: "Sora", sans-serif !important;
+    font-size: 61px !important;
+    font-weight: 700 !important;
+    color: #FFFFFF !important;
+    margin: 0 !important;
+    line-height: 1.2 !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.18) !important;
+  }
+
+  @media (max-width: 1199px) {
+    .breadcrumb-wrapper .page-heading h1 {
+      font-size: 42px !important;
+    }
+  }
+  @media (max-width: 991px) {
+    .breadcrumb-wrapper .page-heading h1 {
+      font-size: 36px !important;
+    }
+  }
+  @media (max-width: 767px) {
+    .breadcrumb-wrapper .page-heading h1 {
+      font-size: 30px !important;
+    }
+  }
+  @media (max-width: 480px) {
+    .breadcrumb-wrapper .page-heading h1 {
+      font-size: 26px !important;
+    }
   }
 
   .ntt-content-area section {
@@ -406,7 +447,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-family: 'Fredoka', 'Sora', sans-serif !important;
+    font-family: "Sora", sans-serif !important;
     font-size: 22px !important;
     font-weight: 700 !important;
     line-height: 1.2 !important;
@@ -482,7 +523,7 @@
   .ntt-title {
     font-family: "Sora", system-ui, sans-serif !important;
     font-size: 55px !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     
     line-height: 1.2 !important;
     text-transform: capitalize !important;
@@ -832,15 +873,15 @@
 
 
 
-  /* Consistent Homepage Heading Colors */
+  /* Consistent Heading Colors matching About Page */
   .info-card-ntt h3,
   .admission-card-ntt h3,
   .fee-card-top-ntt h3 {
-    color: #031F42 !important;
+    color: #0D1B3E !important;
   }
 
 
-  /* Strictly Calibrated Home Page Weights: 600 for Headings, 400-500 for Body */
+  /* Strictly Calibrated About Page Weights: 600 for Headings, 400-500 for Body */
   .ntt-content-area p,
   .info-card-ntt p,
   .info-card-ntt li,
@@ -862,25 +903,25 @@
   .highlight-box-ntt h4,
   .info-card-ntt h3 {
     font-weight: 600 !important;
-    color: #031F42 !important;
+    color: #0D1B3E !important;
   }
 
   .section-title h2,
   .ntt-title {
     font-family: "Sora", system-ui, sans-serif !important;
     font-weight: 600 !important;
-    color: #031F42 !important;
+    color: #0D1B3E !important;
   }
 
   .kidz-eyebrow,
   .eyebrow-splash {
-    font-family: 'Fredoka', 'Sora', sans-serif !important;
+    font-family: "Sora", sans-serif !important;
     font-weight: 700 !important;
   }
 
   .btn-primary-ntt,
   .ntt-btn {
-    font-family: 'Fredoka', 'Sora', sans-serif !important;
+    font-family: "Sora", sans-serif !important;
     font-weight: 600 !important;
   }
 
