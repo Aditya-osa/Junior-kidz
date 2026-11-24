@@ -46,6 +46,41 @@
     --border-color: #e2e8f0;
   }
 
+  /* Header Responsive Sizing with vh & vw */
+  .header-section-3 .container,
+  .header-3 .container,
+  .header-3.style-2 .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: clamp(25px, 7vw, 160px) !important;
+    padding-right: clamp(25px, 7vw, 160px) !important;
+  }
+  .header-3.style-2 .header-main {
+    padding: clamp(0.4vh, 1.2vh, 1.8vh) 0;
+    min-height: clamp(56px, 8.5vh, 100px);
+  }
+  .header-3.style-2 .header-logo img,
+  .header-3.style-2 .header-logo-2 img {
+    height: clamp(48px, 7.5vh, 95px);
+    width: auto;
+    max-width: clamp(140px, 16vw, 230px);
+    vertical-align: middle;
+    object-fit: contain;
+  }
+  .header-3.style-2 .header-main .main-menu ul li {
+    margin-inline-end: clamp(14px, 1.8vw, 32px);
+  }
+  .header-3.style-2 .header-main .main-menu ul li a {
+    font-size: clamp(14px, 1.6vh, 17px);
+    font-weight: 600;
+    white-space: nowrap;
+    padding: clamp(0.8vh, 1.8vh, 2.4vh) 0;
+  }
+  .header-3.style-2 .header-main .header-button .theme-btn {
+    padding: clamp(0.7vh, 1.4vh, 1.8vh) clamp(16px, 1.8vw, 28px);
+    font-size: clamp(13px, 1.5vh, 16px);
+  }
+
   
   /* Typography: Sora throughout matching About Us page */
   .ntt-content-area,
