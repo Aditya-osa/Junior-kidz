@@ -73,7 +73,7 @@
 
                         <!-- Enquiry Action Button -->
                         <div class="offcanvas-button mb-4">
-                            <a href="contact.html" class="theme-btn text-center w-100">Enquiry</a>
+                            <a href="enquiry.html" class="theme-btn text-center w-100">Enquiry</a>
                         </div>
 
                         <!-- Quick Contact Info -->
@@ -153,6 +153,12 @@
                                                 </li>
 
                                                 <li>
+                                                    <a href="enquiry.html">
+                                                        Enquiry
+                                                    </a>
+                                                </li>
+
+                                                <li>
                                                     <a href="contact.html">
                                                         Reach Us
                                                     </a>
@@ -167,7 +173,7 @@
                             <div class="header-right d-flex justify-content-end align-items-center">
 
                                 <div class="header-button">
-                                    <a href="contact.html" class="theme-btn">
+                                    <a href="enquiry.html" class="theme-btn">
                                         Enquiry
                                     </a>
                                 </div>
@@ -237,16 +243,6 @@
         <section class="event-list-section fix section-padding pt-0">
             <div class="container">
                 <div class="event-list-wrapper">
-                    <div class="event-list-top-area">
-                        <div class="search-widget">
-                            <input type="text" id="eventSearchInput" placeholder="Find event by starting letter...">
-                            <div class="sub-icon"><i class="fal fa-search"></i></div>
-                        </div>
-                        <div class="event-button-top">
-                            <button type="button" id="eventSearchBtn" class="theme-btn">Find Event</button>
-                        </div>
-                    </div>
-
                     <div class="event-list-items">
                         <div class="event-content">
                             <div class="content">
@@ -351,8 +347,6 @@
                             <img src="assets/img/gallery/5.png" alt="Field Trip to Vikrant ship">
                         </div>
                     </div>
-
-                    <p id="noEventsMsg" style="display: none; text-align: center; padding: 30px 0; font-weight: 600;">No events found starting with that letter.</p>
                 </div>
             </div>
         </section>
@@ -403,37 +397,5 @@
         <script src="assets/js/wow.min.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
-
-        <!-- Starting-Letter Event Filter Script -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const searchInput = document.getElementById('eventSearchInput');
-                const searchBtn = document.getElementById('eventSearchBtn');
-                const eventItems = document.querySelectorAll('.event-list-items');
-                const noEventsMsg = document.getElementById('noEventsMsg');
-
-                function filterEventsByStartingLetter() {
-                    const query = searchInput.value.trim().toLowerCase();
-                    let visibleCount = 0;
-
-                    eventItems.forEach(function (item) {
-                        const titleEl = item.querySelector('.title-text h4');
-                        const titleText = titleEl ? titleEl.textContent.trim().toLowerCase() : '';
-
-                        if (query === '' || titleText.startsWith(query)) {
-                            item.style.display = '';
-                            visibleCount++;
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-
-                    noEventsMsg.style.display = visibleCount === 0 ? 'block' : 'none';
-                }
-
-                searchInput.addEventListener('input', filterEventsByStartingLetter);
-                searchBtn.addEventListener('click', filterEventsByStartingLetter);
-            });
-        </script>
     </body>
 </html>
