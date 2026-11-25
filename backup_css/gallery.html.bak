@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--<< Header Area >>-->
+    <head>
+        <!-- ========== Meta Tags ========== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="modinatheme">
+        <meta name="description" content="Junior Kidz - Preschool, Daycare & Kindergarten Photo Gallery">
+        <!-- ======== Page title ============ -->
+        <title>Gallery - Junior Kidz</title>
+        <!--<< Favicon >>-->
+        <link rel="shortcut icon" href="assets/img/favicon.svg">
+        <!--<< Bootstrap min.css >>-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!--<< Font Awesome.css >>-->
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <!--<< Animate.css >>-->
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <!--<< Magnific Popup.css >>-->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!--<< MeanMenu.css >>-->
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <!--<< Odometer.css >>-->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!--<< Swiper Bundle.css >>-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <!--<< Nice Select.css >>-->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!--<< Common.css >>-->
+        <link rel="stylesheet" href="assets/css/common.css">
+        <!--<< gallery.css >>-->
+        <link rel="stylesheet" href="assets/css/gallery.css">
+    </head>
+
+    <body>
+
+         <!-- Back To Top start -->
+        <button id="back-top" class="back-to-top">
+            <i class="fas fa-long-arrow-up"></i>
+        </button>
+
+                        <!-- Offcanvas Area Start -->
+        <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-4 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="home.html">
+                                    <img src="assets/img/logo/black-logo.jpg" alt="Junior Kidz Logo">
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Mobile Navigation Menu Links -->
+                        <div class="mobile-menu fix mb-4">
+                            <ul class="offcanvas-nav-links">
+                                <li><a href="about.html">Who We Are</a></li>
+                                <li><a href="franchise.html">Franchise Program</a></li>
+                                <li><a href="nursery-teacher-training.html">Nursery Teacher Training</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="event.html">Events</a></li>
+                                <li><a href="contact.html">Reach Us</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Enquiry Action Button -->
+                        <div class="offcanvas-button mb-4">
+                            <a href="enquiry.html" class="theme-btn text-center w-100">Enquiry</a>
+                        </div>
+
+                        <!-- Quick Contact Info -->
+                        <div class="offcanvas__contact">
+                            <h3>Quick Contact</h3>
+                            <ul class="contact-list">
+                                <li>
+                                    <span>Call:</span>
+                                    <a href="tel:+917030755159">+91 7030755159</a>
+                                </li>
+                                <li>
+                                    <span>Email:</span>
+                                    <a href="mailto:inquiry@juniorkidz.com">inquiry@juniorkidz.com</a>
+                                </li>
+                                <li>
+                                    <span>Location:</span>
+                                    Opera House, Mumbai 400004
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__overlay"></div>
+
+        <!-- Header Section Start -->
+        <header class="header-section-3">
+            <div id="header-sticky" class="header-3 style-2">
+                <div class="container">
+                    <div class="mega-menu-wrapper">
+                        <div class="header-main">
+
+                            <!-- Logo -->
+                            <a href="home.html" class="header-logo">
+                                <img src="assets/img/logo/black-logo.jpg" alt="Junior Kidz Logo">
+                            </a>
+
+                            <a href="home.html" class="header-logo-2">
+                                <img src="assets/img/logo/black-logo.jpg" alt="Junior Kidz Logo">
+                            </a>
+
+                            <!-- Navigation -->
+                            <div class="header-left">
+                                <div class="mean__menu-wrapper">
+                                    <div class="main-menu">
+                                        <nav id="mobile-menu">
+                                            <ul>
+                                                <li>
+                                                    <a href="about.html">
+                                                        Who We Are
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="franchise.html">
+                                                        Franchise Program
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="nursery-teacher-training.html">
+                                                        Nursery Teacher Training
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="gallery.html">
+                                                        Gallery
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="event.html">
+                                                        Events
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="enquiry.html">
+                                                        Enquiry
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="contact.html">
+                                                        Reach Us
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Header Actions -->
+                            <div class="header-right d-flex justify-content-end align-items-center">
+
+                                <div class="header-button">
+                                    <a href="enquiry.html" class="theme-btn">
+                                        Enquiry
+                                    </a>
+                                </div>
+
+                                <!-- Mobile Menu Toggle -->
+                                <div class="header__hamburger d-xl-none my-auto">
+                                    <div class="sidebar__toggle">
+                                        <i class="fas fa-bars"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Breadcrumb-wrapper Start -->
+        <section class="breadcrumb-wrapper">
+        <img src="assets/img/bar/banner-inner.png" alt="" class="banner-bg-img" aria-hidden="true">
+        <!-- Decorative Floating Elements -->
+        <div class="banner-floating-shape shape-flower">
+            <img src="assets/img/shape/banner-flower.png" alt="" aria-hidden="true">
+        </div>
+        <div class="banner-floating-shape shape-umbrella">
+            <img src="assets/img/shape/banner-umbrella.png" alt="" aria-hidden="true">
+        </div>
+        <div class="banner-floating-shape shape-balloon">
+            <img src="assets/img/shape/banner-balloon.png" alt="" aria-hidden="true">
+        </div>
+        <div class="banner-floating-shape shape-tree">
+            <img src="assets/img/shape/banner-tree.png" alt="" aria-hidden="true">
+        </div>
+        <div class="banner-content">
+            <div class="container">
+                <div class="page-heading text-center" style="padding: 0;">
+                    <h1 style="color: var(--header); font-size: 48px; font-weight: 700; margin-bottom: 12px;">Photo Gallery</h1>
+                   
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Junior Kidz Gallery Section Start -->
+        <section class="gallery-section section-padding">
+            <div class="container">
+                <div class="section-title text-center mb-4">
+                    <h6 class="wow fadeInUp" style="color: var(--theme-pink); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;">Memories & Moments</h6>
+                    <h2 class="wow fadeInUp" data-wow-delay=".3s" style="font-weight: 700;">Life & Activities at Junior Kidz</h2>
+                </div>
+
+                <!-- Gallery Search Widget -->
+                <div class="gallery-top-area event-list-top-area mb-5">
+                    <div class="search-widget">
+                        <input type="text" id="gallerySearchInput" placeholder="Search gallery by activity or keyword...">
+                        <div class="sub-icon"><i class="fal fa-search"></i></div>
+                    </div>
+                    <div class="event-button-top">
+                        <button type="button" id="gallerySearchBtn" class="theme-btn">Search Gallery</button>
+                    </div>
+                </div>
+
+                <p id="noGalleryMsg" style="display: none; text-align: center; padding: 40px 0; font-family: 'Quicksand', 'Sora', sans-serif; font-size: 16px; font-weight: 600; color: #556987;">No photos found matching your search.</p>
+
+                <!-- Simple Gallery Grid -->
+                <div class="simple-gallery-grid" id="galleryGrid">
+                    <!-- Photo 1 -->
+                    <div class="simple-gallery-item" data-title="Children's Day Celebration" data-category="Celebration">
+                        <a href="assets/img/gallery/1.png" class="gallery-card img-popup" title="Children's Day Celebration">
+                            <div class="gallery-thumb">
+                                <img src="assets/img/gallery/1.png" alt="Children's Day Celebration" loading="lazy">
+                                <div class="gallery-hover-overlay">
+                                    <span class="hover-icon"><i class="fal fa-search-plus"></i></span>
+                                    <div class="hover-text">
+                                        <h4>Children's Day Celebration</h4>
+                                        <p>Events & Celebrations</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Photo 2 -->
+                    <div class="simple-gallery-item" data-title="Fancy Dress Competition" data-category="Competition">
+                        <a href="assets/img/gallery/2.png" class="gallery-card img-popup" title="Fancy Dress Competition">
+                            <div class="gallery-thumb">
+                                <img src="assets/img/gallery/2.png" alt="Fancy Dress Competition" loading="lazy">
+                                <div class="gallery-hover-overlay">
+                                    <span class="hover-icon"><i class="fal fa-search-plus"></i></span>
+                                    <div class="hover-text">
+                                        <h4>Fancy Dress Competition</h4>
+                                        <p>Creative Expression</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Photo 3 -->
+                    <div class="simple-gallery-item" data-title="Field Trip Panjrapole" data-category="Field Trip">
+                        <a href="assets/img/gallery/3.png" class="gallery-card img-popup" title="Field Trip Panjrapole">
+                            <div class="gallery-thumb">
+                                <img src="assets/img/gallery/3.png" alt="Field Trip Panjrapole" loading="lazy">
+                                <div class="gallery-hover-overlay">
+                                    <span class="hover-icon"><i class="fal fa-search-plus"></i></span>
+                                    <div class="hover-text">
+                                        <h4>Field Trip Panjrapole</h4>
+                                        <p>Outdoor Learning</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Photo 4 -->
+                    <div class="simple-gallery-item" data-title="Field Trip to ISKCON Temple" data-category="Field Trip">
+                        <a href="assets/img/gallery/4.png" class="gallery-card img-popup" title="Field Trip to ISKCON Temple">
+                            <div class="gallery-thumb">
+                                <img src="assets/img/gallery/4.png" alt="Field Trip to ISKCON Temple" loading="lazy">
+                                <div class="gallery-hover-overlay">
+                                    <span class="hover-icon"><i class="fal fa-search-plus"></i></span>
+                                    <div class="hover-text">
+                                        <h4>Field Trip to ISKCON Temple</h4>
+                                        <p>Cultural Visit</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Photo 5 -->
+                    <div class="simple-gallery-item" data-title="Field Trip to Vikrant Ship" data-category="Field Trip">
+                        <a href="assets/img/gallery/5.png" class="gallery-card img-popup" title="Field Trip to Vikrant Ship">
+                            <div class="gallery-thumb">
+                                <img src="assets/img/gallery/5.png" alt="Field Trip to Vikrant Ship" loading="lazy">
+                                <div class="gallery-hover-overlay">
+                                    <span class="hover-icon"><i class="fal fa-search-plus"></i></span>
+                                    <div class="hover-text">
+                                        <h4>Field Trip to Vikrant Ship</h4>
+                                        <p>Educational Tour</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Photo 6 -->
+                    <div class="simple-gallery-item" data-title="Outdoor Sports and Games" data-category="Sports">
+                        <a href="assets/img/gallery/6.png" class="gallery-card img-popup" title="Outdoor Sports and Games">
+                            <div class="gallery-thumb">
+                                <img src="assets/img/gallery/6.png" alt="Outdoor Sports and Games" loading="lazy">
+                                <div class="gallery-hover-overlay">
+                                    <span class="hover-icon"><i class="fal fa-search-plus"></i></span>
+                                    <div class="hover-text">
+                                        <h4>Outdoor Sports & Games</h4>
+                                        <p>Physical Development</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Photo 7 -->
+                    <div class="simple-gallery-item" data-title="Cultural Celebration & Annual Day" data-category="Celebration">
+                        <a href="assets/img/gallery/7.png" class="gallery-card img-popup" title="Cultural Celebration & Annual Day">
+                            <div class="gallery-thumb">
+                                <img src="assets/img/gallery/7.png" alt="Cultural Celebration & Annual Day" loading="lazy">
+                                <div class="gallery-hover-overlay">
+                                    <span class="hover-icon"><i class="fal fa-search-plus"></i></span>
+                                    <div class="hover-text">
+                                        <h4>Cultural Celebration</h4>
+                                        <p>Annual Day Moments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Photo 8 -->
+                    <div class="simple-gallery-item" data-title="Classroom Creative Activities" data-category="Learning">
+                        <a href="assets/img/gallery/8.png" class="gallery-card img-popup" title="Classroom Creative Activities">
+                            <div class="gallery-thumb">
+                                <img src="assets/img/gallery/8.png" alt="Classroom Creative Activities" loading="lazy">
+                                <div class="gallery-hover-overlay">
+                                    <span class="hover-icon"><i class="fal fa-search-plus"></i></span>
+                                    <div class="hover-text">
+                                        <h4>Creative Activities</h4>
+                                        <p>Classroom Learning</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Photo 9 -->
+                    <div class="simple-gallery-item" data-title="Classroom Color Day Activity" data-category="Theme Day">
+                        <a href="assets/img/gallery/collage-photos/photo_01.jpg" class="gallery-card img-popup" title="Classroom Color Day Activity">
+                            <div class="gallery-thumb">
+                                <img src="assets/img/gallery/collage-photos/photo_01.jpg" alt="Classroom Color Day Activity" loading="lazy">
+                                <div class="gallery-hover-overlay">
+                                    <span class="hover-icon"><i class="fal fa-search-plus"></i></span>
+                                    <div class="hover-text">
+                                        <h4>Color Day Celebration</h4>
+                                        <p>Classroom Activities</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Photo 10 -->
+                    <div class="simple-gallery-item" data-title="Hands-on Art & Craft Fun" data-category="Art & Craft">
+                        <a href="assets/img/gallery/collage-photos/photo_02.jpg" class="gallery-card img-popup" title="Hands-on Art & Craft Fun">
+                            <div class="gallery-thumb">
+                                <img src="assets/img/gallery/collage-photos/photo_02.jpg" alt="Hands-on Art & Craft Fun" loading="lazy">
+                                <div class="gallery-hover-overlay">
+                                    <span class="hover-icon"><i class="fal fa-search-plus"></i></span>
+                                    <div class="hover-text">
+                                        <h4>Art & Craft Fun</h4>
+                                        <p>Hands-on Learning</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Photo 11 -->
+                    <div class="simple-gallery-item" data-title="Festival & Tradition Celebrations" data-category="Celebration">
+                        <a href="assets/img/gallery/collage-photos/photo_04.jpg" class="gallery-card img-popup" title="Festival & Tradition Celebrations">
+                            <div class="gallery-thumb">
+                                <img src="assets/img/gallery/collage-photos/photo_04.jpg" alt="Festival & Tradition Celebrations" loading="lazy">
+                                <div class="gallery-hover-overlay">
+                                    <span class="hover-icon"><i class="fal fa-search-plus"></i></span>
+                                    <div class="hover-text">
+                                        <h4>Festival Celebrations</h4>
+                                        <p>Traditions & Culture</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Photo 12 -->
+                    <div class="simple-gallery-item" data-title="Music, Dance & Group Activities" data-category="Music">
+                        <a href="assets/img/gallery/collage-photos/photo_13.jpg" class="gallery-card img-popup" title="Music, Dance & Group Activities">
+                            <div class="gallery-thumb">
+                                <img src="assets/img/gallery/collage-photos/photo_13.jpg" alt="Music, Dance & Group Activities" loading="lazy">
+                                <div class="gallery-hover-overlay">
+                                    <span class="hover-icon"><i class="fal fa-search-plus"></i></span>
+                                    <div class="hover-text">
+                                        <h4>Music & Group Play</h4>
+                                        <p>Interactive Fun</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Junior Kidz Gallery Section End -->
+
+
+        <!-- Footer Section Start -->
+        <footer class="junior-kidz-footer">
+            <div class="container">
+                <div class="junior-kidz-footer-main">
+                    <a href="home.html" class="junior-kidz-footer-logo" aria-label="Junior Kidz home">
+                        <img src="assets/img/logo/black-logo.jpg" alt="Junior Kidz">
+                    </a>
+                    <nav class="junior-kidz-footer-nav" aria-label="Footer navigation">
+                        <a href="home.html">Home</a>
+                        <a href="about.html">Who We Are</a>
+                        <a href="franchise.html">Franchise Program</a>
+                        <a href="nursery-teacher-training.html">Nursery Teacher Training</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="event.html">Events</a>
+                        <a href="contact.html">Reach Us</a>
+                    </nav>
+                </div>
+                <div class="junior-kidz-footer-divider" aria-hidden="true"></div>
+                <div class="junior-kidz-footer-bottom">
+                    <p>© 2026 Junior Kidz. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!--<< All JS Plugins >>-->
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <!--<< Bootstrap Js >>-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!--<< Nice Select Js >>-->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!--<< Odometer Js >>-->
+        <script src="assets/js/odometer.min.js"></script>
+        <!--<< Appear Js >>-->
+        <script src="assets/js/jquery.appear.min.js"></script>
+        <!--<< Swiper Slider Js >>-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <!--<< MeanMenu Js >>-->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!--<< Magnific Popup Js >>-->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!--<< Circle Progress Js >>-->
+        <script src="assets/js/circle-progress.js"></script>
+        <!--<< Wow Animation Js >>-->
+        <script src="assets/js/wow.min.js"></script>
+        <!--<< Main.js >>-->
+        <script src="assets/js/main.js"></script>
+
+        <!-- Gallery Search & Filter Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const searchInput = document.getElementById('gallerySearchInput');
+                const searchBtn = document.getElementById('gallerySearchBtn');
+                const galleryItems = document.querySelectorAll('.simple-gallery-item');
+                const noGalleryMsg = document.getElementById('noGalleryMsg');
+
+                function filterGallery() {
+                    const query = searchInput.value.trim().toLowerCase();
+                    let visibleCount = 0;
+
+                    galleryItems.forEach(function (item) {
+                        if (query === '') {
+                            item.style.display = '';
+                            visibleCount++;
+                            return;
+                        }
+
+                        const title = (item.getAttribute('data-title') || '').toLowerCase();
+                        const category = (item.getAttribute('data-category') || '').toLowerCase();
+                        const img = item.querySelector('img');
+                        const alt = (img ? img.getAttribute('alt') || '' : '').toLowerCase();
+                        const fullText = title + ' ' + category + ' ' + alt;
+                        const words = fullText.split(/[\s\-_\/.]+/);
+                        const wordStarts = words.some(function (w) { return w.startsWith(query); });
+
+                        if (fullText.includes(query) || wordStarts) {
+                            item.style.display = '';
+                            visibleCount++;
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+
+                    if (noGalleryMsg) noGalleryMsg.style.display = visibleCount === 0 ? 'block' : 'none';
+                }
+
+                if (searchInput) {
+                    searchInput.addEventListener('input', filterGallery);
+                    searchInput.addEventListener('keydown', function (e) {
+                        if (e.key === 'Enter') {
+                            e.preventDefault();
+                            filterGallery();
+                        }
+                    });
+                }
+                if (searchBtn) {
+                    searchBtn.addEventListener('click', filterGallery);
+                }
+            });
+        </script>
+    </body>
+</html>

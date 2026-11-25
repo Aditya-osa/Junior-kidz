@@ -209,7 +209,7 @@
             }
 
             .franchise-why-enroll-banner {
-                background: linear-gradient(135deg, #0c1e33 0%, #1e3a8a 100%);
+                background: #00a0e3;
                 border-radius: 16px;
                 padding: 28px 30px;
                 color: #ffffff;
@@ -223,16 +223,16 @@
             }
 
             .franchise-why-enroll-banner p {
-                color: #e2e8f0;
+                color: #ffffff;
                 margin: 0;
                 font-size: 15px;
                 line-height: 1.6;
             }
 
             .franchise-why-enroll-banner a {
-                color: #38bdf8;
+                color: #ffffff;
                 font-weight: 600;
-                text-decoration: underline;
+                
             }
 
             .franchise-map-card {
@@ -265,6 +265,376 @@
                     padding: 22px 20px;
                 }
             }
+
+            /* =========================================================
+               Franchise Page - Comprehensive Responsive Engine
+               Resolutions: 320x568 up to 3440x1440
+               ========================================================= */
+
+            /* 1. Universal Containment & Fluid Image Boundaries */
+            .breadcrumb-wrapper,
+            .event-details-section,
+            .junior-kidz-footer {
+                overflow-x: clip !important;
+            }
+
+            .event-details-items .details-image {
+                border-radius: 16px;
+                overflow: hidden;
+                margin-bottom: 28px;
+            }
+
+            .event-details-items .details-image img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 16px;
+                object-fit: cover;
+            }
+
+            /* Card minimum height safeguard */
+            .franchise-section-card {
+                min-height: 310px;
+                height: auto;
+            }
+
+            .franchise-card-content {
+                height: auto;
+                min-height: 100%;
+            }
+
+            /* Sidebar list link styling */
+            .event-details-wrapper .event-details-information .information-list li {
+                padding: 12px 0;
+            }
+
+            .event-details-wrapper .event-details-information .information-list li a {
+                color: #0c1e33;
+                font-weight: 500;
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                width: 100%;
+                text-decoration: none;
+                transition: color 0.2s ease, transform 0.2s ease;
+            }
+
+            .event-details-wrapper .event-details-information .information-list li a:hover {
+                color: #e52421;
+                transform: translateX(3px);
+            }
+
+            .event-details-wrapper .event-details-information .information-list li a i {
+                color: #e52421;
+                font-size: 15px;
+                width: 20px;
+                text-align: center;
+                flex-shrink: 0;
+            }
+
+            /* Header fluid container */
+            .header-section-3 .container,
+            .header-3 .container,
+            .header-3.style-2 .container {
+                max-width: 100% !important;
+                width: 100% !important;
+                padding-left: clamp(16px, 5vw, 160px) !important;
+                padding-right: clamp(16px, 5vw, 160px) !important;
+            }
+
+            /* 2. Large Tablet & Small Laptop (992px - 1199px) */
+            @media (max-width: 1199px) {
+                .franchise-cards-container {
+                    gap: 24px;
+                }
+                .franchise-section-card {
+                    min-height: 320px;
+                }
+                .franchise-card-image {
+                    width: 36%;
+                }
+                .franchise-card-content {
+                    width: 64%;
+                    padding: 20px 22px;
+                }
+                .franchise-card-title {
+                    font-size: 20px;
+                }
+                .franchise-card-list li {
+                    font-size: 13.5px;
+                }
+            }
+
+            /* 3. Tablet Viewports (768px - 991px) */
+            @media (max-width: 991px) {
+                .event-details-section.section-padding {
+                    padding: 60px 0 !important;
+                }
+                .event-details-wrapper .event-details-information {
+                    margin-top: 40px !important;
+                    padding: 30px 24px !important;
+                    border-radius: 16px !important;
+                }
+                .franchise-cards-container {
+                    gap: 22px;
+                }
+                .franchise-section-card {
+                    flex-direction: column !important;
+                    height: auto !important;
+                    min-height: unset !important;
+                    border-radius: 16px;
+                }
+                .franchise-card-image {
+                    width: 100% !important;
+                    height: 220px !important;
+                }
+                .franchise-card-content {
+                    width: 100% !important;
+                    height: auto !important;
+                    padding: 22px 20px !important;
+                }
+                /* Snappy entrance animations */
+                .wow, .animated {
+                    animation-duration: 0.5s !important;
+                }
+            }
+
+            /* 4. Mobile Viewports (<= 767px) */
+            @media (max-width: 767px) {
+                .breadcrumb-wrapper {
+                    padding: 40px 0 !important;
+                }
+                .breadcrumb-wrapper .page-heading h1 {
+                    font-size: clamp(24px, 6vw, 34px) !important;
+                }
+                .banner-floating-shape {
+                    max-width: 48px !important;
+                    opacity: 0.65 !important;
+                }
+                .event-details-section.section-padding {
+                    padding: 45px 0 !important;
+                }
+                .event-details-content h3 {
+                    font-size: clamp(22px, 5.5vw, 26px) !important;
+                }
+                .event-details-content p {
+                    font-size: 14.5px !important;
+                    line-height: 1.6 !important;
+                }
+                .franchise-intro-card {
+                    padding: 22px 18px !important;
+                    border-radius: 14px !important;
+                    margin-bottom: 22px !important;
+                }
+                .franchise-intro-card h3 {
+                    font-size: 20px !important;
+                }
+                .franchise-map-card {
+                    height: 260px !important;
+                    border-radius: 14px !important;
+                    margin-top: 22px !important;
+                }
+                .franchise-why-enroll-banner {
+                    padding: 24px 20px !important;
+                    border-radius: 14px !important;
+                    margin-top: 22px !important;
+                }
+                .franchise-why-enroll-banner h3 {
+                    font-size: 20px !important;
+                }
+                .franchise-why-enroll-banner p {
+                    font-size: 14px !important;
+                    line-height: 1.6 !important;
+                }
+            }
+
+            /* 5. Standard & Small Mobile (<= 575px) */
+            @media (max-width: 575px) {
+                .event-details-section.section-padding {
+                    padding: 36px 0 !important;
+                }
+                .event-details-items .details-image {
+                    margin-bottom: 20px !important;
+                    border-radius: 14px !important;
+                }
+                .event-details-items .details-image img {
+                    border-radius: 14px !important;
+                }
+                .franchise-cards-container {
+                    gap: 18px !important;
+                    margin-top: 20px !important;
+                    margin-bottom: 20px !important;
+                }
+                .franchise-section-card {
+                    border-radius: 14px !important;
+                }
+                .franchise-card-image {
+                    height: 190px !important;
+                }
+                .franchise-card-content {
+                    padding: 18px 16px !important;
+                }
+                .franchise-card-title {
+                    font-size: 19px !important;
+                    margin-bottom: 4px !important;
+                }
+                .franchise-card-subtitle {
+                    font-size: 12px !important;
+                    margin-bottom: 10px !important;
+                }
+                .franchise-card-list {
+                    gap: 7px !important;
+                }
+                .franchise-card-list li {
+                    font-size: 13.5px !important;
+                    line-height: 1.45 !important;
+                    gap: 8px !important;
+                }
+                .franchise-card-list li i {
+                    font-size: 14px !important;
+                    margin-top: 2px !important;
+                }
+                .franchise-contact-details {
+                    gap: 8px !important;
+                    margin-bottom: 14px !important;
+                }
+                .franchise-contact-item {
+                    font-size: 13px !important;
+                    gap: 8px !important;
+                    line-height: 1.4 !important;
+                    word-break: break-word !important;
+                }
+                .franchise-contact-btn {
+                    width: 100% !important;
+                    justify-content: center !important;
+                    text-align: center !important;
+                    padding: 10px 18px !important;
+                    font-size: 13.5px !important;
+                }
+                .franchise-intro-card {
+                    padding: 18px 14px !important;
+                    border-radius: 12px !important;
+                }
+                .franchise-intro-card h3 {
+                    font-size: 18.5px !important;
+                    line-height: 1.35 !important;
+                }
+                .franchise-map-card {
+                    height: 240px !important;
+                    border-radius: 12px !important;
+                }
+                .franchise-why-enroll-banner {
+                    padding: 20px 16px !important;
+                    border-radius: 12px !important;
+                }
+                .franchise-why-enroll-banner h3 {
+                    font-size: 19px !important;
+                }
+                .franchise-why-enroll-banner p {
+                    font-size: 13.5px !important;
+                    line-height: 1.55 !important;
+                }
+                .event-details-wrapper .event-details-information {
+                    margin-top: 32px !important;
+                    padding: 22px 16px !important;
+                    border-radius: 12px !important;
+                }
+                .event-details-wrapper .event-details-information .franchise-enroll-box h4 {
+                    font-size: 19px !important;
+                }
+                .event-details-wrapper .event-details-information .information-list {
+                    margin-top: 12px !important;
+                    margin-bottom: 18px !important;
+                }
+                .event-details-wrapper .event-details-information .information-list li {
+                    padding: 10px 0 !important;
+                }
+                .event-details-wrapper .event-details-information .information-list li a {
+                    font-size: 13.5px !important;
+                    gap: 8px !important;
+                }
+                .event-details-wrapper .event-details-information .theme-btn {
+                    padding: 12px 20px !important;
+                    font-size: 14px !important;
+                }
+            }
+
+            /* 6. Micro Mobile (<= 360px - e.g. 320x568) */
+            @media (max-width: 360px) {
+                .event-details-section.section-padding {
+                    padding: 28px 0 !important;
+                }
+                .franchise-card-image {
+                    height: 155px !important;
+                }
+                .franchise-card-content {
+                    padding: 14px 12px !important;
+                }
+                .franchise-card-title {
+                    font-size: 17.5px !important;
+                }
+                .franchise-card-list li {
+                    font-size: 12.5px !important;
+                }
+                .franchise-contact-item {
+                    font-size: 12.5px !important;
+                }
+                .franchise-intro-card {
+                    padding: 15px 12px !important;
+                }
+                .franchise-intro-card h3 {
+                    font-size: 17px !important;
+                }
+                .franchise-map-card {
+                    height: 200px !important;
+                }
+                .franchise-why-enroll-banner {
+                    padding: 16px 12px !important;
+                }
+                .franchise-why-enroll-banner h3 {
+                    font-size: 17.5px !important;
+                }
+                .franchise-why-enroll-banner p {
+                    font-size: 12.5px !important;
+                }
+                .event-details-wrapper .event-details-information {
+                    padding: 18px 12px !important;
+                }
+                .event-details-wrapper .event-details-information .information-list li a {
+                    font-size: 12.5px !important;
+                }
+            }
+
+            /* 7. Ultrawide Desktop Safeguards (min-width: 1921px) */
+            @media (min-width: 1921px) {
+                .breadcrumb-wrapper,
+                .event-details-section,
+                .junior-kidz-footer {
+                    max-width: 2560px;
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                }
+                .container {
+                    max-width: 1720px !important;
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                }
+                .franchise-cards-container {
+                    gap: 34px !important;
+                }
+                .franchise-section-card {
+                    min-height: 330px !important;
+                }
+                .franchise-card-title {
+                    font-size: 24px !important;
+                }
+                .franchise-card-list li {
+                    font-size: 15px !important;
+                    line-height: 1.6 !important;
+                }
+            }
+
         </style>
     </head>
 
@@ -583,7 +953,7 @@
                                         <!-- 5. Student Kit -->
                                         <div class="franchise-section-card" id="student-kit">
                                             <div class="franchise-card-image">
-                                                <img src="assets/imgfranchise/student.png" alt="Student Kit">
+                                                <img src="assets/img/franchise/student.png" alt="Student Kit">
                                             </div>
                                             <div class="franchise-card-content">
                                                 <h3 class="franchise-card-title">Student Kit</h3>

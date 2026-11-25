@@ -1,10 +1,12 @@
 /*
- * Gallery Page CSS - Gallery Specific Styles
+ * Gallery Page CSS - Comprehensive Gallery Styles & Responsive Engine
  * Includes: Gallery Grid Layout, Gallery Cards, Hover Effects, Search Widget
+ * Target Resolutions: 320x568 to 3440x1440
  */
 
-/* --- [style.css: Gallery Grid & Search Widget Styling] --- */
-/* Gallery & Search widget styling */
+/* =========================================================
+   1. Gallery & Search Widget Styling
+   ========================================================= */
 .gallery-top-area,
 .event-list-top-area {
     display: flex !important;
@@ -13,12 +15,14 @@
     gap: 20px !important;
     margin-bottom: 40px !important;
 }
+
 .gallery-top-area .search-widget,
 .event-list-top-area .search-widget {
     position: relative !important;
     max-width: 380px !important;
     width: 100% !important;
 }
+
 .gallery-top-area .search-widget input,
 .event-list-top-area .search-widget input {
     width: 100% !important;
@@ -34,12 +38,15 @@
     outline: none !important;
     transition: border-color 0.3s ease !important;
 }
+
 .gallery-top-area .search-widget input:focus {
     border-color: #00a0e3 !important;
 }
+
 .event-list-top-area .search-widget input:focus {
     border-color: var(--theme-orange) !important;
 }
+
 .gallery-top-area .search-widget .sub-icon,
 .event-list-top-area .search-widget .sub-icon {
     position: absolute !important;
@@ -49,6 +56,7 @@
     color: #556987 !important;
     pointer-events: none !important;
 }
+
 .gallery-top-area .event-button-top .theme-btn {
     font-family: 'Fredoka', 'Sora', sans-serif !important;
     font-weight: 600 !important;
@@ -62,9 +70,11 @@
     cursor: pointer !important;
     transition: background-color 0.3s ease !important;
 }
+
 .gallery-top-area .event-button-top .theme-btn:hover {
     background-color: #00a0e3 !important;
 }
+
 .event-list-top-area .event-button-top .theme-btn,
 .event-list-wrapper .event-button .theme-btn {
     font-family: 'Fredoka', 'Sora', sans-serif !important;
@@ -78,6 +88,7 @@
     border: none !important;
     cursor: pointer !important;
 }
+
 #noEventsMsg,
 #noGalleryMsg {
     font-family: 'Quicksand', 'Sora', sans-serif !important;
@@ -86,6 +97,210 @@
     color: #556987 !important;
 }
 
+/* =========================================================
+   2. Universal Containment & Fluid Image Boundaries
+   ========================================================= */
+.breadcrumb-wrapper,
+.gallery-section,
+.junior-kidz-footer {
+    overflow-x: clip !important;
+}
+
+.gallery-section img,
+.simple-gallery-grid img {
+    max-width: 100% !important;
+}
+
+/* Header fluid container */
+.header-section-3 .container,
+.header-3 .container,
+.header-3.style-2 .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: clamp(16px, 5vw, 160px) !important;
+    padding-right: clamp(16px, 5vw, 160px) !important;
+}
+
+/* =========================================================
+   3. Simple Clean Gallery Grid Layout (Desktop)
+   ========================================================= */
+.simple-gallery-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 28px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+.simple-gallery-item {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+.simple-gallery-item .gallery-card {
+    display: block !important;
+    position: relative !important;
+    border-radius: 14px !important;
+    overflow: hidden !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06) !important;
+    background: #FFFFFF !important;
+    border: 1px solid #E8EFF5 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.simple-gallery-item .gallery-thumb {
+    position: relative !important;
+    width: 100% !important;
+    height: 250px !important;
+    overflow: hidden !important;
+}
+
+.simple-gallery-item .gallery-thumb img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    transition: transform 0.4s ease !important;
+}
+
+.simple-gallery-item .gallery-hover-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(to top, rgba(0, 160, 227, 0.92) 0%, rgba(0, 160, 227, 0.35) 60%, transparent 100%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    padding: 20px !important;
+    opacity: 0 !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.simple-gallery-item .gallery-hover-overlay .hover-icon {
+    position: absolute !important;
+    top: 18px !important;
+    right: 18px !important;
+    width: 38px !important;
+    height: 38px !important;
+    background: #00a0e3 !important;
+    color: #FFFFFF !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 14px !important;
+    transform: scale(0.8) !important;
+    transition: transform 0.3s ease !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18) !important;
+}
+
+.simple-gallery-item .gallery-hover-overlay .hover-text h4 {
+    color: #FFFFFF !important;
+    font-family: 'Fredoka', 'Sora', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    margin: 0 0 4px 0 !important;
+    line-height: 1.3 !important;
+}
+
+.simple-gallery-item .gallery-hover-overlay .hover-text p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-family: 'Quicksand', 'Sora', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    margin: 0 !important;
+    letter-spacing: 0.3px !important;
+}
+
+.simple-gallery-item:hover .gallery-card {
+    transform: translateY(-4px) !important;
+    border-color: #00a0e3 !important;
+    box-shadow: 0 12px 28px rgba(0, 160, 227, 0.28) !important;
+}
+
+.simple-gallery-item:hover .gallery-thumb img {
+    transform: scale(1.05) !important;
+}
+
+.simple-gallery-item:hover .gallery-hover-overlay {
+    opacity: 1 !important;
+}
+
+.simple-gallery-item:hover .gallery-hover-overlay .hover-icon {
+    transform: scale(1) !important;
+}
+
+/* =========================================================
+   4. Large Tablet & Small Laptop (992px - 1199px)
+   ========================================================= */
+@media (max-width: 1199px) {
+    .simple-gallery-grid {
+        gap: 20px !important;
+        padding: 0 15px !important;
+    }
+    .simple-gallery-item .gallery-thumb {
+        height: 230px !important;
+    }
+}
+
+/* =========================================================
+   5. Tablet & Medium Screens (768px - 1024px)
+   ========================================================= */
+@media (max-width: 1024px) {
+    .gallery-section.section-padding {
+        padding: 60px 0 !important;
+    }
+    .simple-gallery-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+    }
+    .simple-gallery-item .gallery-thumb {
+        height: 220px !important;
+    }
+    /* Snappy entrance animations */
+    .wow, .animated {
+        animation-duration: 0.5s !important;
+    }
+}
+
+/* =========================================================
+   6. Mobile Devices (<= 767px)
+   ========================================================= */
+@media (max-width: 767px) {
+    .breadcrumb-wrapper {
+        padding: 40px 0 !important;
+    }
+    .breadcrumb-wrapper .page-heading h1 {
+        font-size: clamp(24px, 6.5vw, 36px) !important;
+    }
+    .banner-floating-shape {
+        max-width: 48px !important;
+        opacity: 0.65 !important;
+    }
+    .gallery-section.section-padding {
+        padding: 45px 0 !important;
+    }
+    .simple-gallery-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+        padding: 0 !important;
+    }
+    .simple-gallery-item .gallery-thumb {
+        height: 220px !important;
+    }
+    .section-title h2 {
+        font-size: clamp(22px, 5.5vw, 28px) !important;
+    }
+}
+
+/* =========================================================
+   7. Standard & Small Mobile (<= 575px)
+   ========================================================= */
 @media (max-width: 575px) {
     .gallery-top-area,
     .event-list-top-area {
@@ -105,6 +320,76 @@
     .event-list-top-area .event-button-top .theme-btn {
         width: 100% !important;
         text-align: center !important;
+        justify-content: center !important;
+    }
+    .gallery-section.section-padding {
+        padding: 36px 0 !important;
+    }
+    .simple-gallery-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+    .simple-gallery-item .gallery-thumb {
+        height: clamp(180px, 52vw, 220px) !important;
+    }
+    .section-title {
+        margin-bottom: 24px !important;
+    }
+    .section-title h2 {
+        font-size: clamp(20px, 5.8vw, 26px) !important;
+    }
+    .simple-gallery-item .gallery-hover-overlay {
+        padding: 16px !important;
+    }
+    .simple-gallery-item .gallery-hover-overlay .hover-text h4 {
+        font-size: 16px !important;
+    }
+    .simple-gallery-item .gallery-hover-overlay .hover-text p {
+        font-size: 12px !important;
     }
 }
-
+
+/* =========================================================
+   8. Micro Mobile (<= 360px - e.g. 320x568)
+   ========================================================= */
+@media (max-width: 360px) {
+    .gallery-section.section-padding {
+        padding: 28px 0 !important;
+    }
+    .simple-gallery-item .gallery-thumb {
+        height: 180px !important;
+    }
+    .gallery-top-area .search-widget input {
+        padding: 12px 38px 12px 14px !important;
+        font-size: 13.5px !important;
+    }
+    .gallery-top-area .event-button-top .theme-btn {
+        padding: 12px 20px !important;
+        font-size: 14.5px !important;
+    }
+}
+
+/* =========================================================
+   9. Ultrawide Desktop Safeguards (min-width: 1921px)
+   ========================================================= */
+@media (min-width: 1921px) {
+    .breadcrumb-wrapper,
+    .gallery-section,
+    .junior-kidz-footer {
+        max-width: 2560px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .container {
+        max-width: 1720px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .simple-gallery-grid {
+        max-width: 1600px !important;
+        gap: 36px !important;
+    }
+    .simple-gallery-item .gallery-thumb {
+        height: 290px !important;
+    }
+}
