@@ -4875,3 +4875,238 @@
 .welcome-junior-section .welcome-header {
   margin-bottom: clamp(28px, 4vw, 55px) !important;
 }
+/* ==========================================================================
+   About Page Comprehensive Responsive Optimizations Across 10 Target Resolutions
+   Resolutions:
+   - Small Mobile: 320x568
+   - Standard Mobile: 390x844
+   - Large Mobile: 430x932
+   - Tablet: 768x1024
+   - Large Tablet: 1024x1366
+   - Small Laptop: 1280x720
+   - Standard Laptop: 1366x768
+   - Large Laptop: 1536x864
+   - Full HD Desktop: 1920x1080
+   - Ultrawide Desktop: 3440x1440
+   ========================================================================== */
+
+/* --- Outer section wrappers overflow containment --- */
+.breadcrumb-wrapper,
+.welcome-junior-section,
+.jk-mission-vision-section,
+.jk-core-values-section,
+.popular-program-section,
+.testimonial-section-4,
+.about-wrapper,
+.about-wrapper-2,
+.about-wrapper-3,
+.about-wrapper-4,
+.about-wrapper-5,
+.top-category-section-2,
+.team-wrapper,
+.faq-section-5,
+.testimonial-section-3 {
+    overflow-x: clip;
+}
+
+/* --- Fixed-pixel bounds & doodle clipping prevention on mobile --- */
+@media (max-width: 575px) {
+    .welcome-junior-section .collage-doodle.doodle-leaf,
+    .doodle-leaf {
+        right: 0 !important;
+    }
+    .welcome-junior-section .collage-doodle.doodle-cloud,
+    .doodle-cloud {
+        right: 0 !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .welcome-collage-wrap {
+        height: 280px !important;
+    }
+    .collage-blob-wrapper {
+        height: 220px !important;
+    }
+    .collage-secondary-frame {
+        width: 110px !important;
+        height: 130px !important;
+        left: 0 !important;
+        bottom: 0 !important;
+    }
+    .collage-doodle.doodle-star {
+        left: 115px !important;
+    }
+    .collage-doodle.doodle-leaf {
+        transform: scale(0.85) rotate(18deg) !important;
+        right: 0 !important;
+        bottom: -4px !important;
+    }
+}
+
+/* --- Negative-offset protection on <= 1024px viewports --- */
+@media (max-width: 1024px) {
+    .testimonial-client-wrapper {
+        margin-right: 0 !important;
+        max-width: 100% !important;
+    }
+    .team-details-wrapper .team-details-content {
+        margin-left: 0 !important;
+        max-width: 100% !important;
+    }
+    .testimonial-section-3 {
+        background-attachment: scroll !important;
+    }
+}
+
+/* --- Fluid clamp() scaling for headings & paddings below 1200px (preserves desktop 1280px-1920px) --- */
+@media (max-width: 1199px) {
+    .breadcrumb-wrapper .page-heading h1 {
+        font-size: clamp(28px, 4.5vw, 42px);
+    }
+    .jk-mission-vision-section {
+        padding: clamp(55px, 7vw, 85px) 0 !important;
+    }
+    .jk-mv-card {
+        padding: clamp(28px, 3.5vw, 36px) clamp(22px, 3vw, 30px) !important;
+    }
+    .jk-core-values-section {
+        padding: clamp(55px, 7vw, 85px) 0 !important;
+    }
+    .jk-value-card {
+        padding: clamp(26px, 3.5vw, 32px) clamp(20px, 3vw, 26px) !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .jk-mission-vision-section {
+        padding: clamp(45px, 6vw, 70px) 0 !important;
+    }
+    .jk-core-values-section {
+        padding: clamp(45px, 6vw, 70px) 0 !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .breadcrumb-wrapper .page-heading h1 {
+        font-size: clamp(24px, 6vw, 30px);
+    }
+    .jk-mission-vision-section {
+        padding: 40px 0 !important;
+    }
+    .jk-mv-card {
+        padding: 24px 18px !important;
+    }
+    .jk-mv-header {
+        gap: 12px !important;
+        margin-bottom: 16px !important;
+    }
+    .jk-mv-icon {
+        width: 48px !important;
+        height: 48px !important;
+        font-size: 20px !important;
+    }
+    .jk-mv-title {
+        font-size: clamp(18px, 5vw, 20px) !important;
+    }
+    .jk-mv-body p {
+        font-size: 14.5px !important;
+        line-height: 1.55 !important;
+    }
+    .jk-core-values-section {
+        padding: 40px 0 !important;
+    }
+    .jk-value-card {
+        padding: 20px 18px !important;
+    }
+    .jk-cv-summary-wrap {
+        gap: 8px !important;
+        margin-top: 14px !important;
+        margin-bottom: 24px !important;
+    }
+    .jk-cv-pill {
+        padding: 6px 12px !important;
+        font-size: 12px !important;
+    }
+    .jk-value-icon {
+        width: 48px !important;
+        height: 48px !important;
+        font-size: 20px !important;
+    }
+    .jk-value-title {
+        font-size: 17px !important;
+    }
+    .jk-value-desc {
+        font-size: 14px !important;
+    }
+    .testimonial-section-4.fix.section-padding.pt-0 {
+        padding-top: 45px !important;
+        padding-bottom: 50px !important;
+    }
+    .testimonial-slider-4 .testimonial-wrapper-2 {
+        padding: 24px 18px !important;
+    }
+    .testimonial-slider-4 .testimonial-wrapper-2 .content h3 {
+        font-size: clamp(15px, 3.8vw, 17px) !important;
+        line-height: 1.5 !important;
+    }
+    .testimonial-slider-4 .testimonial-wrapper-2 .content .client-content h4 {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .testimonial-slider-4 .testimonial-wrapper-2 {
+        padding: 20px 14px !important;
+    }
+    .testimonial-slider-4 .testimonial-wrapper-2 .content h3 {
+        font-size: 14.5px !important;
+    }
+    .jk-mv-card {
+        padding: 20px 14px !important;
+    }
+    .jk-value-card {
+        padding: 18px 14px !important;
+    }
+}
+
+/* --- Proportional image scaling inside cards & sections --- */
+.about-wrapper img,
+.about-wrapper-2 img,
+.about-wrapper-3 img,
+.about-wrapper-4 img,
+.breadcrumb-wrapper img,
+.welcome-junior-section img,
+.jk-mission-vision-section img,
+.jk-core-values-section img,
+.popular-program-section img,
+.testimonial-section-4 img,
+.student-kit-card img,
+.team-card-items img {
+    max-width: 100%;
+}
+
+/* --- Ultrawide safeguards (min-width: 1921px up to 3440x1440) --- */
+@media (min-width: 1921px) {
+    .breadcrumb-wrapper {
+        max-width: 2560px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .popular-program-section {
+        max-width: 2560px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        border-radius: 24px;
+    }
+    .breadcrumb-wrapper .container,
+    .welcome-junior-section .container,
+    .jk-mission-vision-section .container,
+    .jk-core-values-section .container,
+    .popular-program-section .container,
+    .testimonial-section-4 .container {
+        max-width: 1720px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}

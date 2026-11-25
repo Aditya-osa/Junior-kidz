@@ -69,4 +69,347 @@
         animation-delay: 0.05s !important;
     }
 }
-
+/* ==========================================================================
+   Nursery Teacher Training Page - Comprehensive Responsive Engine
+   Target Resolutions:
+   1. Small Mobile: 320 × 568
+   2. Standard Mobile: 390 × 844
+   3. Large Mobile: 430 × 932
+   4. Tablet: 768 × 1024
+   5. Large Tablet: 1024 × 1366
+   6. Small Laptop: 1280 × 720
+   7. Standard Laptop: 1366 × 768
+   8. Large Laptop: 1536 × 864
+   9. Full HD Desktop: 1920 × 1080
+   10. Ultrawide Desktop: 3440 × 1440
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Section Overflow Containment & Universal Image Boundaries
+   -------------------------------------------------------------------------- */
+.breadcrumb-wrapper,
+.ntt-content-area,
+.ntt-hero,
+.cta-newsletter-section,
+.junior-kidz-footer {
+    overflow-x: clip !important;
+}
+
+.ntt-container,
+.why-grid,
+.tables-grid,
+.fees-grid,
+.details-grid,
+.info-card-ntt,
+.table-card-ntt,
+.fee-card-ntt,
+.highlight-box-ntt,
+.ntt-cert-card {
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+}
+
+.ntt-hero img,
+.ntt-cert-card img,
+.breadcrumb-wrapper img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* --------------------------------------------------------------------------
+   2. Large Tablet & Small Laptop (992px - 1199px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199px) {
+    .ntt-container {
+        gap: 32px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .ntt-hero .ntt-title {
+        font-size: clamp(26px, 3.2vw, 36px) !important;
+    }
+    .tables-grid,
+    .fees-grid,
+    .why-grid,
+    .details-grid {
+        gap: 20px !important;
+    }
+    .ntt-table th, .ntt-table td {
+        padding: 12px 14px !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   3. Tablet & Medium Screens (768px - 991px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+    .ntt-hero {
+        padding: 56px 20px !important;
+    }
+    .ntt-container {
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+        gap: 36px !important;
+    }
+    .ntt-hero .ntt-title {
+        font-size: clamp(24px, 4vw, 32px) !important;
+    }
+    .ntt-hero .ntt-reg-box {
+        border-left: none !important;
+        border-top: 4px solid #1e40af !important;
+        border-radius: 12px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        max-width: 600px !important;
+    }
+    .ntt-hero .ntt-cta-row {
+        justify-content: center !important;
+    }
+    .ntt-cert-card {
+        max-width: min(340px, 100%) !important;
+        margin: 0 auto !important;
+    }
+    .why-grid,
+    .tables-grid,
+    .fees-grid,
+    .details-grid {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   4. Mobile Devices (<= 767px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    .breadcrumb-wrapper {
+        padding: 40px 0 !important;
+    }
+    .breadcrumb-wrapper .page-heading h1 {
+        font-size: clamp(24px, 6vw, 34px) !important;
+    }
+    .banner-floating-shape {
+        max-width: 48px !important;
+        opacity: 0.65 !important;
+    }
+    .ntt-content-area section {
+        padding: 40px 0 !important;
+    }
+    .table-card-ntt {
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   5. Small & Standard Mobile (<= 575px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 575px) {
+    .ntt-title-subline,
+    .ntt-container .ntt-title-subline,
+    .ntt-title .ntt-title-subline {
+        white-space: normal !important;
+        display: inline !important;
+        word-break: break-word !important;
+    }
+    .ntt-hero {
+        padding: 36px 16px !important;
+    }
+    .ntt-hero .ntt-title {
+        font-size: clamp(19px, 5.5vw, 22px) !important;
+        line-height: 1.25 !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+    .ntt-hero .ntt-subtitle {
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 16px !important;
+    }
+    .ntt-hero .ntt-reg-box {
+        padding: 12px 14px !important;
+        margin-bottom: 20px !important;
+    }
+    .ntt-hero .ntt-reg-box p {
+        font-size: 0.85rem !important;
+        line-height: 1.5 !important;
+    }
+    .ntt-hero .ntt-cta-row {
+        gap: 12px !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .ntt-hero .ntt-cta-row .theme-btn {
+        padding: 12px 24px !important;
+        font-size: 0.95rem !important;
+        width: 100% !important;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+    .ntt-join-text {
+        font-size: 0.9rem !important;
+        text-align: center !important;
+    }
+    .ntt-cert-card {
+        max-width: 100% !important;
+        padding: 24px 16px !important;
+        border-radius: 16px !important;
+    }
+    .ntt-cert-card img {
+        max-width: min(180px, 60%) !important;
+        height: auto !important;
+        margin: 0 auto 12px !important;
+    }
+    .ntt-cert-caption {
+        font-size: 0.82rem !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Cards & Grids on Mobile */
+    .info-card-ntt {
+        padding: 20px 16px !important;
+        border-radius: 12px !important;
+    }
+    .info-card-ntt h3 {
+        font-size: 1.15rem !important;
+        margin-bottom: 8px !important;
+    }
+    .info-card-ntt p,
+    .info-card-ntt li,
+    .styled-list-ntt li {
+        font-size: 0.88rem !important;
+        line-height: 1.55 !important;
+    }
+    .styled-list-ntt li {
+        padding-left: 20px !important;
+        margin-bottom: 8px !important;
+    }
+
+    /* Tables on Mobile */
+    .table-header-ntt {
+        padding: 12px 16px !important;
+        font-size: 1.05rem !important;
+    }
+    .ntt-table th,
+    .ntt-table td {
+        padding: 10px 12px !important;
+        font-size: 0.85rem !important;
+    }
+    .ntt-table tr.total-row td {
+        font-size: 0.92rem !important;
+    }
+
+    /* Fee Cards on Mobile */
+    .fee-card-top-ntt {
+        padding: 16px !important;
+    }
+    .fee-card-top-ntt h3 {
+        font-size: 1.2rem !important;
+    }
+    .fee-card-top-ntt span {
+        font-size: 0.8rem !important;
+    }
+
+    /* Highlight box on Mobile */
+    .highlight-box-ntt {
+        padding: 20px 16px !important;
+        border-radius: 12px !important;
+    }
+    .highlight-box-ntt h4 {
+        font-size: 1.1rem !important;
+    }
+    .highlight-box-ntt p {
+        font-size: 0.9rem !important;
+    }
+
+    /* Section Titles on Mobile */
+    .section-title {
+        margin-bottom: 24px !important;
+    }
+    .section-title h2,
+    .section-title-ntt {
+        font-size: clamp(24px, 6.5vw, 30px) !important;
+    }
+    .kidz-eyebrow,
+    .eyebrow-splash,
+    .section-tag-ntt {
+        font-size: 18px !important;
+    }
+
+    /* CTA Section on Mobile */
+    .cta-newsletter-section.style-2 {
+        padding: 40px 16px !important;
+    }
+    .franchise-cta-content h2,
+    .cta-newsletter-wrapper.style-2 h2 {
+        font-size: clamp(20px, 5.8vw, 24px) !important;
+    }
+    .franchise-cta-content p,
+    .cta-newsletter-wrapper.style-2 p {
+        font-size: 0.88rem !important;
+    }
+
+    /* Modal Form on Mobile */
+    .modal-box {
+        padding: 24px 16px !important;
+        border-radius: 12px !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   6. Micro Mobile (<= 360px - e.g. 320x568)
+   -------------------------------------------------------------------------- */
+@media (max-width: 360px) {
+    .ntt-hero {
+        padding: 28px 10px !important;
+    }
+    .ntt-hero .ntt-title {
+        font-size: 18px !important;
+    }
+    .ntt-table th,
+    .ntt-table td {
+        padding: 8px 8px !important;
+        font-size: 0.8rem !important;
+    }
+    .fee-card-ntt .ntt-table td[style*="padding-left: 34px"] {
+        padding-left: 12px !important;
+    }
+    .ntt-cert-card {
+        padding: 16px 10px !important;
+    }
+    .ntt-cert-card img {
+        max-width: 150px !important;
+    }
+    .ntt-reg-box {
+        padding: 10px 10px !important;
+    }
+    .info-card-ntt {
+        padding: 16px 12px !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   7. Ultrawide Desktop Safeguards (min-width: 1921px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1921px) {
+    .breadcrumb-wrapper,
+    .ntt-hero,
+    .cta-newsletter-section,
+    .junior-kidz-footer {
+        max-width: 2560px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .ntt-container,
+    .container {
+        max-width: 1720px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .tables-grid,
+    .fees-grid,
+    .why-grid,
+    .details-grid {
+        gap: 40px !important;
+    }
+}
