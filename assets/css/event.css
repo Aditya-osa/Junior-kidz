@@ -1110,4 +1110,167 @@
     font-size: 16px !important;
     font-weight: 600 !important;
     color: #556987 !important;
-}
+}
+
+
+/* =========================================================
+   Event Page - Comprehensive Responsive Engine
+   Resolutions: 320x568 up to 3440x1440
+   ========================================================= */
+
+/* 1. Universal Containment & Fluid Image Boundaries */
+.breadcrumb-wrapper,
+.event-list-section,
+.junior-kidz-footer {
+    overflow-x: clip !important;
+}
+
+.event-list-wrapper .event-list-items .event-image img,
+.event-list-wrapper .event-list-items img {
+    max-width: 100% !important;
+}
+
+/* Header fluid container */
+.header-section-3 .container,
+.header-3 .container,
+.header-3.style-2 .container {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-left: clamp(16px, 5vw, 160px) !important;
+    padding-right: clamp(16px, 5vw, 160px) !important;
+}
+
+/* Date box flex-shrink protection */
+.event-list-wrapper .event-list-items .event-content .content .date {
+    flex-shrink: 0 !important;
+}
+
+/* 2. Breadcrumb Scaling */
+@media (max-width: 767px) {
+    .breadcrumb-wrapper {
+        padding: 40px 0 !important;
+    }
+    .breadcrumb-wrapper .page-heading h1 {
+        font-size: clamp(24px, 6.5vw, 36px) !important;
+    }
+    .banner-floating-shape {
+        max-width: 48px !important;
+        opacity: 0.65 !important;
+    }
+    .event-list-section.section-padding {
+        padding-top: 0 !important;
+        padding-bottom: 45px !important;
+    }
+}
+
+/* 3. Standard & Small Mobile (<= 575px) */
+@media (max-width: 575px) {
+    .event-list-section.section-padding {
+        padding-bottom: 36px !important;
+    }
+    .event-list-wrapper .event-list-items {
+        padding: 18px 14px !important;
+        border-radius: 12px !important;
+        margin-top: 20px !important;
+    }
+    .event-list-wrapper .event-list-items .event-content .content {
+        gap: 12px !important;
+    }
+    .event-list-wrapper .event-list-items .event-content .content .date {
+        width: 72px !important;
+        height: 72px !important;
+        border-radius: 8px !important;
+        padding: 8px 10px !important;
+    }
+    .event-list-wrapper .event-list-items .event-content .content .date h2 {
+        font-size: 26px !important;
+    }
+    .event-list-wrapper .event-list-items .event-content .content .date span {
+        font-size: 11.5px !important;
+    }
+    .event-list-wrapper .event-list-items .event-content .content .title-text h4 {
+        font-size: 17.5px !important;
+        margin-bottom: 6px !important;
+    }
+    .event-list-wrapper .event-list-items .event-content .content .title-text .event-desc {
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+        margin-bottom: 8px !important;
+    }
+    .event-list-wrapper .event-list-items .event-content .content .title-text .post-time {
+        margin-top: 10px !important;
+        padding-top: 10px !important;
+        gap: 16px !important;
+    }
+    .event-list-wrapper .event-list-items .event-image {
+        height: 170px !important;
+        border-radius: 10px !important;
+    }
+    .event-list-wrapper .event-list-items .event-image img {
+        border-radius: 10px !important;
+    }
+}
+
+/* 4. Micro Mobile (<= 360px - e.g. 320x568) */
+@media (max-width: 360px) {
+    .event-list-section.section-padding {
+        padding-bottom: 28px !important;
+    }
+    .event-list-wrapper .event-list-items {
+        padding: 14px 10px !important;
+        gap: 12px !important;
+        margin-top: 16px !important;
+    }
+    .event-list-wrapper .event-list-items .event-content .content {
+        gap: 10px !important;
+    }
+    .event-list-wrapper .event-list-items .event-content .content .date {
+        width: 64px !important;
+        height: 64px !important;
+        padding: 6px 8px !important;
+    }
+    .event-list-wrapper .event-list-items .event-content .content .date h2 {
+        font-size: 22px !important;
+    }
+    .event-list-wrapper .event-list-items .event-content .content .date span {
+        font-size: 11px !important;
+    }
+    .event-list-wrapper .event-list-items .event-content .content .title-text h4 {
+        font-size: 16px !important;
+    }
+    .event-list-wrapper .event-list-items .event-content .content .title-text .event-desc {
+        font-size: 12px !important;
+        line-height: 1.45 !important;
+    }
+    .event-list-wrapper .event-list-items .event-image {
+        height: 145px !important;
+    }
+}
+
+/* 5. Ultrawide Desktop Safeguards (min-width: 1921px) */
+@media (min-width: 1921px) {
+    .breadcrumb-wrapper,
+    .event-list-section,
+    .junior-kidz-footer {
+        max-width: 2560px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .container {
+        max-width: 1720px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .event-list-wrapper {
+        max-width: 1400px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .event-list-wrapper .event-list-items {
+        padding: 34px 44px !important;
+    }
+    .event-list-wrapper .event-list-items .event-image {
+        width: 300px !important;
+        height: 180px !important;
+    }
+}
