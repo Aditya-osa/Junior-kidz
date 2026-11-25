@@ -1,0 +1,110 @@
+/*
+ * Gallery Page CSS - Gallery Specific Styles
+ * Includes: Gallery Grid Layout, Gallery Cards, Hover Effects, Search Widget
+ */
+
+/* --- [style.css: Gallery Grid & Search Widget Styling] --- */
+/* Gallery & Search widget styling */
+.gallery-top-area,
+.event-list-top-area {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    margin-bottom: 40px !important;
+}
+.gallery-top-area .search-widget,
+.event-list-top-area .search-widget {
+    position: relative !important;
+    max-width: 380px !important;
+    width: 100% !important;
+}
+.gallery-top-area .search-widget input,
+.event-list-top-area .search-widget input {
+    width: 100% !important;
+    border-radius: 8px !important;
+    border: 1px solid #E6EFFF !important;
+    background: #FFFFFF !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+    padding: 14px 44px 14px 20px !important;
+    font-family: 'Quicksand', 'Sora', sans-serif !important;
+    font-weight: 500 !important;
+    font-size: 15px !important;
+    color: #0D1B3E !important;
+    outline: none !important;
+    transition: border-color 0.3s ease !important;
+}
+.gallery-top-area .search-widget input:focus {
+    border-color: #00a0e3 !important;
+}
+.event-list-top-area .search-widget input:focus {
+    border-color: var(--theme-orange) !important;
+}
+.gallery-top-area .search-widget .sub-icon,
+.event-list-top-area .search-widget .sub-icon {
+    position: absolute !important;
+    top: 50% !important;
+    right: 18px !important;
+    transform: translateY(-50%) !important;
+    color: #556987 !important;
+    pointer-events: none !important;
+}
+.gallery-top-area .event-button-top .theme-btn {
+    font-family: 'Fredoka', 'Sora', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.3px !important;
+    border-radius: 8px !important;
+    padding: 14px 28px !important;
+    background-color: var(--theme-orange) !important;
+    color: #fff !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+}
+.gallery-top-area .event-button-top .theme-btn:hover {
+    background-color: #00a0e3 !important;
+}
+.event-list-top-area .event-button-top .theme-btn,
+.event-list-wrapper .event-button .theme-btn {
+    font-family: 'Fredoka', 'Sora', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    letter-spacing: 0.3px !important;
+    border-radius: 8px !important;
+    padding: 14px 28px !important;
+    background-color: var(--theme-orange) !important;
+    color: #fff !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+#noEventsMsg,
+#noGalleryMsg {
+    font-family: 'Quicksand', 'Sora', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #556987 !important;
+}
+
+@media (max-width: 575px) {
+    .gallery-top-area,
+    .event-list-top-area {
+        flex-direction: column !important;
+        gap: 12px !important;
+        margin-bottom: 25px !important;
+    }
+    .gallery-top-area .search-widget,
+    .event-list-top-area .search-widget {
+        max-width: 100% !important;
+    }
+    .gallery-top-area .event-button-top,
+    .event-list-top-area .event-button-top {
+        width: 100% !important;
+    }
+    .gallery-top-area .event-button-top .theme-btn,
+    .event-list-top-area .event-button-top .theme-btn {
+        width: 100% !important;
+        text-align: center !important;
+    }
+}
+

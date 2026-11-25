@@ -1563,21 +1563,4 @@ html, body {
     }
 }
 
-/* =========================================================
-   Home Page Only: Match outer side spacing below header
-   (clamp(25px, 7vw, 160px) padding, 1200px to 2560px+)
-   Gallery remains full stretch (100% width)
-   ========================================================= */
-@media (min-width: 1200px) {
-    body.home-page section .container,
-    body.home-page footer .container,
-    body.home-page .hero-section .container-fluid,
-    body.home-page .event-secton-2 .event-wrapper-2 {
-        max-width: 100% !important;
-        width: 100% !important;
-        padding-left: clamp(25px, 7vw, 160px) !important;
-        padding-right: clamp(25px, 7vw, 160px) !important;
-    }
-}
-
 

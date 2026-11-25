@@ -1,0 +1,100 @@
+/*
+ * Enquiry Page CSS - Franchise & General Enquiry Styles
+ * Includes: Enquiry Page Section, Form Wrapper, Inputs, Submit Button, Contact Info Box
+ */
+
+/* --- [style.css: Enquiry Page & Form Styling] --- */
+/* =========================================================
+   Enquiry Page (enquiry.html) Styling
+   ========================================================= */
+.enquiry-page-section {
+    background-color: #F8FAFC !important;
+    padding: 70px 0 90px !important;
+}
+
+.enquiry-card-wrapper {
+    background: #FFFFFF !important;
+    border: 1px solid #E8EFF5 !important;
+    border-radius: 16px !important;
+    padding: 55px 65px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+}
+
+.enquiry-form .form-label {
+    display: block !important;
+    font-family: 'Fredoka', 'Sora', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #0D1B3E !important;
+    margin-bottom: 8px !important;
+}
+
+.enquiry-form .form-clt input,
+.enquiry-form .form-clt textarea {
+    width: 100% !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 8px !important;
+    background: #FFFFFF !important;
+    padding: 14px 18px !important;
+    font-family: 'Quicksand', 'Sora', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    color: #0D1B3E !important;
+    outline: none !important;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.enquiry-form .form-clt input::placeholder {
+    color: #94A3B8 !important;
+    font-family: 'Quicksand', 'Sora', sans-serif !important;
+    font-size: 14.5px !important;
+    font-weight: 500 !important;
+    opacity: 1 !important;
+}
+
+@media (max-width: 575px) {
+    .enquiry-form .form-clt input::placeholder {
+        font-size: 13px !important;
+    }
+}
+
+.enquiry-form .form-clt input:focus,
+.enquiry-form .form-clt textarea:focus {
+    border-color: #00a0e3 !important;
+    box-shadow: 0 0 0 3px rgba(0, 160, 227, 0.15) !important;
+}
+
+.input-with-icon {
+    position: relative !important;
+    width: 100% !important;
+}
+
+.input-with-icon .input-icon {
+    position: absolute !important;
+    right: 18px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    color: #94A3B8 !important;
+    font-size: 16px !important;
+    pointer-events: none !important;
+    transition: color 0.25s ease !important;
+}
+
+.input-with-icon .textarea-icon {
+    top: 20px !important;
+    transform: none !important;
+}
+
+.input-with-icon input:focus ~ .input-icon,
+.input-with-icon textarea:focus ~ .input-icon {
+    color: #00a0e3 !important;
+}
+
+.enquiry-form .form-clt .input-with-icon input {
+    padding-right: 48px !important;
+}
+
+.enquiry-form .form-clt .input-with-icon textarea {
+    padding-right: 48px !important;
+}
+

@@ -1,0 +1,389 @@
+/*
+ * Contact Page CSS - Contact Information & Form Styles
+ * Includes: Centres Section, Contact Section, Contact Cards, Form Inputs & Map
+ */
+
+/* --- [main.css: Contact Section & Wrapper] --- */
+.contact-box-items {
+  margin-top: 30px;
+  padding: 50px;
+  border: 1px solid var(--bg2);
+  background-color: var(--white);
+  filter: drop-shadow(10px 4px 60px rgba(204, 204, 204, 0.25));
+  height: 363px;
+}
+.contact-box-items .icon {
+  font-size: 45px;
+  color: var(--theme-blue);
+  margin-bottom: 40px;
+}
+.contact-box-items h5 {
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.contact-box-items .image {
+  margin-bottom: 25px;
+}
+.contact-box-items h4 {
+  line-height: 150%;
+}
+
+.map-area iframe {
+  height: 715px;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .map-area iframe {
+    height: 650px;
+  }
+}
+@media (max-width: 767px) {
+  .map-area iframe {
+    height: 530px;
+  }
+}
+@media (max-width: 575px) {
+  .map-area iframe {
+    height: 430px;
+  }
+}
+
+.map-area-section .container-fluid {
+  padding: 0px 115px;
+}
+@media (max-width: 1600px) {
+  .map-area-section .container-fluid {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1399px) {
+  .map-area-section .container-fluid {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1199px) {
+  .map-area-section .container-fluid {
+    padding: 0 30px;
+  }
+}
+
+.contact-form-items {
+  background-color: var(--bg);
+  border: 1px solid var(--theme-blue);
+  border-radius: 10px;
+  padding: 60px 110px;
+  margin-top: -320px;
+  position: relative;
+  z-index: 9;
+}
+@media (max-width: 1199px) {
+  .contact-form-items {
+    margin-top: 0;
+  }
+}
+@media (max-width: 991px) {
+  .contact-form-items {
+    padding: 60px 50px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-form-items {
+    padding: 50px 40px;
+  }
+}
+@media (max-width: 575px) {
+  .contact-form-items {
+    padding: 40px 30px;
+  }
+}
+.contact-form-items .title {
+  margin-bottom: 30px;
+}
+.contact-form-items .title h2 {
+  font-size: 40px;
+}
+.contact-form-items .form-clt {
+  position: relative;
+}
+.contact-form-items .form-clt input, .contact-form-items .form-clt textarea {
+  padding: 16px 30px;
+  border: none;
+  outline: none;
+  background-color: var(--white);
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--text);
+}
+@media (max-width: 575px) {
+  .contact-form-items .form-clt input, .contact-form-items .form-clt textarea {
+    padding: 12px 20px;
+  }
+}
+.contact-form-items .form-clt textarea {
+  padding: 18px 30px 110px;
+}
+@media (max-width: 575px) {
+  .contact-form-items .form-clt textarea {
+    padding: 12px 20px 90px;
+  }
+}
+.contact-form-items .form-clt::placeholder {
+  color: var(--text);
+}
+.contact-form-items .form-clt .icon {
+  position: absolute;
+  right: 30px;
+  top: 16px;
+  color: var(--text);
+}
+.contact-form-items .theme-btn {
+  background-color: var(--theme-blue);
+  color: var(--white);
+}
+
+.sign-in-items {
+  background-color: var(--bg);
+  border: 1px solid var(--theme-blue);
+  border-radius: 10px;
+  padding: 60px 110px;
+  position: relative;
+  z-index: 9;
+}
+@media (max-width: 991px) {
+  .sign-in-items {
+    padding: 60px 50px;
+  }
+}
+@media (max-width: 767px) {
+  .sign-in-items {
+    padding: 50px 40px;
+  }
+}
+@media (max-width: 575px) {
+  .sign-in-items {
+    padding: 40px 30px;
+  }
+}
+.sign-in-items .title {
+  margin-bottom: 30px;
+}
+.sign-in-items .title h2 {
+  font-size: 30px;
+}
+.sign-in-items .form-clt {
+  position: relative;
+}
+.sign-in-items .form-clt span {
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #031F42;
+}
+.sign-in-items .form-clt input, .sign-in-items .form-clt textarea {
+  padding: 16px 30px;
+  border: none;
+  outline: none;
+  background-color: var(--white);
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 7px;
+  color: var(--text);
+  border: 1px solid rgba(0, 91, 255, 0.2);
+}
+@media (max-width: 575px) {
+  .sign-in-items .form-clt input, .sign-in-items .form-clt textarea {
+    padding: 12px 20px;
+  }
+}
+.sign-in-items .form-clt.style-2 input, .sign-in-items .form-clt.style-2 textarea {
+  border: 1px solid var(--theme-blue);
+}
+.sign-in-items .form-clt textarea {
+  padding: 18px 30px 110px;
+}
+@media (max-width: 575px) {
+  .sign-in-items .form-clt textarea {
+    padding: 12px 20px 90px;
+  }
+}
+.sign-in-items .form-clt::placeholder {
+  color: var(--text);
+}
+.sign-in-items .form-clt .icon {
+  position: absolute;
+  right: 30px;
+  top: 55px;
+  color: #031F42;
+}
+.sign-in-items .from-cheak-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign-in-items .from-cheak-items .from-customradio .form-check-label {
+  text-transform: capitalize;
+  color: var(--text);
+}
+.sign-in-items .from-cheak-items span {
+  color: var(--theme-blue);
+  font-weight: 500;
+}
+.sign-in-items .from-cheak-items.style-2 {
+  justify-content: right;
+}
+.sign-in-items .theme-btn {
+  background-color: var(--theme-blue);
+  color: var(--white);
+  width: 100%;
+  justify-content: center;
+}
+
+
+/* --- [style.css: Contact Page & Centres Section Styling] --- */
+/* =========================================================
+   Simple Clean Gallery Grid Layout
+   ========================================================= */
+.simple-gallery-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 28px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+.simple-gallery-item {
+    position: relative !important;
+    display: block !important;
+}
+
+.simple-gallery-item .gallery-card {
+    display: block !important;
+    position: relative !important;
+    border-radius: 14px !important;
+    overflow: hidden !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06) !important;
+    background: #FFFFFF !important;
+    border: 1px solid #E8EFF5 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.simple-gallery-item .gallery-thumb {
+    position: relative !important;
+    width: 100% !important;
+    height: 250px !important;
+    overflow: hidden !important;
+}
+
+.simple-gallery-item .gallery-thumb img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+    transition: transform 0.4s ease !important;
+}
+
+.simple-gallery-item .gallery-hover-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(to top, rgba(0, 160, 227, 0.92) 0%, rgba(0, 160, 227, 0.35) 60%, transparent 100%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    padding: 20px !important;
+    opacity: 0 !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.simple-gallery-item .gallery-hover-overlay .hover-icon {
+    position: absolute !important;
+    top: 18px !important;
+    right: 18px !important;
+    width: 38px !important;
+    height: 38px !important;
+    background: #00a0e3 !important;
+    color: #FFFFFF !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 14px !important;
+    transform: scale(0.8) !important;
+    transition: transform 0.3s ease !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18) !important;
+}
+
+.simple-gallery-item .gallery-hover-overlay .hover-text h4 {
+    color: #FFFFFF !important;
+    font-family: 'Fredoka', 'Sora', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    margin: 0 0 4px 0 !important;
+    line-height: 1.3 !important;
+}
+
+.simple-gallery-item .gallery-hover-overlay .hover-text p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-family: 'Quicksand', 'Sora', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    margin: 0 !important;
+    letter-spacing: 0.3px !important;
+}
+
+.simple-gallery-item:hover .gallery-card {
+    transform: translateY(-4px) !important;
+    border-color: #00a0e3 !important;
+    box-shadow: 0 12px 28px rgba(0, 160, 227, 0.28) !important;
+}
+
+.simple-gallery-item:hover .gallery-thumb img {
+    transform: scale(1.05) !important;
+}
+
+.simple-gallery-item:hover .gallery-hover-overlay {
+    opacity: 1 !important;
+}
+
+.simple-gallery-item:hover .gallery-hover-overlay .hover-icon {
+    transform: scale(1) !important;
+}
+
+/* Tablet (768px - 1024px): 2 columns */
+@media (max-width: 1024px) {
+    .simple-gallery-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+    }
+    .simple-gallery-item .gallery-thumb {
+        height: 230px !important;
+    }
+}
+
+/* Mobile (< 768px): 1 column */
+@media (max-width: 767px) {
+    .simple-gallery-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+    .simple-gallery-item .gallery-thumb {
+        height: 220px !important;
+    }
+}
+@media (max-width: 575px) and (min-width: 420px) {
+    .simple-gallery-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+    .simple-gallery-item .gallery-thumb {
+        height: 170px !important;
+    }
+}
+
