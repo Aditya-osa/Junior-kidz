@@ -1230,10 +1230,27 @@
         transition: none;
     }
 }
+
+/* Match outer side spacing below header to header padding clamp(25px, 7vw, 160px) across 1200px to 2560px+ (gallery full stretch) */
+@media (min-width: 1200px) {
+    body.home-page section .container,
+    body.home-page footer .container,
+    body.home-page .hero-section .container-fluid,
+    body.home-page .event-secton-2 .event-wrapper-2,
+    section .container,
+    footer .container,
+    .hero-section .container-fluid,
+    .event-secton-2 .event-wrapper-2 {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding-left: clamp(25px, 7vw, 160px) !important;
+        padding-right: clamp(25px, 7vw, 160px) !important;
+    }
+}
         </style>
     </head>
 
-    <body>
+    <body class="home-page">
 
          <!-- Back To Top start -->
         <button id="back-top" class="back-to-top">
